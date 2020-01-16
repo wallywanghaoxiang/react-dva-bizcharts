@@ -1,0 +1,68 @@
+.searchResult {
+  height: 67vh;
+  // border: 1px solid #E5E5E5;
+  margin-top: 10px;
+
+  .studentlist {
+    height: 100%;
+    margin-top: -1px;
+    overflow-y: auto;
+    // border-top: 1px solid #E5E5E5;
+
+    .searchTable {
+      border: 1px solid #e5e5e5;
+      border-bottom: none;
+
+      .dropdown {
+        color: #333;
+        font-weight: bolder;
+        font-size: 16px;
+      }
+
+      :global {
+        .ant-table table {
+          table-layout: fixed;
+        }
+
+        th {
+          padding: 7px 10px;
+        }
+
+        .ant-table-column-title {
+          color: #888;
+          font-size: 13px;
+        }
+
+        td {
+          padding: 8px 10px;
+          overflow: hidden;
+          color: #333;
+          font-weight: 400;
+          font-size: 13px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      width: 6px;
+      background: rgba(204, 204, 204, 1);
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #fff;
+      border-radius: 0;
+    }
+  }
+
+  .pagination {
+    float: left;
+    width: 50%;
+    padding-top: 15px;
+  }
+}

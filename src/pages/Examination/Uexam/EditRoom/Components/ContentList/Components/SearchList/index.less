@@ -1,0 +1,32 @@
+.searchList {
+  width: 100%;
+  height: 570px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+
+  .empty {
+    margin-top: 200px;
+  }
+
+  .bubm {
+    margin-left: 5px;
+    color: rgba(51, 51, 51, 1);
+    font-weight: 400;
+    font-size: 10px;
+    background: rgba(229, 229, 229, 1);
+    border-radius: 50%;
+  }
+
+  :global {
+    .ant-table table {
+      table-layout: fixed;
+
+      td {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}

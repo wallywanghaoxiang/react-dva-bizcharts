@@ -1,0 +1,170 @@
+@import '~@/frontlib/utils/utils.less';
+
+:global {
+    .otherInfo{
+        padding: 0 0 20px 0;
+        .tipsName{
+            margin-top: 25px;
+            color:rgba(136,136,136,1);  
+            font-weight:400;
+            font-size:14px;
+            .tips{
+                width:34px;
+                height:24px;
+                padding-top: 3px;
+                padding-left: 4px;
+                color:rgba(3,196,107,1);
+                font-weight:400;
+                font-size:14px;
+                line-height:16px;
+                background:rgba(3,196,107,0.1);
+                //border:1px solid rgba(3,196,107,1);
+            }
+            .tip2{
+                width:0;
+                height:0;
+                border:12px solid rgba(3,196,107,1);
+                border-color:transparent  transparent transparent rgba(3,196,107,0.1);
+            }
+        }
+        .ooops{
+            color: #888;
+            font-size:18px;
+            font-style:italic;
+            .oops-info{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width:245px;
+                height:40px;             
+                padding: 4px 0;    
+                color:rgba(136,136,136,1);   
+                font-weight:500;  
+                font-style:normal;  
+                line-height:25px; 
+                background:rgba(255,255,255,1);
+                border-radius:20px;   
+            }
+            .long{
+                width: 300px;
+            }
+        }
+        .titleName{
+            display: flex;
+            align-items: center;
+            margin-top:20px; 
+            margin-bottom:10px; 
+            color:rgba(51,51,51,1); 
+            font-weight:500;          
+            font-size:16px;           
+            .dic{  
+                width:4px;
+                height:14px;
+                margin-right: 5px;
+                background:rgba(136,136,136,1);
+                border-radius:2px;
+            }
+            .dix{
+                margin-right: 10px; 
+            }
+        }
+        .evaluateInfo{
+            display: flex;
+            margin-top: 30px;
+            .title{
+                color:rgba(136,136,136,1);
+                font-weight:500;
+                font-size:14px; 
+            }
+            .content{
+                width:700px;
+                color:rgba(51,51,51,1);
+                font-weight:400;
+                font-size:15px;  
+            }
+        }
+        .result{
+            .question{
+                align-items: flex-start;
+                margin-bottom: 10px; 
+                color:rgba(51,51,51,1);
+                font-weight: @paper-bold;
+                font-size: @paper-normal;
+                font-family: @paper-family;
+                .question_no{
+                    margin-right: 5px;
+                }
+                .question_content{
+                    width: 90%;
+                    .text{
+                        font-weight: 500;
+                        font-size: 16px;
+                        font-family: inherit;
+                    }
+                }
+                .subScore{
+                    float: right;
+                    margin-left: 5px;
+                    color:rgba(51,51,51,1);
+                    font-weight:500;     
+                    font-size:16px;                   
+                    .score{
+                        color:rgba(255,110,74,1);
+                        font-size:28px;       
+                        line-height:40px;
+                    }
+                }          
+            }
+            .answer{
+                flex:1;
+                width: fit-content;
+                margin-top: 5px; 
+                color:rgba(51,51,51,1);
+                // font-weight: @paper-bold;
+                // font-size: @paper-normal;
+                // font-family: @paper-family;
+                line-height:25px;
+            }
+            .answerhalf{
+                width: fit-content;
+                margin-top: 5px; 
+                color:rgba(51,51,51,1); 
+                font-weight:500;
+                font-size:16px;
+                line-height:25px;
+            }
+            .wrong{
+                color:rgba(255,110,74,1);
+                font-weight:500;
+                font-size:18px;
+                line-height:25px;
+            }
+            .rightAnswer{
+                padding-right: 10px;
+                padding-left: 10px;  
+                background:rgba(255,255,255,1);
+                border:2px solid rgba(3,196,107,1);   
+                border-radius:15px;         
+            }
+            .noanswer{
+                border:2px solid #888;   
+            }
+            .correct{
+                padding-right: 10px;
+                padding-left: 10px;  
+                background:rgba(255,255,255,1);
+                border:2px solid rgba(136,136,136,1);   
+                border-radius:15px;                           
+            }
+            .myPerformance{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            
+        }
+        .flex{
+            display: flex;
+        }
+    }
+
+}

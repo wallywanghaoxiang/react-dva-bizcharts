@@ -1,0 +1,362 @@
+.mainContainer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  .logoContainer {
+    position: absolute;
+    top: 20px;
+    left: 23px;
+    z-index: 2;
+
+    img {
+      width: 126px;
+      height: 34px;
+    }
+  }
+
+  .topMenuContainer {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    z-index: 2;
+
+    .menusBox {
+      display: flex;
+
+      .menuItemWhite {
+        position: relative;
+        margin: 0 10px;
+        color: #fff;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .menuWhiteActive {
+        &::before {
+          position: absolute;
+          bottom: -4px;
+          left: 25%;
+          width: 50%;
+          background: #fff;
+          border-top: 2px solid transparent;
+          border-radius: 4px 4px 0 0;
+          transition: all 0.3s;
+          content: '';
+          pointer-events: none;
+        }
+      }
+
+      .menuItemBlack {
+        position: relative;
+        margin: 0 10px;
+        color: #333;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .menuBlackActive {
+        &::before {
+          position: absolute;
+          bottom: -4px;
+          left: 25%;
+          width: 50%;
+          background: #333;
+          border-top: 2px solid transparent;
+          border-radius: 4px 4px 0 0;
+          transition: all 0.3s;
+          content: '';
+          pointer-events: none;
+        }
+      }
+    }
+  }
+
+  .pageContainer {
+    position: absolute;
+    top: calc(~'50% + 110px');
+    right: 24px;
+    z-index: 2;
+    text-align: center;
+
+    .vline {
+      width: 2px;
+      height: 60px;
+      margin: 0 auto;
+      opacity: 0.5;
+    }
+
+    .indexWhite {
+      color: #fff;
+      font-size: 20px;
+    }
+
+    .totalWhite {
+      color: #fff;
+      font-size: 14px;
+    }
+
+    .indexBlack {
+      color: #333;
+      font-size: 20px;
+    }
+
+    .totalBlack {
+      color: #333;
+      font-size: 14px;
+    }
+  }
+
+  .carouselWhite {
+    :global {
+      .ant-carousel .slick-dots li {
+        margin: 6px 2px;
+        padding: 5px;
+        border-radius: 50%;
+      }
+
+      .ant-carousel-vertical .slick-dots li.slick-active {
+        border: 1px solid #fff;
+      }
+
+      .ant-carousel-vertical .slick-dots li button {
+        width: 8px;
+        height: 8px;
+        background: #fff;
+        border-radius: 4px;
+        opacity: 0.5;
+      }
+
+      .ant-carousel-vertical .slick-dots li.slick-active button {
+        width: 8px;
+        height: 8px;
+        border-radius: 4px;
+        opacity: 1;
+      }
+    }
+  }
+
+  .carouselBlack {
+    :global {
+      .ant-carousel .slick-dots li {
+        margin: 6px 2px;
+        padding: 5px;
+        border-radius: 50%;
+      }
+
+      .ant-carousel-vertical .slick-dots li.slick-active {
+        border: 1px solid #333;
+      }
+
+      .ant-carousel-vertical .slick-dots li button {
+        width: 8px;
+        height: 8px;
+        background: #333;
+        border-radius: 4px;
+        opacity: 0.5;
+      }
+
+      .ant-carousel-vertical .slick-dots li.slick-active button {
+        width: 8px;
+        height: 8px;
+        background: rgba(51, 51, 51, 1);
+        border-radius: 4px;
+        opacity: 1;
+      }
+    }
+  }
+
+  .arrowDownContainer {
+    position: absolute;
+    bottom: 10px;
+    left: calc(~'50% - 20px');
+    animation: twinkleAnimation 1s cubic-bezier(0, 0, 1, 1) infinite alternate;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  @keyframes twinkleAnimation {
+    0% {
+      bottom: 0;
+    }
+
+    25% {
+      bottom: 10px;
+    }
+
+    50% {
+      bottom: 0;
+    }
+
+    75% {
+      bottom: 10px;
+    }
+
+    100% {
+      bottom: 0;
+    }
+  }
+
+  .closeBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 5;
+    color: #fff;
+  }
+
+  .playBtnContainer {
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    width: 270px;
+    height: 60px;
+    background: linear-gradient(270deg, rgba(7, 228, 164, 0) 0%, rgba(3, 196, 107, 1) 100%);
+    border-radius: 100px 0 0 100px;
+
+    .circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      margin: 0 20px 0 20px;
+      background: rgba(255, 255, 255, 1);
+      border-radius: 20px;
+      cursor: pointer;
+
+      .triangle {
+        width: 0;
+        height: 0;
+        margin-left: 5px;
+        border-right: (20px * (sqrt(5) / 2) / 2) solid transparent;
+        border-bottom: 20px solid #03c46b;
+        border-left: (20px * (sqrt(5) / 2) / 2) solid transparent;
+        transform: rotate(90deg);
+      }
+    }
+
+    span {
+      color: #fff;
+      font-size: 18px;
+    }
+
+    .videoControlContainer {
+      height: 100%;
+
+      .videoControl {
+        position: absolute;
+        z-index: 4;
+        min-width: 100vw;
+        min-height: 100vh;
+        object-fit: fill;
+      }
+
+      // i {
+      //   position: absolute;
+      //   top: 0;
+      //   right: 0;
+      //   z-index: N;
+      //   color: red;
+      // }
+
+      :global {
+        video::-webkit-internal-media-controls-download-button {
+          display: none !important;
+        }
+
+        video::-webkit-media-controls-fullscreen-button {
+          display: none !important;
+        }
+
+        /* video默认aduio音量按钮 */
+        video::-webkit-media-controls-mute-button {
+          display: block !important;
+        }
+
+        video::-webkit-media-controls {
+          overflow: auto !important;
+        }
+
+        video::-webkit-media-controls-enclosure {
+          width: calc(100% + 32px);
+          margin-left: auto;
+        }
+      }
+    }
+  }
+
+  .arrowUpContainer {
+    position: absolute;
+    right: 25px;
+    bottom: 40px;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #000;
+    border-radius: 20px;
+    opacity: 0.5;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    i {
+      color: #fff;
+      font-size: 18px !important;
+    }
+  }
+
+  :global {
+    .ant-carousel .slick-slide {
+      height: 100vh;
+      // overflow: hidden;
+      text-align: center;
+      background: #fff;
+      border: none;
+    }
+
+    .ant-carousel-vertical .slick-dots-right {
+      right: 54px;
+    }
+  }
+}
+
+.videoModal {
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+
+  :global {
+    .ant-modal {
+      top: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+      margin: 0 0;
+      padding: 0 0;
+    }
+
+    .ant-modal-content {
+      border-radius: 0;
+      box-shadow: none;
+    }
+
+    .ant-modal-body {
+      max-height: 100vh !important;
+      padding: 0 0 !important;
+      overflow: hidden;
+    }
+  }
+}

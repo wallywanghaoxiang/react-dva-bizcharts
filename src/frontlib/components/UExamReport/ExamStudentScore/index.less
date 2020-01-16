@@ -1,0 +1,39 @@
+.transcript {
+  .transcriptTable {
+    margin-top: 10px;
+  }
+  :global {
+    .ant-table-thead > tr > th .anticon-filter,
+    .ant-table-thead > tr > th .ant-table-filter-icon {
+      float: left;
+      position: absolute;
+      top: 0;
+      right: auto;
+      width: 28px;
+      height: 100%;
+
+      color: #bfbfbf;
+      font-size: 12px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .ant-table-thead > tr > th .ant-table-header-column {
+      padding-left: 5px;
+    }
+  }
+}
+.studentName {
+  width: 60px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.campusName {
+  width: 120px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

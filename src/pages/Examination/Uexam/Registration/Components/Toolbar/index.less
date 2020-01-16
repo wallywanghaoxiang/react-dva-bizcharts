@@ -1,0 +1,86 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .leftInfo {
+    .title {
+      color: #333333;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .statis {
+      padding: 5px 0;
+      color: #888888;
+      font-size: 13px;
+
+      .boldNum {
+        color: #333333;
+        font-weight: bold;
+        padding: 0px 2px;
+      }
+    }
+  }
+
+  .rightBtngroup {
+    .btnStart {
+      height: 36px;
+      font-size: 13px;
+      font-weight: bold;
+      color: #FFFFFF;
+      background: #03C46B;
+      box-shadow: 0px 2px 5px 0px #03C46B;
+      border-radius: 18px;
+      border: none;
+    }
+
+    .btnCustom {
+      font-size: 13px;
+      color: #333333;
+      font-weight: bold;
+      height: 36px;
+      border: 1px solid #333333;
+
+      &:first-child {
+        margin-right: 10px;
+      }
+    }
+
+    .searchInput {
+      width: 350px;
+      height: 36px;
+
+      input {
+        padding-right: 50px;
+        border-radius: 18px;
+      }
+
+      :global {
+        .icon-error {
+          margin-right: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .cancelSearch {
+      color: #228EFF;
+    }
+
+    :global {
+      .ant-divider-vertical {
+        height: 20px;
+        margin: 0 10px;
+        color: #CCCCCC;
+      }
+
+      .ant-btn[disabled] {
+        color: #CCCCCC !important;
+        background-color: #ffffff;
+        border: 1px solid #CCCCCC !important;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,5 @@
+
+[submodule "src/frontlib"]
+	path = src/frontlib
+	url = git@gitlab.aidoin.com:VOEP/frontlib.git
+  ignore = all

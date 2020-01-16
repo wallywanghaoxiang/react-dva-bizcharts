@@ -1,0 +1,130 @@
+.add-manager-modal {
+  :global {
+    .ant-modal-content {
+      .ant-modal-header {
+        border-bottom: none;
+
+        .ant-modal-title {
+          color: #1C2438;
+          font-size: 20px;
+        }
+      }
+
+      .ant-modal-body {
+        .content {
+          height: 100%;
+
+          .search {
+            width: 100%;
+            height: 32px;
+
+            .ant-input {
+              border: 0;
+              border-bottom: 1px solid #E5E5E5;
+              border-bottom-right-radius: 0;
+              border-bottom-left-radius: 0;
+              outline: none;
+
+              &:focus,
+              &:hover,
+              &:not([disabled]):hover {
+                box-shadow: none !important;
+              }
+            }
+
+          }
+
+          .search-result-box {
+            height: calc(~"100% - 32px");
+            padding-top: 20px;
+
+            .result {
+              max-height: 400px;
+              overflow-x: hidden;
+
+              .ant-list-item-meta-content {
+                text-align: left;
+              }
+
+              .btn-active {
+                width: 86px;
+                color: #50B679;
+                border-color: #50B679;
+                border-radius: 18px;
+              }
+
+              .btn-disable {
+                width: 86px;
+                color: #888;
+                background: #F5F5F5;
+                border: none;
+                border-radius: 18px;
+              }
+
+            }
+
+            .subjectAndGrade {
+              padding-top: 10px;
+
+              .ant-select-selection {
+                border: none;
+                box-shadow: none;
+              }
+
+              .item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid #e5e5e5;
+
+                .title {
+                  color: #333;
+                  font-size: 14px;
+
+                  .require {
+                    color: #ff6e4a;
+                  }
+                }
+              }
+            }
+
+            .notFound {
+              text-align: center;
+
+              img {
+                width: 100px;
+                height: 100px;
+              }
+
+              .tip {
+                padding: 5px 0;
+                color: #888;
+                font-size: 14px;
+
+                .module {
+                  padding: 0 3px;
+                  font-weight: bold;
+
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .ant-modal-footer>div>button:last-child {
+        border: none;
+      }
+
+      .ant-modal-footer>div {
+        .ant-btn-primary[disabled] {
+          color: #fff;
+          background-color: #B2B2B2;
+          box-shadow: none !important;
+        }
+      }
+
+    }
+
+  }
+}

@@ -1,0 +1,291 @@
+.detailList {
+  overflow: auto;
+}
+.noData {
+  margin: 120px 0;
+  color: #888;
+  font-size: 16px;
+  text-align: center;
+
+  :global {
+    img {
+      display: block;
+      margin: 0 auto;
+      color: #888;
+      font-size: 66px;
+    }
+  }
+}
+.add {
+  width: 125px;
+  height: 36px;
+  margin-top: 25px;
+  margin-right: 10px;
+  color: #fff !important;
+  background: rgba(255, 180, 0, 1) !important;
+  border: 1px solid #ffb400 !important;
+  border-radius: 18px;
+  box-shadow: 02px 5px 0 rgba(255, 180, 0, 0.5) !important;
+
+  i {
+    padding-right: 5px;
+    color: #fff !important;
+  }
+}
+.inputCode {
+  color: #666;
+  font-size: 20px;
+
+  :global {
+    input {
+      display: inline-block;
+      width: 67px;
+      margin: 0 12px 10px;
+      text-align: center;
+      border: 0;
+      border-bottom: 1px solid #ccc;
+      outline: none;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+.paperTips {
+  padding-bottom: 20px;
+  color: rgba(51, 51, 51, 1);
+  font-weight: 400;
+  font-size: 14px;
+}
+.paperInfoListanbul {
+  :global {
+    .ant-list-item {
+      position: relative;
+      width: auto;
+      max-width: 100%;
+      height: 300px;
+      padding: 20px;
+      overflow: hidden;
+      background: rgba(255, 255, 255, 1);
+      border: 1px solid rgba(229, 229, 229, 1) !important;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
+    }
+  }
+}
+.paperListName {
+  margin: 0 auto;
+  overflow: hidden;
+  color: rgba(51, 51, 51, 1);
+  font-weight: 500;
+  font-size: 18px;
+  white-space: nowrap;
+  text-align: center;
+  text-overflow: ellipsis;
+}
+.times {
+  margin: 10px 0;
+  color: rgba(51, 51, 51, 1);
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+
+  span {
+    padding-left: 5px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+.tips {
+  text-align: center;
+  span {
+    display: inline-block;
+    margin-right: 5px;
+    padding: 3px 6px;
+    font-size: 13px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(204, 204, 204, 1);
+    border-radius: 4px;
+  }
+}
+.zeroFire {
+  color: #ff6e4a;
+  background: rgba(255, 241, 237, 1) !important;
+  border: 1px solid #fff1ed !important;
+
+  i {
+    color: #ff6e4a;
+  }
+}
+.intro {
+  margin: 20px 0 10px;
+  padding: 0 10px;
+  background: rgba(245, 245, 245, 1);
+  border-radius: 5px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      height: 32px;
+      color: rgba(136, 136, 136, 1);
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 32px;
+      border-bottom: 1px solid #e5e5e5;
+
+      &:last-child {
+        border: 0;
+      }
+      span {
+        float: right;
+        color: rgba(51, 51, 51, 1);
+      }
+    }
+  }
+}
+.view {
+  display: inline-block;
+  width: 86px;
+  height: 36px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(204, 204, 204, 1);
+  border-radius: 18px;
+}
+.operBtn {
+  text-align: center;
+}
+.paperTitle {
+  margin-bottom: 20px;
+  padding: 20px 0;
+  color: rgba(51, 51, 51, 1);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  border-bottom: 1px solid #e5e5e5;
+
+  .paperPackageName {
+    display: inline-block;
+    width: calc(100% - 280px);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  :global {
+    .ant-select {
+      float: right;
+      width: 140px !important;
+      margin-right: 20px;
+    }
+    .ant-select-selection {
+      width: 140px;
+      height: 36px;
+      background: rgba(255, 255, 255, 1);
+      border: 1px solid rgba(204, 204, 204, 1);
+      border-radius: 18px;
+    }
+  }
+}
+.back {
+  float: right;
+  width: 86px;
+  height: 36px;
+  margin-left: 20px;
+  color: #333;
+  font-size: 13px;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(51, 51, 51, 1);
+  border-radius: 18px;
+
+  &:hover {
+    i {
+      color: #03c46b;
+    }
+  }
+  i {
+    padding-right: 5px;
+    color: #333;
+    font-size: 13px;
+  }
+}
+.r {
+  float: right;
+  margin-top: 5px;
+  color: #e5e5e5;
+  font-weight: normal;
+  font-size: 14px;
+}
+.bindStatus {
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid #f1f1f1;
+  border-radius: 10px;
+
+  :global {
+    .lockUp {
+      display: block;
+    }
+    .paperListName,
+    .times,
+    .tips,
+    .intro {
+      opacity: 0.3;
+    }
+  }
+}
+.lockUp {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  width: 0;
+  height: 0;
+  border-top: 40px solid #f5f5f5;
+  border-bottom: 40px solid transparent;
+  border-left: 40px solid transparent;
+
+  i {
+    position: absolute;
+    top: -36px;
+    right: 5px;
+    font-size: 13px;
+  }
+}
+.errorInfomation {
+  height: 30px;
+  color: #ff6e4a;
+}
+.addPaper {
+  :global {
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+    .ant-modal-footer {
+      .ant-btn-primary {
+        margin-right: 15px;
+      }
+    }
+    .ant-btn-primary-disabled,
+    .ant-btn-primary.disabled,
+    .ant-btn-primary[disabled],
+    .ant-btn-primary-disabled:hover,
+    .ant-btn-primary.disabled:hover,
+    .ant-btn-primary[disabled]:hover,
+    .ant-btn-primary-disabled:focus,
+    .ant-btn-primary.disabled:focus,
+    .ant-btn-primary[disabled]:focus,
+    .ant-btn-primary-disabled:active,
+    .ant-btn-primary.disabled:active,
+    .ant-btn-primary[disabled]:active,
+    .ant-btn-primary-disabled.active,
+    .ant-btn-primary.disabled.active,
+    .ant-btn-primary[disabled].active {
+      color: rgba(0, 0, 0, 0.25);
+      text-shadow: none;
+      background-color: #f5f5f5;
+      border-color: #d9d9d9;
+      box-shadow: none;
+    }
+  }
+}

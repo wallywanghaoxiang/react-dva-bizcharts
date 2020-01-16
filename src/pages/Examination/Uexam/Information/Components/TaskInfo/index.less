@@ -1,0 +1,53 @@
+.taskInfo {
+  .infoContainer {
+    display: flex;
+    justify-content: space-between;
+
+    .taskName {
+      margin-right: 5px;
+      color: #333;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 25px;
+    }
+
+    .otherInfo {
+      margin-left: 5px;
+      padding: 2px 5px;
+      color: #888;
+      font-size: 12px;
+      line-height: 25px;
+      background: #f5f5f5;
+      border-radius: 5px;
+    }
+
+    .footerInfo {
+      padding-top: 5px;
+      color: #888;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 18px;
+
+      .info {
+        color: #333;
+      }
+    }
+
+    .dangerBtn {
+      font-weight: 500;
+      font-size: 13px;
+      background: rgba(255, 110, 74, 1);
+      box-shadow: 0 2px 5px 0 rgba(255, 110, 74, 0.5);
+    }
+  }
+
+  :global {
+    .ant-divider-vertical {
+      margin: 0 18px;
+    }
+
+    .ant-divider-horizontal {
+      margin: 15px 0 10px 0;
+    }
+  }
+}

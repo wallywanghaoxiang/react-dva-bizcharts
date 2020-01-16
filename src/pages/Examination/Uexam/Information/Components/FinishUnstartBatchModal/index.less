@@ -1,0 +1,75 @@
+.finishUnstartBatchModal {
+  .warningInfo {
+    height: 36px;
+    padding: 5px 10px;
+    color: #333;
+    font-size: 13px;
+    background: #fff8e6;
+    border-radius: 5px;
+
+    :global {
+      .iconfont {
+        margin-right: 5px;
+        color: #ff6e4a;
+      }
+    }
+  }
+
+  .invigilationList {
+    height: 100%;
+    padding-top: 10px;
+
+    .searchTable {
+      // border: 1px solid #e5e5e5;
+      // border-bottom: none;
+
+      :global {
+        .ant-table {
+          table-layout: fixed;
+          border: 1px solid #e5e5e5;
+          border-bottom: none;
+        }
+
+        .ant-table-pagination .ant-pagination {
+          margin: 10px 0 0 0;
+        }
+
+        th {
+          padding: 7px 10px;
+
+          .anticon-filter,
+          .ant-table-filter-icon {
+            right: auto;
+          }
+        }
+
+        .ant-table-column-title {
+          color: #888;
+          font-size: 13px;
+        }
+
+        td {
+          padding: 8px 10px;
+          overflow: hidden;
+          color: #333;
+          font-weight: 400;
+          font-size: 13px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+
+  .pagination {
+    padding: 10px 0 0 0;
+  }
+
+  :global {
+    .ant-modal-footer > div > button:last-child {
+      background: rgba(255, 110, 74, 1);
+      border: none;
+      box-shadow: 0 2px 5px 0 rgba(255, 110, 74, 0.5);
+    }
+  }
+}

@@ -1,0 +1,94 @@
+.affairs {
+  .affairs_top {
+    display: flex;
+    align-items: center;
+    height: 71px;
+    background: rgba(245, 245, 245, 1);
+    border-radius: 5px;
+    .affairs_text {
+      flex: 1;
+      padding: 0 20px;
+      border-left: 1px solid rgba(229, 229, 229, 1);
+      .title {
+        color: rgba(136, 136, 136, 1);
+        font-weight: 500;
+        font-size: 12px;
+      }
+      .num {
+        color: rgba(51, 51, 51, 1);
+        font-weight: 600;
+        font-size: 20px;
+      }
+      .blue {
+        color: rgba(34, 142, 255, 1);
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+    .no_border {
+      border: 0;
+    }
+  }
+
+  .blue {
+    color: rgba(34, 142, 255, 1);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .title_tips {
+    margin: 15px 0;
+    padding: 0 5px;
+    color: rgba(51, 51, 51, 1);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    border-left: 3px solid rgba(3, 196, 107, 1);
+  }
+
+  .transcriptTable {
+    :global {
+      .ant-table {
+        border: 1px solid #e5e5e5;
+        border-bottom: none;
+      }
+
+      .ant-table-thead > tr > th .ant-table-header-column {
+        padding-left: 5px;
+      }
+
+      th {
+        .anticon-filter,
+        .ant-table-filter-icon {
+          right: auto;
+        }
+      }
+
+      .ant-table-column-title {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+.studentName {
+  width: 60px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.campusName {
+  width: 120px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.titleText {
+  margin-bottom: 10px;
+  color: rgba(51, 51, 51, 1);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}

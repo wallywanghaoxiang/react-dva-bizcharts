@@ -1,0 +1,152 @@
+@import '~antd/lib/style/themes/default.less';
+
+.perfect {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  // padding-top: 10vh;
+  padding-top: 20vh;
+  background: linear-gradient(to bottom left, #00c673, #08caa5);
+
+  .loginOut {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .logo {
+    padding-bottom: 40px;
+    text-align: center;
+
+    img {
+      width: 127px;
+      height: 32px;
+    }
+  }
+
+  .center {
+    width: 100%;
+    color: #888;
+    text-align: center;
+    text-align: -webkit-center;
+
+    .center_box {
+      width: 680px;
+      // height: 540px;
+      margin: 0 auto;
+      padding: 40px 150px;
+      background: #fff;
+      border-radius: 10px;
+
+      .title {
+        margin-bottom: 36px;
+        color: #333;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+      }
+
+      .inputName {
+        :global {
+          .ant-input {
+            text-align: center;
+            border-radius: 20px;
+
+            &:focus {
+              background: #dbffef;
+              border-color: #03c46b !important;
+            }
+          }
+        }
+      }
+
+      .genderflex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .gender {
+        height: 82px;
+        padding: 0 16px;
+        line-height: 82px;
+      }
+    }
+
+    .selectSex {
+      display: flex;
+      justify-content: space-between;
+
+      .avatarBox {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 140px;
+        height: 140px;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 70px;
+
+        &:hover {
+          border: 1px solid rgba(3, 196, 107, 1);
+          box-shadow: 0 0 10px 0 rgba(3, 196, 107, 0.5);
+        }
+      }
+
+      .genderIcon {
+        width: 128px;
+        height: 128px;
+        border-radius: 64px;
+      }
+
+      .txt {
+        padding: 4px 0;
+        color: #333;
+        font-size: 14px;
+        text-align: center;
+      }
+
+      .selection {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -16px;
+        margin-left: -16px;
+        background: #fff;
+        border-radius: 16px;
+
+        img {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+
+    .btn {
+      margin-top: 40px;
+
+      :global {
+        .ant-btn {
+          width: 200px;
+          height: 48px;
+          background: rgba(255, 180, 0, 1);
+          border: none;
+          border-radius: 24px;
+          box-shadow: 0 2px 5px 0 rgba(255, 180, 0, 0.5);
+        }
+
+        .ant-btn-primary[disabled] {
+          width: 200px;
+          height: 48px;
+          color: #fff;
+          background: rgba(204, 204, 204, 1);
+          border-radius: 24px;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}

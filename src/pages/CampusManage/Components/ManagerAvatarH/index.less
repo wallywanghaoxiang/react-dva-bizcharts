@@ -1,0 +1,62 @@
+:global {
+    .manager-avatar-h {
+        width: 150px;
+        height: 40px;
+        margin: 0;
+        padding: 0px 0px;
+        display: flex;
+        border-radius: 20px;
+        background-color: #F5F5F5;
+        text-align: left;
+        align-items: center;
+        .ant-avatar {
+            margin-left: 10px;
+            width: 26px;
+            height: 26px;
+        }
+        .right {
+            padding-left: 4px;
+            .name {
+                width: 82px;
+                height: 18px;
+                padding: 0 5px;
+                font-size:13px;
+                color: #333333;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow:ellipsis;
+            }
+            .mobile {
+                padding: 0 5px;
+                font-size:12px;
+                color: #888888;
+            }
+        }
+        .count {
+            font-size: 12px;
+            width:16px;
+            height:16px;
+            background:rgba(3,196,107,1);
+            color: #fff;
+            text-align: center;
+            line-height: 16px;
+            border-radius: 8px;
+        }
+        
+        &:hover {
+            background-color: #DFFFF0;
+        }
+    }
+    .classConfigHover {
+        &:hover {
+            border-color: #03C46B;
+            background-color: #DFFFF0;
+        }
+    }
+    .selected {
+        border: 1px solid #E5E5E5;
+        border-color: #03C46B;
+        background-color: rgba(3,196,107,0.1);
+    }
+    
+}

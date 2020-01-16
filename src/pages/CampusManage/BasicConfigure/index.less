@@ -1,0 +1,243 @@
+
+.eduPhase {
+    float: left;
+    width:360px;
+    height:110px; 
+    padding: 20px 20px;
+    background-image: url('../../../assets/campus/learn_section.png');
+    background-repeat:no-repeat;
+    background-size: auto 100%;  
+}
+.eduSystem {
+    float: left;
+    width:360px;
+    height:110px; 
+    padding: 20px 20px;
+    background-image: url('../../../assets/campus/education_system.png');
+    background-repeat:no-repeat;
+    background-size: auto 100%;
+}
+.optionalSystem {
+    float: left;
+    width:360px;
+    height:110px;
+    padding: 20px 20px; 
+    background-image: url('../../../assets/campus/class_structure.png'); 
+    background-repeat:no-repeat;
+    background-size: auto 100%;
+}
+.configTit {
+    color: #888888;
+    font-size:16px;
+}
+.configCont {
+    margin-top: 10px;
+    color: #333333;
+    font-size:22px;
+    font-weight:500;
+}  
+.tit {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.division {
+    padding: 0px 8px 0px 4px;
+}
+.subTit {
+    font-size: 20px;
+}
+.campusName {
+    padding: 10px 0px;
+    font-size:22px;
+    font-family:PingFangSC-Medium;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+    line-height:22px;
+}
+.classNameSet {
+    padding: 10px 0px;
+}
+.classNameSetCont {
+    display: flex;
+}
+.campusSetCont {
+    width: 100%;
+}
+.classSetting {
+    position: relative;
+    padding: 20px 20px;
+    width:360px;
+    height:110px;
+    background:rgba(255,255,255,1);
+    border-radius:8px;
+    border:1px solid rgba(229,229,229,1);
+}
+.setTitle {
+    margin-bottom: 20px;
+    font-size:16px;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+    line-height:16px;
+}
+.itemTit {
+    font-size:18px;
+    font-weight:500;
+    color: #888888;
+}
+.itemCont {
+    margin-top: 10px;
+    font-size:14px;
+    font-weight:400;
+    color: #333333;
+}
+.setBtn {
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 0px;
+    width:60px;
+    height:24px;
+    line-height: 24px;
+    background:rgba(245,245,245,1);
+    border-radius:8px 8px 0px 0px;
+    text-align: center;
+    cursor: pointer;
+    i {
+        font-size: 13px;
+        color: #333;
+    }
+    &:hover {
+        i {
+            color: #228EFF;
+        }
+    }
+}
+.yang {
+    width:24px;
+    height:24px;
+    background:rgba(255,110,74,0.1);
+    border-radius:12px;
+    border:1px solid rgba(255,110,74,1);
+    color: #FF6E4A;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+}
+.formatName {
+    padding: 0px 0px 0px 5px;
+    line-height: 24px;
+    font-size:14px;
+    color: #333333;
+}
+.logoBox {
+    width: 360px;
+    text-align: center;
+}
+.campusLogo {
+    margin: 0 auto;
+    width:auto;
+    height:auto;
+    max-width: 360px;
+    max-height: 200px;
+    background:#EEF2F6;
+    border-radius:10px;
+}
+.tip {
+    padding: 10px 0px;
+    width:360px;
+    text-align: center;
+    font-size:12px;
+    color: #888888;
+}
+.upload {
+    width:360px;
+    text-align: center;
+}
+
+.pop {
+    :global{
+
+        .ant-popover-arrow {
+            display: none;
+        }
+        .ant-popover-title {
+            padding: 20px 16px 0px 16px;
+            width:360px;
+            border-bottom: none;
+            font-size: 14px;
+            color: #333333;
+        }
+        .ant-popover-inner-content {
+            padding: 0px 16px 12px 16px;
+            width:360px;
+        }
+        .ant-btn {
+            width:66px;
+            height:36px;
+            background:rgba(3,196,107,1);
+            border-radius:18px;
+            color: #fff;
+            border-color:#03c46b;
+        } 
+    }
+    .item {
+        border-bottom: 1px solid #E5E5E5;
+        padding: 10px 0px;
+    }
+    .nameFormatTit {
+        height:26px;
+        padding: 0px 10px;
+        background:rgba(255,248,237,1);
+        border-radius:4px;
+        border:1px solid rgba(255,180,0,1);
+        color: #FFB400;
+        line-height: 26px;
+        font-size:13px;
+        i {
+            font-size: 13px;
+            color: #FFB400;
+        }
+        span {
+            padding-left: 5px;
+        }
+    }
+    .nameFormatContent {
+        .top {
+            display: flex;
+            justify-content: space-between;
+            .section {
+                font-size:14px;
+                color: #03C46B;
+                font-weight: bold;
+            }
+            .yangBox {
+                display: flex;
+            }
+            .itemYang {
+                width:20px;
+                height:20px;
+                background:rgba(255,110,74,0.1);
+                border-radius:10px;
+                border:1px solid rgba(255,110,74,1);
+                color: #FF6E4A;
+                font-size: 12px;
+                text-align: center;
+            }
+        }
+        .middle {
+            padding: 10px 0px;
+            display: flex;
+            justify-content: space-between;
+            .grade {
+                padding-left: 5px;
+            }
+            .class {
+                span {
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+}
+

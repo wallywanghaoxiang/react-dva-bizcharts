@@ -1,0 +1,17 @@
+.fixedHeader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9;
+  width: 100%;
+  transition: width 0.2s;
+}
+:global{
+  .showStyleBg{
+    .antd-pro-components-global-header-index-header{
+      background:rgba(255,255,255,1);
+      box-shadow:0px 2px 4px 0px rgba(0,0,0,0.1);
+      .trigger,.antd-pro-components-global-header-index-action i{color: #333;}
+    }   
+  }
+}

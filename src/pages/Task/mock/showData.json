@@ -1,0 +1,189 @@
+{
+  "data": {
+    "41783704229511168": {
+      "id": "41783704229511168",
+      "dataVersion": 1000100,
+      "structure": {
+        "patternType": "TWO_LEVEL",
+        "subjectiveAndObjective": "OBJECTIVE",
+        "viewInfo": {
+          "components": [
+            {
+              "name": "stemAudioSpace",
+              "orderIndex": "0",
+              "audioButton": "stemAudio",
+              "textButton": "stemAudioText"
+            }
+          ],
+          "subComponents": [
+            { "name": "subQuestionStemText", "orderIndex": "0" },
+            { "name": "subQuestionAnswerArea", "orderIndex": "3" }
+          ],
+          "multipleQuestionPerPage": "Y",
+          "manualPager": "Y",
+          "showAnswerAfter": "Y"
+        },
+        "flowInfo": {
+          "components": [
+            { "name": "stemReadSection", "orderIndex": "0" },
+            { "name": "stemAudioSection", "orderIndex": "1" }
+          ],
+          "subComponents": [
+            { "name": "subQuestionPrepareSection", "orderIndex": "2" },
+            { "name": "subQuestionAnswerSection", "orderIndex": "3" }
+          ],
+          "allowCompressReadSection": "Y",
+          "allowMultiAnswerMode": "Y"
+        }
+      }
+    },
+    "41784028499542016": {
+      "id": "41784028499542016",
+      "dataVersion": 1000100,
+      "structure": {
+        "patternType": "NORMAL",
+        "subjectiveAndObjective": "SUBJECTIVE_ORAL",
+        "viewInfo": {
+          "components": [
+            {
+              "name": "stemText",
+              "orderIndex": "0",
+              "audioButton": "stemAudio",
+              "textButton": "stemAudioText"
+            },
+            { "name": "stemAudio", "orderIndex": "2" },
+            { "name": "stemAudioSpace", "orderIndex": "1" },
+            {
+              "name": "answerArea",
+              "orderIndex": "3",
+              "displaySize": { "width": 130, "height": 90 }
+            }
+          ],
+          "subComponents": [],
+          "multipleQuestionPerPage": "Y",
+          "manualPager": "Y",
+          "showAnswerAfter": "Y"
+        },
+        "flowInfo": {
+          "components": [
+            { "name": "stemAudioSection", "orderIndex": "1" },
+            { "name": "answerSection", "orderIndex": "7" }
+          ],
+          "subComponents": [],
+          "allowCompressReadSection": "N",
+          "allowMultiAnswerMode": "N"
+        }
+      }
+    },
+    "41785263302639616": {
+      "id": "41785263302639616",
+      "dataVersion": 1000100,
+      "structure": {
+        "patternType": "COMPLEX",
+        "subjectiveAndObjective": "SUBJECTIVE_ORAL",
+        "groups": [
+          {
+            "structure": {
+              "patternType": "TWO_LEVEL",
+              "subjectiveAndObjective": "OBJECTIVE",
+              "viewInfo": {
+                "components": [
+                  {
+                    "name": "stemImage",
+                    "orderIndex": "0",
+                    "audioButton": "stemAudio",
+                    "textButton": "stemAudioText",
+                    "displaySize": { "width": 440 }
+                  },
+                  { "name": "stemAudio", "orderIndex": "2" },
+                  { "name": "stemAudioSpace", "orderIndex": "1" }
+                ],
+                "subComponents": [{ "name": "subQuestionAnswerArea", "orderIndex": "3" }],
+                "multipleQuestionPerPage": "Y",
+                "manualPager": "Y",
+                "showAnswerAfter": "Y"
+              },
+              "flowInfo": {
+                "components": [
+                  { "name": "stemReadSection", "orderIndex": "0" },
+                  { "name": "stemAudioSection", "orderIndex": "1" }
+                ],
+                "subComponents": [{ "name": "subQuestionAnswerSection", "orderIndex": "3" }],
+                "allowCompressReadSection": "Y",
+                "allowMultiAnswerMode": "Y"
+              }
+            }
+          },
+          {
+            "structure": {
+              "patternType": "NORMAL",
+              "subjectiveAndObjective": "SUBJECTIVE_ORAL",
+              "viewInfo": {
+                "components": [
+                  {
+                    "name": "stemImage",
+                    "orderIndex": "0",
+                    "audioButton": "stemAudio",
+                    "textButton": "stemAudioText",
+                    "displaySize": { "width": 440 }
+                  },
+                  { "name": "stemAudio", "orderIndex": "1" },
+                  { "name": "stemAudioSpace", "orderIndex": "2" },
+                  { "name": "guideSuffixText", "orderIndex": "3" },
+                  { "name": "answerArea", "orderIndex": "4" },
+                  { "name": "answerBeforeArea", "orderIndex": "5" }
+                ],
+                "subComponents": [],
+                "multipleQuestionPerPage": "Y",
+                "manualPager": "Y",
+                "showAnswerAfter": "Y"
+              },
+              "flowInfo": {
+                "components": [
+                  { "name": "stemAudioSection", "orderIndex": "1" },
+                  { "name": "prepareSection", "orderIndex": "6" },
+                  { "name": "answerSection", "orderIndex": "7" }
+                ],
+                "subComponents": [],
+                "allowCompressReadSection": "N",
+                "allowMultiAnswerMode": "N"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "41784221773070336": {
+      "id": "41784221773070336",
+      "dataVersion": 1000100,
+      "structure": {
+        "patternType": "NORMAL",
+        "subjectiveAndObjective": "SUBJECTIVE_ORAL",
+        "viewInfo": {
+          "components": [
+            { "name": "stemText", "orderIndex": "0" },
+            {
+              "name": "answerArea",
+              "orderIndex": "11",
+              "displaySize": { "width": 130, "height": 90 }
+            }
+          ],
+          "subComponents": [],
+          "multipleQuestionPerPage": "Y",
+          "manualPager": "Y",
+          "showAnswerAfter": "Y"
+        },
+        "flowInfo": {
+          "components": [
+            { "name": "stemReadSection", "orderIndex": "0" },
+            { "name": "answerSection", "orderIndex": "7" }
+          ],
+          "subComponents": [],
+          "allowCompressReadSection": "N",
+          "allowMultiAnswerMode": "N"
+        }
+      }
+    }
+  },
+  "responseCode": "200"
+}

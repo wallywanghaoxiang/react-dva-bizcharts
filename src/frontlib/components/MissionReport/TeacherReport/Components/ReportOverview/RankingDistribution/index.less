@@ -1,0 +1,174 @@
+.reportRanking {
+    .rangeList {
+        width: 160px;
+        float: left;
+
+        :global {
+            .ant-list {
+                margin-right: -1px;
+                z-index: 1;
+            }
+
+            .ant-list-item {
+                cursor: pointer;
+                border-right: solid 1px #E5E5E5;
+            }
+
+            .ant-list-item:first-child {
+                border-top: none !important;
+            }
+
+            .ant-list-item:last-child {
+                border-bottom: none !important;
+            }
+        }
+
+        .rangeListItem {
+            line-height: 24px;
+
+            .highlightCircle {
+                width: 11px;
+                height: 11px;
+                background: rgba(3, 196, 107, 0.5);
+                border-radius: 20px;
+                float: left;
+                border: 6px solid transparent;
+                padding: 6px;
+                background-clip: padding-box;
+            }
+
+            .rangeListItemContent {
+                padding-left: 5px;
+                color: #888888;
+            }
+        }
+
+        .active {
+            border-right: solid 1px #F5F5F5;
+            border-top: solid 1px #e5e5e5;
+            border-bottom: solid 1px #E5E5E5;
+
+            .highlightCircle {
+                background: #03C46B;
+                background-clip: padding-box;
+                border: 6px solid rgba(3, 196, 107, 0.3);
+            }
+
+            .rangeListItemContent {
+                font-weight: bold;
+                color: #333333;
+            }
+        }
+    }
+
+    .rightContainer {
+        height: 280px;
+        border-left: 1px solid #E5E5E5;
+        float: left;
+
+        .btngroup {
+            padding-top: 10px;
+
+            .ant-btn:hover,
+            .ant-btn:focus {
+                color: #03C46B;
+                border-color: #03C46B;
+            }
+
+            .sortable {
+                color: #03C46B;
+                border-color: #03C46B;
+                z-index: 1;
+            }
+
+            :global {
+                .ant-btn {
+                    width: 80px;
+                    height: 36px;
+                    font-weight: bold;
+                }
+
+                .ant-btn-group>.ant-btn:first-child:not(:last-child),
+                .ant-btn-group>span:first-child:not(:last-child)>.ant-btn {
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 20px;
+                }
+
+                .ant-btn-group>.ant-btn:last-child:not(:first-child),
+                .ant-btn-group>span:last-child:not(:first-child)>.ant-btn {
+                    border-top-right-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                }
+            }
+        }
+
+        .studentList {
+            font-size: 13px;
+            padding: 10px 0px;
+            line-height: 30px;
+            float: left;
+            height: 245px;
+            overflow-y: auto;
+            width: 100%;
+
+            .cName {
+                font-weight: bold;
+                width: 100%;
+                float: left;
+            }
+
+            .studentListItem {
+                float: left;
+                width: 220px;
+                height: 32px;
+                padding: 0 15px;
+                line-height: 32px;
+                margin-right: 15px;
+                margin-bottom: 10px;
+                background: #FAFAFA;
+                border: 1px solid #E5E5E5;
+                border-radius: 4px;
+
+                .rank {
+                    width: 64px;
+                    display: inline-block;
+                }
+
+                .name {
+                    width: 72px;
+                    font-weight: bold;
+                    display: inline-block;
+                }
+
+                .score {
+                    color: #888888;
+                    display: inline;
+                    float: right;
+                }
+            }
+        }
+
+        .studentList::-webkit-scrollbar {
+            width: 5px;
+            height: 10px;
+            background-color: transparent;
+        }
+
+        .studentList::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px transparent;
+            border-radius: 10px;
+            background-color: transparent;
+        }
+
+        .studentList::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px #CCCCCC;
+            background-color: #CCCCCC;
+        }
+    }
+}
+:global{
+  .ant-tooltip{
+    max-width: 300px !important;
+  }
+}

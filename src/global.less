@@ -1,0 +1,422 @@
+@import '/font/iconfont/iconfont.css';
+@import '~antd/lib/style/themes/default.less';
+
+@font-family-iconfont: 'iconfont';
+
+.iconfont::before {
+  font-family: @font-family-iconfont;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.globalSpin {
+  width: 100%;
+  margin: 40px 0 !important;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+// toast
+.ant-message-notice-content {
+  padding: 0;
+}
+
+.ant-message-success {
+  background: rgba(222, 255, 238, 1);
+  border: 1px solid rgba(191, 252, 220, 1);
+  border-radius: 4px;
+  box-shadow: 0 3px 7px 0 rgba(25, 190, 107, 0.1);
+}
+
+.ant-message-custom-content {
+  padding: 10px 16px;
+}
+
+.ant-message-error {
+  background: rgba(255, 241, 238, 1);
+  border: 1px solid rgba(249, 231, 227, 1);
+  border-radius: 4px;
+  box-shadow: 0 3px 7px 0 rgba(255, 110, 74, 0.1);
+}
+
+//弹窗样式
+.ant-modal-header {
+  padding: 30px 30px 0 30px !important;
+  border-bottom: none !important;
+
+  .ant-modal-title {
+    color: #333;
+    font-weight: 500;
+    font-size: 20px;
+  }
+}
+
+.ant-modal-body {
+  max-height: calc(100vh - 200px);
+  padding: 20px 30px !important;
+  overflow: auto;
+
+  .ant-modal-confirm-body {
+    .ant-modal-confirm-content {
+      .cont {
+        .name {
+          padding: 0 8px;
+          color: #03c46b;
+        }
+      }
+    }
+  }
+}
+
+.ant-modal-footer {
+  padding: 0 30px 30px 30px !important;
+  border-top: none !important;
+}
+
+.ant-modal-footer>div>button {
+  border-radius: 18px;
+
+  &:first-child {
+    &:hover {
+      border-color: rgba(204, 204, 204, 1);
+    }
+
+    color: #888;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(204, 204, 204, 1);
+  }
+
+  &:last-child {
+    background-color: #03c46b;
+    box-shadow: 0 2px 5px 0 rgba(3, 196, 107, 0.5);
+  }
+}
+
+// confirm弹窗样式处理
+.ant-modal-confirm-confirm .ant-modal-confirm-body>.anticon {
+  display: none;
+}
+
+.ant-modal-confirm-body .ant-modal-confirm-content {
+  margin-top: 16px !important;
+  margin-bottom: 10px !important;
+  margin-left: 0 !important;
+  color: #333 !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+}
+
+.ant-modal-confirm .ant-modal-confirm-btns>button {
+  border-radius: 18px;
+
+  &:first-child {
+    &:hover {
+      border-color: rgba(204, 204, 204, 1);
+    }
+
+    color: #888;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(204, 204, 204, 1);
+  }
+
+  &.ant-btn-primary {
+    color: #fff;
+    background-color: #ff6e4a;
+    border: none;
+    box-shadow: 0 2px 5px 0 rgba(255, 110, 74, 0.5);
+  }
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+
+    &-thead>tr,
+    &-tbody>tr {
+
+      >th,
+      >td {
+        white-space: pre;
+
+        >span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.clearfix::after {
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  content: '';
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+// 统一改写分页器样式（同蓝湖）
+.ant-input {
+  &:hover {
+    border-color: #d9d9d9 !important;
+  }
+}
+
+.ant-pagination {
+  height: 36px !important;
+
+  li {
+    height: 36px !important;
+    line-height: 36px !important;
+    background: #fff !important;
+    border-top: 1px solid rgba(229, 229, 229, 1) !important;
+    border-right: none !important;
+    border-bottom: 1px solid rgba(229, 229, 229, 1) !important;
+    border-left: none !important;
+    border-radius: 0;
+
+    &:first-child {
+      border-left: 1px solid rgba(229, 229, 229, 1) !important;
+      border-top-left-radius: 18px;
+      border-bottom-left-radius: 18px;
+    }
+
+    &:last-child {
+      border-right: 1px solid rgba(229, 229, 229, 1) !important;
+      border-top-right-radius: 18px;
+      border-bottom-right-radius: 18px;
+    }
+  }
+
+  .ant-pagination-item-link {
+    width: 36px;
+    height: 34px !important;
+    line-height: 34px !important;
+  }
+
+  .ant-pagination-item-active:focus,
+  .ant-pagination-item-active:hover {
+    color: rgba(3, 196, 107, 1);
+  }
+
+  .ant-pagination-prev {
+    .ant-pagination-item-link {
+      i {
+        display: none;
+      }
+
+      &::before {
+        content: '\e631';
+        display: inline;
+        font-weight: bold;
+        font-size: 13px;
+        font-family: @font-family-iconfont;
+      }
+    }
+  }
+
+  .ant-pagination-next {
+    .ant-pagination-item-link {
+      i {
+        display: none;
+      }
+
+      &::before {
+        content: '\e632';
+        display: inline;
+        font-weight: bold;
+        font-size: 13px;
+        font-family: @font-family-iconfont;
+      }
+    }
+  }
+}
+
+// 新增Butten 样式风格
+// 原有风格 type	 primary dashed danger link
+// 新增风格同蓝湖（ 高亮操作-light ）
+.ant-btn {
+  min-width: 36px;
+  height: 36px;
+
+  >span+.anticon,
+  >.anticon+span {
+    margin-left: 5px;
+  }
+
+  // 小按钮
+  &.ant-btn-sm {
+    height: 24px;
+    padding: 0 7px;
+    font-size: 14px;
+  }
+
+  // 大按钮
+  &.ant-btn-lg {
+    height: 50px;
+    padding: 0 15px;
+    font-size: 16px;
+  }
+
+  // 主要操作-minor
+  &.ant-btn-main {
+    color: rgba(255, 255, 255, 1);
+    font-size: 13px;
+    background: rgba(3, 196, 107, 1);
+    border-color: transparent;
+    box-shadow: 0 2px 5px 0 rgba(3, 196, 107, 0.5);
+
+    &:hover {
+      color: rgba(255, 255, 255, 1);
+      font-size: 13px;
+      background: rgba(0, 217, 117, 1);
+      border-color: transparent;
+      box-shadow: 0 2px 5px 0 rgba(0, 217, 117, 0.5);
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 1);
+      font-size: 13px;
+      background: rgba(3, 175, 96, 1);
+      border-color: transparent;
+      box-shadow: none;
+    }
+
+    &.ant-btn-loading {
+      color: rgba(255, 255, 255, 1);
+      font-size: 13px;
+      background: rgba(3, 175, 96, 1);
+      border-color: transparent;
+      box-shadow: none;
+    }
+  }
+
+  // 高亮操作-light
+  &.ant-btn-light {
+    color: rgba(255, 255, 255, 1);
+    font-size: 13px;
+    background: #ffb400;
+    border-color: transparent;
+    box-shadow: 0 2px 5px 0 rgba(255, 153, 0, 0.5);
+
+    &:hover {
+      color: #fff;
+      font-size: 13px;
+      background: rgba(255, 180, 67, 1);
+      border-color: transparent;
+      box-shadow: 0 2px 5px 0 rgba(255, 180, 67, 0.5);
+    }
+
+    &:active {
+      color: #fff;
+      font-size: 13px;
+      background: rgba(255, 132, 0, 1);
+      border-color: transparent;
+      box-shadow: none;
+    }
+  }
+
+  // 高亮操作-light
+  &.ant-btn-warn {
+    color: rgba(255, 255, 255, 1);
+    font-size: 13px;
+    background: rgba(255, 110, 74, 1);
+    border-color: transparent;
+    box-shadow: 0 2px 5px 0 rgba(255, 110, 74, 0.5);
+
+    &:hover {
+      color: #fff;
+      font-size: 13px;
+      background: rgba(255, 140, 112, 1);
+      border-color: transparent;
+      box-shadow: 0 2px 5px 0 rgba(255, 110, 74, 0.5);
+    }
+
+    &:active {
+      color: #fff;
+      font-size: 13px;
+      background: rgba(240, 94, 57, 1);
+      border-color: transparent;
+      box-shadow: none;
+    }
+  }
+
+  // 次要操作-minor
+  &.ant-btn-minor {
+    color: rgba(51, 51, 51, 1);
+    font-size: 13px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(204, 204, 204, 1);
+    box-shadow: none;
+
+    &:hover {
+      color: rgba(51, 51, 51, 1);
+      font-size: 13px;
+      background: rgba(245, 245, 245, 1);
+      border: 1px solid rgba(204, 204, 204, 1);
+      box-shadow: none;
+    }
+
+    &:active {
+      color: rgba(51, 51, 51, 1);
+      font-size: 13px;
+      background: rgba(229, 229, 229, 1);
+      border: 1px solid rgba(204, 204, 204, 1);
+      box-shadow: none;
+    }
+
+    &.ant-btn-loading {
+      color: rgba(51, 51, 51, 1);
+      font-size: 13px;
+      background: rgba(229, 229, 229, 1);
+      border: 1px solid rgba(204, 204, 204, 1);
+      box-shadow: none;
+    }
+  }
+
+  &.ant-btn-disabled,
+  &[disabled],
+  &[disabled]:hover,
+  &[disabled]:focus,
+  &[disabled]:active {
+    color: rgba(0, 0, 0, 0.25);
+    text-shadow: none;
+    background-color: #f5f5f5;
+    border-color: #d9d9d9;
+    box-shadow: none;
+  }
+}
+
+video::-webkit-media-controls-enclosure {
+  width: 100% !important;
+  margin-left: 0 !important;
+}

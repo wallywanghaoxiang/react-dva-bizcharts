@@ -1,0 +1,144 @@
+.invigilateModal {
+  .headerInfo {
+    margin-top: -10px;
+    color: #333;
+
+    // :global {
+    //   .ant-divider-horizontal {
+    //     margin: 8px 0;
+    //   }
+    // }
+  }
+
+  .modalFooter {
+    margin-top: -18px;
+
+    .btnOk {
+      color: #FFF;
+      border: none;
+    }
+
+    :global {
+      .ant-btn[disabled] {
+        color: #CCC !important;
+        background-color: #fff;
+        border: 1px solid #CCC !important;
+      }
+    }
+  }
+
+  .invigilateTeacher {
+    .search {
+      margin-right: 9px;
+      margin-left: -9px;
+    }
+
+    .teacherList {
+      display: flex;
+      flex-direction: row;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-right: -5px;
+      margin-left: -5px;
+      padding: 5px 0;
+
+      .teacherListItem {
+        display: flex;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 120px;
+        height: 40px;
+        margin: 5px 6px;
+        background: #F5F5F5;
+        border-radius: 5px;
+        cursor: pointer;
+
+        .chk {
+          padding: 9px 9px;
+        }
+
+        .info {
+          padding-top: 4px;
+          color: #333;
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 17px;
+
+          .tel {
+            color: #888;
+            font-weight: 500;
+            font-size: 12px;
+          }
+        }
+
+        &:hover {
+          background: #CDF3E1;
+        }
+      }
+
+      .selected {
+        background: #CDF3E1;
+      }
+    }
+
+    .pagination {
+      text-align: left;
+    }
+
+    :global {
+      .noData {
+        width: 100%;
+        min-height: 280px;
+      }
+    }
+  }
+
+  .setMaster {
+    display: flex;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: -10px;
+    padding: 5px 0;
+
+    .teacherListItem {
+      display: flex;
+      flex-direction: row;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: 120px;
+      height: 40px;
+      margin: 5px 10px 5px 0;
+      background: #F5F5F5;
+      border-radius: 5px;
+      cursor: pointer;
+
+      .chk {
+        padding: 9px 0 9px 9px;
+      }
+
+      .info {
+        color: #333;
+        font-weight: 500;
+        font-size: 13px;
+
+        .tel {
+          color: #888;
+          font-weight: 500;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .selected {
+      background: #CDF3E1;
+    }
+  }
+
+  :global {
+    .ant-divider-horizontal {
+      margin: 8px 0;
+    }
+  }
+}

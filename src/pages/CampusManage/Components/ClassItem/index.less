@@ -1,0 +1,95 @@
+.classItem {
+    width: 100%;
+    height: 70px;
+    border-radius: 8px;
+    border: 1px solid rgba(216, 216, 216, 1);
+    line-height: 70px;
+    text-align: center;
+    color: #B2B2B2;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.hasManagerItem {
+    position: relative;
+    padding: 10px;
+    width: 100%;
+    height: 70px;
+    background: rgba(230, 249, 240, 1);
+    border-radius: 8px;
+    border: 1px solid rgba(3, 196, 107, 0.3);
+
+    i {
+        position: absolute;
+        font-size: 13px !important;
+        color: #333333;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+    }
+}
+
+.clickTeacherItem {
+    background: rgba(255, 240, 204, 1);
+    border: 1px solid rgba(255, 180, 0, 1);
+
+    i {
+        color: #FFB400;
+    }
+
+    .className {
+        color: #FFB400;
+    }
+
+    .teacherName {
+        color: #FFB400;
+    }
+}
+
+.className {
+    font-size: 24px;
+    color: #03C46B;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.teacherName {
+    padding-top: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #03C46B;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pop {
+    :global {
+        .ant-popover-title {
+            padding: 20px 16px 8px 16px;
+            width: 360px;
+            border-bottom: none;
+            font-size: 14px;
+            color: #333333;
+        }
+
+        .ant-popover-inner-content {
+            padding: 0 0;
+        }
+
+    }
+
+    .selectItem {
+        border-radius: 4px;
+        padding: 8px 10px;
+        font-size: 13px;
+        color: #333;
+        line-height: 13px;
+        cursor: pointer;
+
+        &:hover {
+            background: #F5F5F5;
+        }
+    }
+}

@@ -1,0 +1,159 @@
+
+:global {
+
+    .contentDetails1{
+        --S4:rgba(3,196,107,1);
+        --S3:rgba(34,142,255,1);
+        --S2:rgba(255,153,0,1);
+        --S1:rgba(255,110,74,1);
+        .details{
+            display: flex;
+            .subIndex{
+                font-size:24px;
+                font-family:PingFangSC-Medium;
+                font-weight:500;
+                color:rgba(51,51,51,1);
+                margin-top: 2px;                     
+            }
+            .subScore{
+                font-size:16px;
+                font-family:PingFangSC-Regular;
+                font-weight:400;
+                color:rgba(136,136,136,1);
+                line-height:16px;
+                .score{
+                    font-size:28px;
+                    font-family:PingFangSC-Medium;
+                    font-weight:500;
+                    color:rgba(255,110,74,1);
+                    line-height:28px;
+                }
+            }
+            .content{
+                width:740px;
+                font-size:24px;
+                font-family:PingFangSC-Medium;
+                font-weight:500;
+                line-height:36px;
+                .words{
+                    white-space: nowrap; /*强制span不换行*/
+                    display: inline-block;  /*将span当做块级元素对待*/
+                    padding-right: 6px;
+                    margin-top: 2px;
+                }
+
+                .score4{
+                    color:var(--S4);
+                }
+                .score3{
+                    color:var(--S3);                  
+                }
+                .score2{
+                    color:var(--S2);                       
+                }
+                .score1{
+                    color:var(--S1);                   
+                }
+                .score0{
+                    color:var(--S1);                    
+                }
+                .score{
+                    margin-right: 2px;
+                }
+                .sent4{
+                    background:var(--S4);
+                }
+                .sent3{
+                    background:var(--S3);                  
+                }
+                .sent2{
+                    background:var(--S2);                       
+                }
+                .sent1{
+                    background:var(--S1);                   
+                }
+                .sent0{
+                    background:var(--S1);                    
+                }
+                .sent{
+                    margin-right: 2px;
+                }
+                .nomal{
+                    color:rgba(204,204,204,1);
+                }
+
+            }
+        }
+
+        .taginfo{
+            display: flex;
+            font-size:14px;
+            font-family:PingFangSC-Regular;
+            font-weight:400;
+            color:rgba(51,51,51,1);
+            line-height:14px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            .ponit{
+                width:5px;
+                height:5px;
+                margin-right: 5px;
+            }
+            .score4{
+                background:var(--S4);
+            }
+            .score3{
+                background:var(--S3);                  
+            }
+            .score2{
+                background:var(--S2);                       
+            }
+            .score1{
+                background:var(--S1);                   
+            }
+            .score0{
+                background:var(--S1);                    
+            }
+            .percent{
+                font-size:14px;
+                font-family:PingFangSC-Regular;
+                font-weight:400;
+                color:rgba(178,178,178,1);
+                line-height:14px;
+                margin-left: 5px;
+                margin-right: 20px;
+            }
+            .tips{
+                font-size:18px;
+                font-family:PingFangSC-Medium;
+                font-weight:500;
+                color:rgba(255,110,74,1);
+                line-height:25px;
+            }
+        }
+
+        .titleName{
+            margin-top:30px; 
+            display: flex;
+            font-size:16px;
+            font-family:PingFangSC-Medium;
+            font-weight:500;
+            color:rgba(51,51,51,1);
+            line-height:16px;
+            .dic{
+                width:4px;
+                height:14px;
+                background:rgba(136,136,136,1);
+                border-radius:2px;
+                margin-right: 5px;
+            }
+        }
+        .flex{
+            display: flex;
+        }
+        
+
+    }
+
+
+}

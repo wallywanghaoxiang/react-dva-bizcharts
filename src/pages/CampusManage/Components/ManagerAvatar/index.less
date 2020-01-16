@@ -1,0 +1,61 @@
+:global {
+    .manager-avatar {
+        position: relative;
+        display: inline-block;
+        margin: 0;
+        padding: 0 2px;
+
+        .avatar {
+            margin-bottom: 5px;
+
+            .ant-avatar {
+                width: 60px;
+                height: 60px;
+            }
+        }
+
+        .name {
+            width: 66px;
+            height: 30px;
+            padding: 0 5px;
+            overflow: hidden;
+            color: #333;
+            font-size: 14px;
+            line-height: 30px;
+            white-space: nowrap;
+            text-align: center;
+            text-overflow: ellipsis;
+        }
+
+        .subject {
+            position: absolute;
+            top: -2px;
+            right: 2px;
+            width: 20px;
+            color: #fff;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: center;
+            background: rgba(51, 51, 51, 1);
+            border: 1px solid rgba(255, 255, 255, 1);
+            border-radius: 10px;
+        }
+
+        i.delete {
+            position: absolute;
+            right: -8px;
+            bottom: 34px;
+            display: none;
+            color: #FF6E4A;
+            font-size: 14px;
+        }
+
+        &:hover {
+            cursor: pointer;
+
+            & i.delete {
+                display: block;
+            }
+        }
+    }
+}

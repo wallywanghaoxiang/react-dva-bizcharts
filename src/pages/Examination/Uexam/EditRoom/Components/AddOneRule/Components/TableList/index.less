@@ -1,0 +1,42 @@
+.myTableList {
+  .table {
+    width: 400px;
+    border: 1px solid rgba(229, 229, 229, 1);
+    thead {
+      background: rgba(245, 245, 245, 1);
+    }
+    tr {
+      height: 32px;
+      border: 1px solid rgba(229, 229, 229, 1);
+      th {
+        padding-left: 8px;
+      }
+      td {
+        padding-left: 8px;
+        :global {
+          .ant-select-selection {
+            border: none;
+            box-shadow: unset;
+          }
+          i {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .add {
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+    border: 1px solid rgba(229, 229, 229, 1);
+    a {
+      color: #228eff;
+    }
+  }
+  .tableBody {
+    max-height: 315px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}

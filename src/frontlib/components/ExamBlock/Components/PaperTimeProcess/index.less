@@ -1,0 +1,64 @@
+.body{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  .connect{
+    margin-left: 20px;
+    height: 100%;
+    display: flex;
+    line-height: 40px;
+    align-items: center;
+    // 图片
+    .state-icon{
+      height: 40px;
+      width: 40px;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+    // 标题
+    .state-title{
+      margin-left: 10px;
+      font-size:16px;
+      color:rgba(51,51,51,1);
+      font-weight: bold;
+    }
+    // 次数
+    .state-time{
+      margin-left: 15px;
+      font-size:13px;
+      color:rgba(51,51,51,1);
+
+    }
+    // 倒计时
+    .state-count{
+      margin-left: 15px;
+      display: flex;
+      align-items: center;
+
+      .down{
+        margin-left: 15px;
+        font-size:13px;
+        color:rgba(51,51,51,1);
+        .number{
+          padding: 0px 5px;
+          font-size: 16px;
+          color: rgba(255, 110, 74, 1);
+        }
+      }
+    }
+  }
+}
+
+// 倒计时-进度条
+.progress{
+  width: 300px;
+  position: relative;
+  height: 3px;
+  background: #ccc;
+  .finishline {
+    position: absolute;
+    height: 3px;
+    background: #03c46b;
+  }
+}

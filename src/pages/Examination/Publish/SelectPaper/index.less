@@ -1,0 +1,576 @@
+:global {
+  .ball {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 180, 0, 1);
+    border-radius: 50%;
+    box-shadow: 0 2px 4px 0 rgba(255, 180, 0, 0.5);
+    opacity: 0;
+  }
+  .origin {
+    position: absolute;
+    top: 30px;
+    right: 28px;
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    // vertical-align: top;
+  }
+  .target {
+    position: absolute;
+    bottom: 14px;
+    left: 16px;
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+    color: #00cc89;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .examination {
+    .selectpaper {
+      display: flex;
+      padding: 0;
+      .selectpaperDrawer {
+        position: absolute;
+        z-index: 99;
+        width: 367px;
+        height: 801px;
+        min-height: 801px;
+        padding: 17px 20px;
+        padding-bottom: 66px;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 10px 0 0 0;
+        box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.3);
+        .tag {
+          position: absolute;
+          top: 45%;
+          right: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 36px;
+          height: 100px;
+          margin-right: -36px;
+          color: #fff;
+          background-image: url('../../../../assets/examination/colse_plan_btn_bg.png');
+          cursor: pointer;
+          .text {
+            width: 18px;
+            text-align: center;
+          }
+        }
+        .pages {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 367px;
+          height: 67px;
+          padding: 15px;
+          border-top: 1px solid #e5e5e5;
+          .ant-pagination {
+            position: relative;
+            right: 0;
+            bottom: 0;
+          }
+        }
+        .lefttop {
+          position: absolute;
+          top: 12px;
+          right: 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-bottom: 7px;
+        }
+
+        .leftInfo {
+          width: 327px;
+          margin: 10px 0;
+          padding: 10px;
+          background: rgba(245, 245, 245, 1);
+          border-radius: 5px;
+          .leftInfocontent {
+            display: flex;
+          }
+          .infoCard {
+            flex: 1;
+            .label {
+              color: rgba(136, 136, 136, 1);
+              font-size: 13px;
+            }
+            .labelinfo {
+              flex: 1;
+              color: rgba(51, 51, 51, 1);
+              font-size: 13px;
+            }
+          }
+        }
+      }
+      .selectpaperDraweropen {
+        position: absolute;
+        z-index: 2;
+        height: 801px;
+        padding-bottom: 66px;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 10px 0 0 0;
+        box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.3);
+        .tag {
+          position: absolute;
+          top: 45%;
+          right: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 36px;
+          height: 100px;
+          margin-right: -36px;
+          color: #fff;
+          background-image: url('../../../../assets/examination/colse_plan_btn_bg.png');
+          cursor: pointer;
+          .text {
+            width: 18px;
+            text-align: center;
+          }
+        }
+      }
+      .left {
+        width: 367px;
+        padding: 17px 20px;
+        padding-bottom: 66px;
+        border-right: 1px solid #e5e5e5;
+        .pages {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 367px;
+          height: 67px;
+          padding: 15px;
+          border-top: 1px solid #e5e5e5;
+          .ant-pagination {
+            position: relative;
+            right: 0;
+            bottom: 0;
+          }
+        }
+        .lefttop {
+          position: absolute;
+          top: 12px;
+          right: 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-bottom: 7px;
+        }
+
+        .leftInfo {
+          width: 327px;
+          margin: 10px 0;
+          padding: 10px;
+          background: rgba(245, 245, 245, 1);
+          border-radius: 5px;
+          .leftInfocontent {
+            display: flex;
+          }
+          .infoCard {
+            flex: 1;
+            .label {
+              color: rgba(136, 136, 136, 1);
+              font-size: 13px;
+            }
+            .labelinfo {
+              flex: 1;
+              color: rgba(51, 51, 51, 1);
+              font-size: 13px;
+            }
+          }
+        }
+      }
+      .right {
+        position: relative;
+        flex: 1;
+        .selectedPaper {
+          position: absolute;
+          bottom: 0;
+          z-index: 1;
+          display: flex;
+          flex: 1 1 auto;
+          justify-content: space-between;
+          width: 100%;
+          height: 67px;
+          padding: 15px;
+          border-top: 1px solid #e5e5e5;
+          .showPaperList {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+          }
+          .selectedCount {
+            position: relative;
+            display: inline-block;
+            margin-right: 10px;
+            .icon-btn {
+              align-items: center;
+              width: 40px;
+              height: 40px;
+              padding-left: 5px;
+              font-size: 20px;
+              line-height: 40px;
+              text-align: center;
+              vertical-align: middle;
+              background: rgba(245, 245, 245, 1);
+              border-radius: 50%;
+            }
+            .counts {
+              position: absolute;
+              top: -5px;
+              right: -5px;
+              display: block;
+              width: 16px;
+              height: 16px;
+              color: rgba(255, 255, 255, 1);
+              font-weight: 500;
+              font-size: 12px;
+              // font-family: PingFangSC-Medium;
+              line-height: 16px;
+              text-align: center;
+              background: rgba(255, 110, 74, 1);
+              border-radius: 16px;
+              box-shadow: 0 4px 8px 0 rgba(255, 110, 74, 0.5);
+            }
+          }
+        }
+        .black {
+          color: #333;
+          font-size: 13px;
+        }
+        .title {
+          padding-bottom: 5px;
+          color: rgba(51, 51, 51, 1);
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 28px;
+        }
+
+        .paperSelected {
+          position: absolute;
+          bottom: 66px;
+          z-index: 100;
+          width: 100%;
+          background: rgba(255, 255, 255, 1);
+          box-shadow: 0 -5px 5px 0 rgba(0, 0, 0, 0.05);
+          .ant-spin-container {
+            height: 300px;
+            overflow-y: auto;
+          }
+          .navTitle {
+            height: 50px;
+            padding: 0 15px;
+            color: #333;
+            font-size: 14px;
+            line-height: 50px;
+            border-bottom: 1px solid #e5e5e5;
+            .tips {
+              font-weight: 600;
+            }
+            .clearAll {
+              float: right;
+              cursor: pointer;
+              .anticon {
+                margin-left: 30px;
+              }
+            }
+          }
+          .selectedlist {
+            padding: 0;
+            cursor: pointer;
+            .titlesub {
+              padding-bottom: 5px;
+              color: #333;
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 28px;
+            }
+            .listItem {
+              position: relative;
+              padding: 10px;
+              list-style: none;
+              border-bottom: 1px solid #e5e5e5;
+              .ant-list-item-content {
+                display: block;
+              }
+              .deleteTest {
+                position: absolute;
+                top: 35%;
+                right: 15px;
+              }
+              .tips {
+                padding-right: 40px;
+                color: #333;
+                span {
+                  color: #888;
+                }
+              }
+              h2 {
+                font-size: 14px;
+              }
+              // &:last-child {
+              //   border: 0;
+              // }
+            }
+          }
+        }
+      }
+    }
+    .testDetail_none {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      min-height: 801px;
+      .noData {
+        height: auto;
+      }
+      .noData img {
+        width: 120px;
+        height: 120px;
+        margin-top: 0;
+      }
+    }
+    .testDetail {
+      width: 100%;
+      .tips {
+        padding-right: 40px;
+        span {
+          color: #888;
+        }
+      }
+      .paperTitle {
+        position: relative;
+        z-index: 3;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        border-bottom: 1px solid #e5e5e5;
+        .selectedTest {
+          .button:hover {
+            span {
+              color: #888;
+              cursor: pointer;
+            }
+            i {
+              color: #888;
+              cursor: pointer;
+            }
+          }
+          .iconfont {
+            color: #888;
+          }
+          .button .icon-text {
+            color: #888;
+          }
+          .button {
+            color: #888;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 18px;
+            box-shadow: none;
+          }
+          .textColor {
+            color: #888;
+          }
+        }
+        .addCart {
+          .button {
+            width: 42px;
+            height: 42px;
+            line-height: 42px;
+            text-align: center;
+            background: rgba(255, 153, 0, 1);
+            border: 0;
+            border-radius: 50%;
+            box-shadow: 0 5px 10px rgba(255, 153, 0, 0.5);
+            .icon-add::before {
+              color: #fff !important;
+              font-size: 18px;
+            }
+            .iconfont {
+              padding: 0;
+            }
+          }
+        }
+        h2 {
+          color: #333;
+          font-size: 18px;
+        }
+      }
+      .paperContent {
+        min-height: 650px;
+        margin-bottom: 66px;
+        overflow: auto;
+        .paperDetail {
+          display: flex;
+          justify-content: center;
+          min-height: 650px;
+          padding-bottom: 10px;
+          background-color: #f5f5f5;
+        }
+      }
+    }
+    .secondForm {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      width: 100%;
+      height: 66px;
+      border-top: 1px solid #e5e5e5;
+      .pages {
+        width: 367px;
+        padding: 15px;
+        border-right: 1px solid #e5e5e5;
+        .ant-pagination {
+          position: relative;
+          right: 0;
+          bottom: 0;
+        }
+      }
+      .selectedPaper {
+        position: absolute;
+        z-index: 100;
+        display: flex;
+        flex: 1 1 auto;
+        justify-content: space-between;
+        padding: 15px;
+        .selectedCount {
+          position: relative;
+          display: inline-block;
+          margin-right: 10px;
+
+          .icon-btn {
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            padding-left: 5px;
+            line-height: 40px;
+            text-align: center;
+            vertical-align: middle;
+            background: rgba(245, 245, 245, 1);
+            border-radius: 50%;
+          }
+          .counts {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            display: block;
+            width: 16px;
+            height: 16px;
+            color: rgba(255, 255, 255, 1);
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            background: rgba(255, 110, 74, 1);
+            border-radius: 16px;
+            box-shadow: 0 4px 8px 0 rgba(255, 110, 74, 0.5);
+          }
+        }
+      }
+    }
+
+    .paperSource {
+      .ant-tabs-extra-content {
+        padding-top: 2px;
+        color: #888;
+        font-size: 12px;
+      }
+      .ant-tabs-ink-bar {
+        left: 30px;
+        width: 10px !important;
+        height: 4px;
+      }
+      .ant-tabs-nav .ant-tabs-tab {
+        padding: 12px 0;
+      }
+      .paperlist {
+        padding: 0;
+        .paperItem {
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          width: 321px;
+          margin-bottom: 10px;
+          padding: 7px 10px;
+          // overflow: hidden;
+          color: #333;
+          font-size: 14px;
+          list-style: none;
+          background-color: #fff;
+          border: 1px solid #e5e5e5;
+          border-radius: 5px;
+          cursor: pointer;
+          .paperNameDetail {
+            display: block; //转换为盒子模型
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            padding-right: 10px;
+            overflow: hidden; //超出隐藏
+            color: #333;
+            text-overflow: ellipsis; //超出文本设置为...
+            word-break: break-all;
+            -webkit-line-clamp: 2; //设置文本为2行
+            -webkit-box-orient: vertical; //从顶部向底部垂直布置子元素
+          }
+          .ant-checkbox-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            .ant-checkbox {
+              display: none;
+            }
+          }
+          .isExamination {
+            position: absolute;
+            top: 6px;
+            right: -5px;
+          }
+          // &:nth-child(2n){
+          //     margin-left: 10px;
+          // }
+        }
+
+        .selected {
+          background: linear-gradient(90deg, rgba(3, 196, 107, 1), rgba(44, 195, 157, 1));
+          border: 0 solid #e5e5e5;
+          box-shadow: 2px 0 8px rgba(14, 192, 93, 0.2);
+          .paperNameDetail {
+            color: #fff;
+          }
+        }
+        .noselected {
+          background: rgba(245, 245, 245, 1);
+          border: 1px solid #f5f5f5;
+          cursor: not-allowed !important;
+          .ant-checkbox-wrapper {
+            // cursor: not-allowed;
+          }
+        }
+      }
+    }
+  }
+}

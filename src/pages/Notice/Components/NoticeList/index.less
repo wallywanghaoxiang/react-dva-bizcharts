@@ -1,0 +1,61 @@
+.noticeList {
+    padding-top: 5px;
+
+    .noticeListItem {
+        color: #888888;
+        min-height: 60px;
+        width: 100%;
+        border-radius: 5px;
+        background: #FFFFFF;
+        border: 1px solid #E5E5E5;
+        padding: 20px;
+        line-height: 22px;
+        margin-top: 10px;
+        overflow: auto;
+
+        &:first {
+            margin-top: 5px;
+        }
+
+        div {
+            // float: left;
+            display: inline-block;
+        }
+
+        .leftCols {
+            padding-right: 15px;
+        }
+
+        :global {
+            .ant-tag {
+                font-size: 13px;
+            }
+
+            .ant-btn-link {
+                color: #228EFF;
+                height: auto;
+                min-height: auto;
+                width: 50px;
+                margin: 0 auto;
+                display: block;
+                text-align: center;
+                padding: 0px;
+            }
+        }
+    }
+
+    :global {
+        .noData img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .noData p {
+            margin-top: 0;
+        }
+    }
+}
+
+.modalTenantName {
+    color: #FF6E4A;
+}

@@ -1,0 +1,40 @@
+.reportTabs {
+    line-height: 20px;
+    padding-bottom: 20px;
+
+    // height: 40px;
+    .tabItem {
+        position: relative;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+
+    .active {
+        font-weight: bold;
+    }
+
+    .active:after {
+        content: "";
+        bottom: -5px;
+        width: 10px;
+        height: 4px;
+        background-color: #03C46B;
+        position: absolute;
+        left: 44%;
+        border-radius: 2px;
+    }
+
+    .rightBtns {
+        float: right;
+        width: 120px;
+
+        .readAll {
+            width: 118px;
+            height: 36px;
+            background: #FFFFFF;
+            color: #888888;
+            border-radius: 18px;
+            border: 1px solid #CCCCCC;
+        }
+    }
+}

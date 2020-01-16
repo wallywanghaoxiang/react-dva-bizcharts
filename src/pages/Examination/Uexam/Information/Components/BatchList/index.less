@@ -1,0 +1,28 @@
+.batchListContainer {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+        width:6px;
+        background:rgba(204,204,204,1);
+    }
+    &::-webkit-scrollbar-track {/*滚动条里面轨道*/
+        border-radius: 0;
+        background: #fff;
+    }
+    .examDate {
+        margin-bottom: 10px;
+        width:62px;
+        height:26px;
+        background:rgba(178,178,178,1);
+        border-radius:4px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 26px;
+        font-size: 13px;
+    }
+}

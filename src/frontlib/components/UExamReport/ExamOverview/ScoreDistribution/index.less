@@ -1,0 +1,79 @@
+.scoreDistribution {
+
+
+  .sdTable {
+    .title {
+      color: #888;
+      text-align: center;
+    }
+
+    &.sdTable1 {
+      :global {
+        .ant-table-body {
+          overflow: hidden !important;
+        }
+      }
+    }
+
+    &.sdTable2 {
+      margin-top: 10px;
+
+      :global {
+        .ant-table-body::-webkit-scrollbar {
+          width: 6px;
+          height: 6px;
+        }
+
+        .ant-table-body::-webkit-scrollbar-thumb {
+          width: 6px;
+          height: 6px;
+          background: rgba(204, 204, 204, 1);
+        }
+
+        .ant-table-body::-webkit-scrollbar-track {
+          background: #fff;
+          border-radius: 0;
+        }
+      }
+    }
+
+    :global {
+      .ant-table table {
+        table-layout: fixed;
+        border-radius: 0;
+      }
+
+      .ant-table-pagination.ant-pagination {
+        margin: 10px 0 !important;
+      }
+
+      th {
+        padding: 7px 10px;
+
+        .anticon-filter,
+        .ant-table-filter-icon {
+          right: auto;
+        }
+
+        &:last-child {
+          border-radius: 0;
+        }
+      }
+
+      .ant-table-column-title {
+        color: #888888;
+        font-size: 13px;
+      }
+
+      td {
+        padding: 8px 10px;
+        overflow: hidden;
+        color: #333;
+        font-weight: 400;
+        font-size: 13px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}

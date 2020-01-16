@@ -1,0 +1,101 @@
+@import '~@/utils/utils.less';
+
+:global {
+
+  .addTableListModal {
+    .ant-table-wrapper {
+      max-height: 500px;
+      overflow-y: auto;
+    }
+    .ant-table table{
+      border: 1px solid #e5e5e5;
+    }
+    .ant-table-placeholder{
+      border-left: 1px solid #e5e5e5;
+      border-right: 1px solid #e5e5e5;
+    }
+    .student_list{
+      float: left;
+      .name{
+        margin-left: 2px;
+      }
+    }
+    .bigTable {
+      width: 750px;
+      border: 1px solid #c8c8c8;
+      .up {
+        display: flex;
+        text-align: center;
+        background-color:#E5E5E5 ;
+        font-size:16px;
+        color: #333333;
+        .tag {
+          width: 120px;
+          height: 40px;
+          line-height: 34px;   
+          cursor: pointer;
+        }
+        .active {
+          border:1px solid rgba(229,229,229,1);
+          color: #03C46B;
+          border-bottom-width: 0px;
+          border-top-width: 0px;
+          background-color: white;
+        }
+      }
+      .myTable {
+        width: 100%;
+        height: 328px;
+        display: flex;
+        margin-top:20px;
+        margin-bottom:5px;
+        .leftInfo {
+          border-right: 1px solid rgba(229, 229, 229, 1);
+          min-width: 150px;
+          .left-tag {
+            color: #888888;
+            margin-top: 10px;  
+            margin-left: 14px;
+            min-width: 130px;
+            height: 14px;
+            line-height: 15px;
+            padding-left: 6px;
+            background: #ffffff;
+            cursor: pointer;        
+          }
+          .active {
+            color: #03C46B;
+            border-left: 2px solid #03C46B;
+          }
+        }
+        .content {
+          // min-height: 140px;
+          // max-height: 320px;
+          flex: 1;
+          overflow-y: auto;
+          // display: flex;
+          // flex-wrap: wrap;
+          .icon{
+            margin-left: 40%;
+            margin-top: 14%;
+          }
+          .one {
+            margin: 5px 8px 5px 8px;
+            display: flex;
+            float: left;
+            height: 30px;
+            background: rgba(255, 255, 255, 1);
+            border-radius: 5px 5px 5px 5px;
+            border: 1px solid rgba(204, 204, 204, 1);
+            .name {
+              padding-left: 14px;
+              padding-top: 3px;
+              padding-right: 14px;
+              //margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

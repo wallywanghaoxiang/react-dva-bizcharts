@@ -1,0 +1,53 @@
+.studentListBox {
+  height: 100%;
+
+  .studentList {
+    height: 61vh;
+    padding: 0 10px;
+    overflow-y: auto;
+
+    .studentlistItem {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 8px 10px;
+      color: #333;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 20px;
+      border-bottom: 1px solid #f5f5f5;
+
+      .examno {
+        color: #888;
+        font-weight: 400;
+        font-size: 12px;
+      }
+
+      .dropdown {
+        margin-left: 20px;
+        color: #333;
+        font-weight: bolder;
+        font-size: 16px;
+      }
+    }
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      width: 6px;
+      background: rgba(204, 204, 204, 1);
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #fff;
+      border-radius: 0;
+    }
+  }
+
+  .pagination {
+    padding: 10px 0 10px 20px;
+  }
+}

@@ -1,0 +1,103 @@
+  .abilityChartBar {
+
+      .abilityChartBarBox {
+          padding-top: 40px;
+
+          .abilityChartBarItem {
+              margin: 0px 0px 40px 0px;
+
+              .title {
+                  text-align: right;
+                  font-size: 13px;
+                  line-height: 18px;
+                  margin-right: 20px;
+                  color: #333333;
+                  font-weight: bold;
+              }
+
+              .background {
+                  height: 20px;
+                  background: #CCCCCCFF;
+                  color: #888888FF;
+                  font-size: 12px;
+
+                  .taskbar {
+                      height: 20px;
+                      position: absolute;
+                      top: 0;
+                  }
+
+                  .startscore {
+                      float: left;
+                      margin-top: 20px;
+                  }
+
+                  .endscore {
+                      float: right;
+                      margin-top: 20px;
+                  }
+
+                  .taskBar {
+                      height: 20px;
+                      position: absolute;
+                      top: 0;
+                  }
+
+                  .otherBar {
+                      position: absolute;
+                      top: -14px;
+                      line-height: 10px;
+                      text-align: center;
+                      border-top: 6px solid transparent;
+                      border-bottom: 6px solid transparent;
+                      border-left: 12px solid #FF6E4A;
+                      transform: rotate(90deg);
+                      transform-origin: 50% 50%;
+                  }
+              }
+          }
+          .abilityChartBarItem:last-child{
+            margin-bottom: 0px!important;
+          }
+      }
+
+      .legend {
+          position: relative;
+          font-size: 12px;
+          line-height: 20px;
+          color: #8c8c8c;
+          z-index: 1;
+          max-width: 759.5px;
+          margin: 0 auto;
+          margin-top:-40px;
+          padding: 15px 0px;
+
+          .legendList {
+              list-style-type: none;
+              margin: 0px;
+              padding: 0px;
+              text-align: center;
+
+              .legendListItem {
+                  cursor: pointer;
+                  font-size: 14px;
+                  color: rgb(140, 140, 140);
+                  margin-bottom: 5px;
+                  margin-right: 24px;
+                  display: inline-block;
+
+                  .legendMarker {
+                      width: 9px;
+                      height: 9px;
+                      border-radius: 2px;
+                      display: inline-block;
+                      margin-top: -4px;
+                      margin-right: 4px;
+                      background-color: rgb(3, 196, 107);
+                      vertical-align: middle;
+                      opacity: 1;
+                  }
+              }
+          }
+      }
+  }

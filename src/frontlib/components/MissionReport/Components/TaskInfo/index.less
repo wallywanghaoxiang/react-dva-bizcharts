@@ -1,0 +1,68 @@
+  .taskInfo {
+      font-size: 13px;
+
+      .taskName {
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 28px;
+      }
+
+      .taskFullMark {
+          background: rgba(250, 250, 250, 1);
+          border-radius: 12px;
+          border: 1px solid rgba(229, 229, 229, 1); // margin-left: 20px !important;
+          font-family: PingFangSC-Medium;
+          font-weight: bold;
+          line-height: 18px;
+          line-height: 22px;
+          padding: 2px 8px 2px 8px;
+          margin-left: 15px;
+      }
+
+      .btn {
+          float: right;
+          width: 92px;
+          height: 36px;
+          border-radius: 18px;
+          border: 1px solid;
+          font-size: 13px;
+          line-height: 20px;
+          margin-right: 10px;
+      }
+
+      .btnOrange {
+          border: none;
+          color: #fff;
+          background: #FFB400;
+          box-shadow: 0px 2px 5px 0px rgba(255, 180, 0, 0.5);
+      }
+      .myscore{
+        float: right;
+        font-size: 14px;
+        border-left: 1px solid #E5E5E5;
+        padding-left: 28px;
+        height: 50px;
+        span{
+            color:#FF6E4A;
+            font-size:40px;
+        }
+      }
+      .content {
+          color: #888888;
+          line-height: 18px;
+          padding: 10px 0px 10px 0px;
+
+          :global {
+
+              .ant-divider,
+              .ant-divider-vertical {
+                  margin: 0 20px !important;
+              }
+          }
+      }
+      :global {
+        .ant-divider-horizontal {
+            margin: 10px 0;
+        }
+    }
+  }

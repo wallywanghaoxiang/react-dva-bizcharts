@@ -1,0 +1,188 @@
+.studentHomeContainer {
+    width: 100%;
+    height: calc(100vh - 60px);
+}
+.noClassBox {
+    text-align: center;
+    img {
+        margin-top: 110px;
+        width: 380px;
+        height: 220px;
+    }
+}
+.welcomTxt {
+    margin: 20px auto 10px;
+    font-size: 36px;
+    color: #333333;
+    span {
+        padding: 0px 10px;
+        color: #FF7412;
+        font-weight: bold;
+    }
+}
+.tip {
+    font-size: 14px;
+    color: #888888;
+}
+.addBtn {
+    margin: 20px auto 0px;
+    width:118px;
+    height:36px;
+    background:rgba(255,180,0,1);
+    box-shadow:0px 2px 5px 0px rgba(255,180,0,0.5);
+    border-radius:18px;
+    text-align: center;
+    line-height: 36px;
+    color: #fff;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.alreadyJoinBox {
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.left {
+    width: 270px;
+}
+.headerBox {
+    width: 270px;
+    height: 257px;
+    border-radius:10px 10px 0px 0px;
+    background: url('../../../../assets/student/user_card_bg.png') no-repeat;
+    background-position-y:bottom;
+    background-color: #03C46B;
+    text-align: center;
+    .name {
+        margin: 10px auto;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+    .avatarImg {
+        margin-top: 46px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+    }
+    .VBNumber {
+        padding: 0px 8px;
+        margin: 0 auto;
+        width:108px;
+        height: 20px;
+        line-height: 20px;
+        background:rgba(255,253,216,1);
+        box-shadow:0px 1px 1px 0px rgba(0,0,0,0.1);
+        border-radius:10px;
+        img {
+            width: 14px;
+            height: 12px;
+        }
+        span {
+            font-size: 12px;
+            color:#FF9600; 
+        }
+        :global {
+            .ant-divider, .ant-divider-vertical {
+                margin: 0 6px;
+            }
+        }
+    }
+}
+.joinCampusInfo {
+    padding: 10px;
+    background: #fff;
+    text-align: center;
+    border-radius:0px 0px 10px 10px;
+    .campusName {
+        font-size: 16px;
+        color: #333333;
+    }
+    .classList {
+        padding: 10px 0px;
+    }
+    .classList > div {
+        margin-right: 10px;
+        margin-bottom: 5px;
+        &:nth-of-type(3),&:last-child {
+            margin-right: 0px;
+        }
+    }
+}
+.right {
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .topLeft {
+            :global {
+                .ant-divider {
+                    width: 3px;
+                    height: 12px;
+                    border-radius:2px;
+                    background: #03C46B;
+                    margin-left: 0px;
+                }
+            }
+            .tit {
+                font-size: 16px;
+                color: #292935;
+                font-weight: bold;
+            }
+        }
+        .topRight {
+            color: #888888;
+            font-size: 13px;
+            &:hover {
+                cursor: pointer;
+                color: #03C46B;
+                i {
+                    color: #03C46B;
+                }
+            }
+        }
+    }
+}
+.right {
+    
+    width: calc(~'100% - 390px');
+}
+.listBox {
+    padding-top: 10px;
+    & > div {
+        margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+}
+.dataBox {
+    position: relative;
+    margin-top: 10px;
+    width:100%;
+    height:374px;
+    background:rgba(255,255,255,1);
+    box-shadow:0px 5px 20px 0px rgba(193,206,216,0.2);
+    border-radius:10px;
+}
+.noData {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 340px;
+    height: 230px;
+    margin-left: -170px;
+    margin-top: -115px;
+    img {
+        width: 340px;
+        height: 230px;
+    }
+}
+.noTip {
+    position: absolute;
+    top: 35px;
+    right: 42px;
+    font-size: 18px;
+    color: #888888;
+}

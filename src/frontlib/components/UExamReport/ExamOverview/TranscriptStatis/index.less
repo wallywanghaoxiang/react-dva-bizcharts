@@ -1,0 +1,39 @@
+.transcriptStatis {
+  .transcriptTable {
+    :global {
+      .ant-table table {
+        table-layout: fixed;
+        border: 1px solid #e5e5e5;
+        border-bottom: none;
+      }
+
+      .ant-table-pagination.ant-pagination {
+        margin: 10px 0 !important;
+      }
+
+      th {
+        padding: 7px 10px;
+
+        .anticon-filter,
+        .ant-table-filter-icon {
+          right: auto;
+        }
+      }
+
+      .ant-table-column-title {
+        color: #888;
+        font-size: 13px;
+      }
+
+      td {
+        padding: 8px 10px;
+        overflow: hidden;
+        color: #333;
+        font-weight: 400;
+        font-size: 13px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}

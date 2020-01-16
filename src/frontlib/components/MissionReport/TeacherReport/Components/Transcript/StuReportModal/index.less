@@ -1,0 +1,44 @@
+.stuReportModal {
+  :global {
+    .ant-modal-header {
+      background-color: #F5F5F5;
+      padding: 20px 30px 20px 30px !important;
+    }
+    .ant-modal-title {
+      color: #333333;
+      font-size: 16px !important;
+      font-weight: bold !important;
+    }
+    .ant-modal-body::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .ant-modal-body::-webkit-scrollbar-thumb {
+      /*滚动条里面小方块*/
+      width: 6px;
+      background: rgba(204, 204, 204, 1);
+    }
+
+    .ant-modal-body::-webkit-scrollbar-track {
+      /*滚动条里面轨道*/
+      border-radius: 0;
+      background: #fff;
+    }
+
+    .ant-modal-body {
+      height: calc(~'100vh - 100px');
+      overflow-y: auto;
+      padding: 0px 0px !important;
+      background-color: #F5F5F5;
+      max-height: calc(~'100vh - 100px') !important;
+    }
+
+    .ant-modal-footer {
+      display: none;
+    }
+
+    .wrapperMain {
+      border-radius: 0;
+    }
+  }
+}

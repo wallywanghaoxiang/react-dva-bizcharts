@@ -1,0 +1,86 @@
+@import '~@/utils/utils.less';
+:global {
+
+.demon{
+    background:rgba(245,245,245,1);
+    border-radius:5px;
+    padding: 10px;
+    margin-top: 10px;   
+}
+.modal-body::-webkit-scrollbar{
+  width: 6px;
+  height: 8px;
+  height: 780px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.modal-body::-webkit-scrollbar-track{
+  border-radius: 10px;
+}
+.modal-body::-webkit-scrollbar-thumb{
+  height: 300px;
+  border-radius: 10px;
+  background-color: #ccc;
+}
+.modal-body:hover::-webkit-scrollbar{
+  display: block;
+}
+
+  .addNewSubjectModal {
+    .ant-modal-body{
+      padding: 0!important;
+    }
+    .ant-modal-header{padding:40px 40px 20px 40px !important}
+    .ant-modal-footer{
+      padding:20px 40px 40px !important;
+    }
+    padding-bottom: 0;
+    .modal-body {
+        height: 608px;
+        padding: 0 40px;
+        margin: 20px 0;
+        overflow-x: hidden;
+        overflow-y:auto;
+    }
+  }
+
+  .twoLevel,.normalType{   
+    .complexTypeLevel{margin-top: 10px;}
+    .singleStemInfo{
+      .ant-tabs-bar{border: 0;
+        .ant-tabs-nav-container{height: 0!important;}
+      }
+    }
+    
+    .ant-tabs-bar{border-bottom:1px solid#ccc;}
+    .ant-tabs-bar .ant-tabs-nav-container{
+      height: 36px!important;
+      width: 475px;
+    }
+    .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab{
+      background:rgba(245,245,245,1);
+      border: 0;
+      border-radius:4px 4px 0px 0px;
+      border:1px solid rgba(245,245,245,1);
+      border-bottom: 0;
+      color: #888;
+      height: 35px;
+      line-height: 35px;
+      padding: 0 16px;
+      margin-right: 6px;
+      margin-bottom: 0!important;
+    }
+    .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active{
+      position: relative;
+      z-index: 10;
+      height: 36px;
+      line-height: 36px;
+      background:rgba(255,255,255,1);
+      border:1px solid rgba(204, 204, 204, 1);
+      border-radius:4px 4px 0px 0px;
+      border-bottom: 0;
+      color: #333;
+    }
+    .ant-tabs-ink-bar{display: none!important;}
+  }
+}

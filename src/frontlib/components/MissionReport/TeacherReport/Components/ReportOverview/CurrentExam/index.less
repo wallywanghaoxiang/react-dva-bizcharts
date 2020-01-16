@@ -1,0 +1,70 @@
+.currentExam {
+    .examGrid {
+        height: 130px;
+        overflow: hidden;
+        border-radius: 5px;
+
+        .pagination {
+            text-align: center;
+            padding: 20px 0 10px 0;
+        }
+
+        .headerTitle {
+            font-size: 24px;
+            font-weight: 500;
+            color: #333333;
+        }
+
+        .headerTitleOther {
+            font-size: 13px;
+            color: #888888;
+            font-weight: normal;
+            padding-left: 3px;
+        }
+
+        .examTable {
+            background: #F5F5F5;
+
+            :global {
+                .ant-table-thead>tr {
+                    background: none;
+                }
+
+                tr>td {
+                    color: #333333;
+                    padding: 10px 16px;
+                    white-space: nowrap
+                }
+
+                .ant-table-thead>tr>th {
+                    background: none;
+                    white-space: nowrap
+                }
+
+                .ant-table-thead>tr>th .ant-table-column-sorter {
+                    top: 21%;
+                    left: 60px;
+                    position: absolute;
+                }
+            }
+
+        }
+    }
+
+    .examExtend {
+        border-top: 27px solid #F5F5F5;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        width: 90px;
+        margin: 0 auto;
+        border-radius: 0px 0px 24px 24px;
+        color: #888888;
+        font-size: 13px;
+
+        .extendBtnBox {
+            margin-top: -25px;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+}

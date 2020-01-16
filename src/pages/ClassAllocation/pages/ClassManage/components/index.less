@@ -1,0 +1,3044 @@
+@import '~antd/lib/style/themes/default.less';
+
+// 行政班,教学班没有数据情况
+.noData {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 990px;
+  margin-top: 180px;
+  overflow: hidden;
+  color: #888;
+  font-size: 16px;
+  text-align: center;
+  background: @body-background;
+  transform: translate(-50%, -50%);
+  .classImg {
+    width: 100px;
+    height: 100px;
+  }
+  :global {
+    img {
+      display: block;
+      margin: 0 auto;
+      color: #888;
+      font-size: 66px;
+    }
+    .ant-empty .ant-empty-norma {
+      .ant-empty-description {
+        display: none !important;
+      }
+    }
+  }
+}
+
+// 行政班信息剩余时间提示
+.headNews {
+  height: 50px;
+  margin-bottom: 10px;
+  line-height: 50px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+  .position {
+    padding-left: 24px;
+    color: #333;
+    .message {
+      width: 273px;
+      height: 36px;
+      line-height: 18px;
+      div {
+        color: rgba(255, 255, 255, 1);
+        font-weight: 400;
+        font-size: 13px;
+      }
+    }
+    span {
+      width: 32px;
+      height: 28px;
+      padding-left: 10px;
+      color: #ff6e4a;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 28px;
+    }
+    i {
+      cursor: pointer;
+    }
+  }
+  .warning {
+    width: auto;
+    height: 50px;
+    padding: 0 24px;
+    background: rgba(255, 248, 230, 1);
+    border-radius: 10px;
+    span {
+      color: rgba(255, 110, 74, 1);
+      font-weight: 400;
+      font-size: @font-size-base;
+    }
+  }
+}
+
+// 行政班管理-内容头部信息(搜索)
+.headContent {
+  position: relative;
+  .avatar {
+    height: 55px;
+    line-height: 60px;
+    .adminAvatar {
+      width: 26px;
+      height: 26px;
+      margin-right: 10px;
+    }
+    span {
+      position: relative;
+      top: 8px;
+      display: inline-block;
+      width: auto;
+      max-width: 300px;
+      margin-right: 10px;
+      overflow: hidden;
+      color: #333;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 28px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    i {
+      position: relative;
+      top: 2px;
+      cursor: pointer;
+    }
+  }
+  .baseInfo {
+    display: flex;
+    height: 50px;
+    line-height: 30px;
+    border-bottom: 1px solid #e5e5e5;
+    cursor: default;
+    .number {
+      margin-right: 20px;
+      color: #888;
+      font-weight: 500;
+      font-size: @font-size-base;
+      span {
+        color: #333;
+        font-weight: 500;
+        font-size: @font-size-base;
+      }
+      i {
+        position: relative;
+        top: 1px;
+        left: 5px;
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+      }
+    }
+    .student {
+      margin-right: 20px;
+      margin-left: 20px;
+      span {
+        color: #333;
+        font-weight: 600;
+        font-size: @font-size-base;
+      }
+    }
+    .grade {
+      margin-right: 20px;
+      margin-left: 20px;
+      span {
+        color: #333;
+        font-weight: 600;
+        font-size: @font-size-base;
+      }
+    }
+    .english {
+      margin-right: 20px;
+      margin-left: 20px;
+      span {
+        color: #333;
+        font-weight: 600;
+        font-size: @font-size-base;
+      }
+    }
+    .line {
+      position: relative;
+      top: 10px;
+      height: 12px;
+      border-left: 1px solid #e5e5e5;
+    }
+    .teacher {
+      margin-right: 20px;
+      margin-left: 20px;
+      span {
+        img {
+          width: 26px;
+          height: 26px;
+          margin-right: 5px;
+          border-radius: 13px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .search {
+    position: relative;
+    display: flex;
+    height: 70px;
+    line-height: 70px;
+    .userName {
+      position: absolute;
+      left: 0;
+      :global {
+        .custom-searchbar {
+          width: 320px;
+          .Search {
+            margin-right: 0;
+            margin-left: 0;
+          }
+          .left-icon {
+            left: 5px;
+            width: 20px;
+            border: 0;
+          }
+          .clear {
+            right: 12px;
+          }
+          .ant-input {
+            padding-left: 30px;
+            text-align: left;
+          }
+        }
+      }
+    }
+    .goto {
+      position: absolute;
+      right: 0;
+      display: flex;
+      .line {
+        position: relative;
+        top: 30px;
+        left: 12px;
+        height: 12px;
+        border-left: 1px solid #e5e5e5;
+      }
+      .grouping:hover {
+        color: #03c46b;
+      }
+      .grouping {
+        color: rgba(51, 51, 51, 1);
+        font-weight: 500;
+        font-size: @font-size-base;
+        cursor: pointer;
+        .link {
+          color: #333;
+          font-weight: 500;
+          font-size: @font-size-base;
+        }
+        .position {
+          width: 110px;
+          span {
+            margin-left: 6px;
+          }
+        }
+      }
+      .update_btn:hover {
+        color: #03c46b;
+        border: 1px solid #03c46b;
+        i {
+          color: #03c46b;
+        }
+      }
+      .update_btn {
+        position: relative;
+        top: 16px;
+        width: 112px;
+        height: 36px;
+        margin-left: 30px;
+        color: rgba(51, 51, 51, 1);
+        font-weight: 500;
+        font-size: @font-size-base;
+        background: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(51, 51, 51, 1);
+        border-radius: 18px;
+        cursor: pointer;
+        .link {
+          color: #333;
+          font-weight: 500;
+          font-size: @font-size-base;
+        }
+        .position:hover {
+          .studentID {
+            display: none;
+          }
+          .studentIDHover {
+            position: relative;
+            right: 4px;
+            display: inline-block;
+            color: #03c46b;
+            font-size: 13px;
+          }
+        }
+        .position {
+          position: absolute;
+          top: -17px;
+          left: 22px;
+          img {
+            position: relative;
+            right: 5px;
+            bottom: 1px;
+            width: 13px;
+            height: 13px;
+          }
+          .studentID {
+            position: relative;
+            right: 4px;
+            display: inline-block;
+            font-size: 13px;
+          }
+          .studentIDHover {
+            display: none;
+          }
+        }
+      }
+      .manager {
+        position: relative;
+        top: 16px;
+        width: 112px;
+        height: 36px;
+        margin-left: 10px;
+        font-size: @font-size-base;
+        background: rgba(255, 180, 0, 1);
+        border-radius: 18px;
+        box-shadow: 0 2px 5px 0 rgba(255, 180, 0, 0.5);
+        cursor: pointer;
+        .link {
+          color: #333;
+          font-weight: 500;
+          font-size: @font-size-base;
+        }
+        .position {
+          position: absolute;
+          top: -17px;
+          left: 22px;
+          i {
+            position: relative;
+            right: 5px;
+            color: @white;
+          }
+          span {
+            color: @white;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 行政班空数据的情况下
+.adminNoData {
+  margin: 120px 0;
+  overflow: hidden;
+  color: #888;
+  font-size: 16px;
+  text-align: center;
+  background: @body-background;
+  :global {
+    img {
+      display: block;
+      margin: 0 auto;
+      color: #888;
+      font-size: 66px;
+    }
+  }
+  .classImg {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  .manager {
+    display: inline-flex;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    .position {
+      position: relative;
+      width: 112px;
+      height: 36px;
+      font-size: @font-size-base;
+      background: rgba(255, 180, 0, 1);
+      border-radius: 18px;
+      box-shadow: 0 2px 5px 0 rgba(255, 180, 0, 0.5);
+      cursor: pointer;
+      div {
+        position: absolute;
+        top: 7px;
+        left: 22px;
+        display: flex;
+        i {
+          position: relative;
+          right: 5px;
+          color: @white;
+        }
+        span {
+          color: @white;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+.teachingNoData {
+  margin: 120px 0;
+  color: #888;
+  font-size: 16px;
+  text-align: center;
+  background: @body-background;
+  :global {
+    .ant-list-empty-text {
+      padding: 0;
+      color: rgba(0, 0, 0, 0);
+      .ant-empty-normal {
+        display: none;
+        margin: 100px 0;
+        .ant-empty-image {
+          display: none;
+          height: 0;
+        }
+      }
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      color: #888;
+      font-size: 66px;
+    }
+  }
+  .classImg {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  .manager {
+    display: inline-flex;
+    margin-top: 20px;
+    .position {
+      position: relative;
+      width: 112px;
+      height: 36px;
+      font-size: @font-size-base;
+      background: rgba(255, 180, 0, 1);
+      border-radius: 18px;
+      box-shadow: 0 2px 5px 0 rgba(255, 180, 0, 0.5);
+      cursor: pointer;
+      div {
+        position: absolute;
+        top: 7px;
+        left: 22px;
+        display: flex;
+        i {
+          position: relative;
+          right: 5px;
+          color: @white;
+        }
+        span {
+          color: @white;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .goto_dis {
+    display: inline-flex;
+    .line {
+      position: relative;
+      top: 30px;
+      left: 12px;
+      height: 12px;
+      border-left: 1px solid #e5e5e5;
+    }
+    .grouping {
+      color: rgba(51, 51, 51, 1);
+      font-weight: 500;
+      font-size: @font-size-base;
+      cursor: pointer;
+      .link {
+        color: #333;
+        font-weight: 500;
+        font-size: @font-size-base;
+      }
+      .position {
+        span {
+          padding-left: 4px;
+        }
+      }
+    }
+    .update_btn {
+      position: relative;
+      top: 14px;
+      width: 112px;
+      height: 36px;
+      margin-left: 10px;
+      color: @normal-color;
+      font-weight: 500;
+      font-size: @font-size-base;
+      background: rgba(255, 255, 255, 1);
+      border: 1px solid @normal-color;
+      border-radius: 18px;
+      cursor: not-allowed;
+      .link {
+        color: #333;
+        font-weight: 500;
+        font-size: @font-size-base;
+      }
+      .position {
+        position: absolute;
+        top: -14px;
+        left: 22px;
+        span {
+          position: relative;
+          top: 20px;
+        }
+      }
+      .position_stu {
+        position: absolute;
+        top: -14px;
+        left: 22px;
+        display: inline-flex;
+        span {
+          position: relative;
+          top: 20px;
+        }
+        .importDis {
+          display: block;
+        }
+        .import {
+          display: none;
+        }
+        img {
+          position: relative;
+          top: 25px;
+          right: 5px;
+          bottom: 1px;
+          width: 13px;
+          height: 13px;
+        }
+      }
+      .position_peo {
+        position: absolute;
+        top: -14px;
+        left: 20px;
+        display: inline-flex;
+        i {
+          position: relative;
+          top: 18px;
+        }
+        span {
+          position: relative;
+          top: 20px;
+          right: 15px;
+          padding-left: 17px;
+        }
+        .peopleDis {
+          display: block;
+        }
+        .noClicks {
+          position: relative;
+          top: 37px;
+          left: 63px;
+        }
+        img {
+          position: relative;
+          top: 25px;
+          right: 5px;
+          bottom: 1px;
+          width: 13px;
+          height: 13px;
+        }
+      }
+    }
+  }
+  .goto {
+    display: inline-flex;
+    .line {
+      position: relative;
+      top: 30px;
+      left: 12px;
+      height: 12px;
+      border-left: 1px solid #e5e5e5;
+    }
+    .grouping {
+      color: rgba(51, 51, 51, 1);
+      font-weight: 500;
+      font-size: @font-size-base;
+      cursor: pointer;
+      .link {
+        color: #333;
+        font-weight: 500;
+        font-size: @font-size-base;
+      }
+      .position {
+        span {
+          padding-left: 4px;
+        }
+      }
+    }
+    .update_btn:hover {
+      color: #03c46b;
+      border: 1px solid #03c46b;
+      i {
+        color: #03c46b;
+      }
+      .link {
+        color: #03c46b;
+      }
+    }
+    .update_btn {
+      position: relative;
+      top: 14px;
+      width: 112px;
+      height: 36px;
+      margin-left: 10px;
+      color: #333;
+      font-weight: 500;
+      font-size: @font-size-base;
+      background: rgba(255, 255, 255, 1);
+      border: 1px solid #333;
+      border-radius: 18px;
+      cursor: pointer;
+      .link {
+        color: #333;
+        font-weight: 500;
+        font-size: @font-size-base;
+      }
+      .position {
+        position: absolute;
+        top: -14px;
+        left: 22px;
+        span {
+          position: relative;
+          top: 20px;
+        }
+      }
+      .position_stu:hover {
+        .importHover {
+          display: block;
+        }
+        .import {
+          display: none;
+        }
+      }
+      .position_stu {
+        position: absolute;
+        top: -14px;
+        left: 22px;
+        display: inline-flex;
+        span {
+          position: relative;
+          top: 20px;
+        }
+        .importHover {
+          display: none;
+        }
+        .import {
+          display: block;
+        }
+        img {
+          position: relative;
+          top: 25px;
+          right: 5px;
+          bottom: 1px;
+          width: 13px;
+          height: 13px;
+        }
+      }
+      .position_peo:hover {
+        .peopleHover {
+          display: block;
+        }
+        .people {
+          display: none;
+        }
+      }
+      .position_peo {
+        position: absolute;
+        top: -14px;
+        left: 20px;
+        display: inline-flex;
+        i {
+          position: relative;
+          top: 18px;
+        }
+        span {
+          position: relative;
+          top: 20px;
+          padding-left: 3px;
+        }
+        .peopleHover {
+          display: none;
+        }
+        .people {
+          display: block;
+        }
+        img {
+          position: relative;
+          top: 25px;
+          right: 5px;
+          bottom: 1px;
+          width: 13px;
+          height: 13px;
+        }
+      }
+    }
+  }
+}
+
+.groupingNoData {
+  margin: 120px 0;
+  overflow: hidden;
+  color: #888;
+  font-size: 16px;
+  text-align: center;
+  background: @body-background;
+  :global {
+    img {
+      display: block;
+      margin: 0 auto;
+      color: #888;
+      font-size: 66px;
+    }
+  }
+  .classImg {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+}
+
+// 班务管理-内容头部信息
+.workContent {
+  position: relative;
+  bottom: 16px;
+  .baseInfo {
+    display: flex;
+    height: 88px;
+    line-height: 88px;
+    border-bottom: 1px solid #e5e5e5;
+    .addTeacher:hover {
+      .hover {
+        display: block;
+        .pencil:hover {
+          background: #f5f5f5;
+        }
+        .trash:hover {
+          background: #f5f5f5;
+        }
+      }
+    }
+    .addTeacher {
+      display: flex;
+      width: auto;
+      cursor: pointer;
+      .hover {
+        position: relative;
+        top: 30px;
+        display: none;
+        height: 33px;
+        margin-left: 8px;
+        line-height: 33px;
+        .pencil {
+          float: left;
+          width: 33px;
+          height: 33px;
+          margin: 0 5px;
+          background: rgba(255, 255, 255, 1);
+          border: 1px solid rgba(51, 51, 51, 1);
+          border-radius: 20px;
+          img {
+            position: relative;
+            bottom: 3px;
+            left: 10px;
+            width: 13px;
+            height: 13px;
+            border-radius: 8px;
+          }
+        }
+        .trash {
+          float: right;
+          width: 33px;
+          height: 33px;
+          margin: 0 5px;
+          background: rgba(255, 255, 255, 1);
+          border: 1px solid rgba(51, 51, 51, 1);
+          border-radius: 20px;
+          img {
+            position: relative;
+            bottom: 3px;
+            left: 9px;
+            width: 13px;
+            height: 13px;
+            border-radius: 8px;
+          }
+        }
+      }
+      .header {
+        img {
+          width: 48px;
+          height: 48px;
+          border-radius: 24px;
+        }
+      }
+      .line {
+        position: relative;
+        top: 20px;
+        height: 50px;
+        margin: 0 10px;
+        border-left: 1px solid #e5e5e5;
+      }
+      .name {
+        position: relative;
+        top: 16px;
+        height: 33px;
+        padding-left: 10px;
+        line-height: 33px;
+        .admin {
+          span {
+            display: inline-block;
+            max-width: 80px;
+            overflow: hidden;
+            color: rgba(51, 51, 51, 1);
+            font-weight: 500;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            word-break: break-all;
+          }
+          img {
+            position: relative;
+            bottom: 12px;
+            left: 2px;
+            width: 11px;
+            height: 11px;
+          }
+        }
+        .subject {
+          position: relative;
+          top: 5px;
+          right: 10px;
+          display: flex;
+          div {
+            position: relative;
+            bottom: 5px;
+            left: 0;
+            width: 40px;
+            height: 20px;
+            margin-left: 10px;
+            border: 1px solid rgba(204, 204, 204, 1);
+            border-radius: 13px;
+            span {
+              position: absolute;
+              bottom: 1px;
+              left: 7px;
+              color: rgba(51, 51, 51, 1);
+              font-weight: 400;
+              font-size: @font-size-sm;
+              line-height: 17px;
+            }
+          }
+        }
+      }
+    }
+    .addNewTeacher {
+      .addBtn:hover {
+        background: #e8e8e8;
+      }
+      .addBtn {
+        position: relative;
+        top: 22px;
+        left: 10px;
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        background: rgba(245, 245, 245, 1);
+        border-radius: 24px;
+        cursor: pointer;
+        span {
+          position: absolute;
+          top: -3px;
+          left: 14px;
+          color: #333;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+  .search {
+    position: relative;
+    display: flex;
+    height: 62px;
+    line-height: 62px;
+    .search_l {
+      position: relative;
+      left: 50px;
+      flex: 1;
+      color: #333;
+      text-align: left;
+      @media only screen and (max-width: 1024px) {
+        left: 30px;
+      }
+      .cancel:hover {
+        color: #03c46b;
+        cursor: pointer;
+      }
+      .call:hover {
+        .notSubmint {
+          cursor: not-allowed;
+        }
+        .callOutHover {
+          display: block;
+          cursor: pointer;
+        }
+        .callOut {
+          display: none;
+        }
+        .callOutDis {
+          display: block;
+        }
+      }
+      .call {
+        position: relative;
+        bottom: 1px;
+        left: 15px;
+        display: inline-grid;
+        display: -ms-inline-grid;
+        display: inline-block;
+        .notSubmint {
+          color: rgba(0, 0, 0, 0.25) !important;
+          text-shadow: none;
+          background-color: #f5f5f5;
+          border-color: #d9d9d9;
+          box-shadow: none;
+          cursor: not-allowed;
+        }
+        span {
+          height: 14px;
+          line-height: 14px;
+        }
+        span:hover {
+          color: #03c46b;
+          cursor: pointer;
+        }
+        img {
+          position: absolute;
+          top: 25px;
+          right: 55px;
+          width: 13px;
+          height: 13px;
+          margin-right: 4px;
+        }
+        .callOut {
+          display: block;
+        }
+        .callOutHover {
+          display: none;
+        }
+      }
+    }
+    .search_r {
+      position: absolute;
+      right: 0;
+      display: flex;
+      flex: 4;
+      text-align: right;
+      .userName {
+        float: right;
+        margin-right: 10px;
+        :global {
+          @media only screen and (max-width: 1024px) {
+            .custom-searchbar {
+              width: 170px !important;
+            }
+          }
+          .custom-searchbar {
+            width: 350px;
+            .left-icon {
+              left: 5px;
+              width: 20px;
+              border: 0;
+            }
+            .clear {
+              top: 10px !important;
+              right: 12px !important;
+            }
+            .ant-input {
+              position: relative;
+              padding-left: 30px;
+              text-align: left;
+            }
+          }
+        }
+      }
+      .goto {
+        display: flex;
+        float: right;
+        .line {
+          position: relative;
+          top: 30px;
+          left: 12px;
+          height: 12px;
+          border-left: 1px solid #e5e5e5;
+        }
+        .grouping {
+          color: rgba(51, 51, 51, 1);
+          font-weight: 500;
+          font-size: @font-size-base;
+          cursor: pointer;
+          .link {
+            color: #333;
+            font-weight: 500;
+            font-size: @font-size-base;
+          }
+          .position {
+            span {
+              padding-left: 4px;
+            }
+          }
+        }
+        .notSubmint {
+          position: relative;
+          top: 16px;
+          width: 112px;
+          height: 36px;
+          margin-left: 15px;
+          color: rgba(0, 0, 0, 0.25);
+          font-weight: 500;
+          font-size: @font-size-base;
+          text-shadow: none;
+          background: rgba(255, 255, 255, 1);
+          background-color: #f5f5f5;
+          border: 1px solid rgba(51, 51, 51, 1);
+          border-color: @normal-color;
+          border-radius: 18px;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          .position {
+            position: absolute;
+            top: -14px;
+            left: 22px;
+          }
+          .position_stu:hover {
+            .importHover {
+              display: none;
+            }
+            .import {
+              display: block;
+            }
+          }
+          .position_stu {
+            position: absolute;
+            top: -14px;
+            left: 22px;
+            display: inline-flex;
+            .importHover {
+              display: none;
+            }
+            .import {
+              display: block;
+            }
+            img {
+              position: relative;
+              top: 25px;
+              right: 5px;
+              bottom: 1px;
+              width: 13px;
+              height: 13px;
+            }
+          }
+          .position_peo {
+            position: absolute;
+            top: -14px;
+            left: 22px;
+            display: inline-flex;
+            .peopleHover {
+              display: none;
+            }
+            .people {
+              display: block;
+            }
+            img {
+              position: relative;
+              top: 25px;
+              right: 5px;
+              bottom: 1px;
+              width: 13px;
+              height: 13px;
+            }
+          }
+        }
+        .notSubmint:hover {
+          cursor: not-allowed;
+        }
+        .update_btn:hover {
+          color: #03c46b;
+          border: 1px solid #03c46b;
+          i {
+            color: #03c46b;
+          }
+          .link {
+            color: #03c46b;
+          }
+        }
+        .update_btn {
+          position: relative;
+          top: 14px;
+          width: 108px;
+          height: 36px;
+          margin-left: 10px;
+          color: rgba(51, 51, 51, 1);
+          font-weight: 500;
+          font-size: @font-size-base;
+          background: rgba(255, 255, 255, 1);
+          border: 1px solid rgba(51, 51, 51, 1);
+          border-radius: 18px;
+          cursor: pointer;
+          .link {
+            color: #333;
+            font-weight: 500;
+            font-size: @font-size-base;
+          }
+          .position {
+            position: absolute;
+            top: -14px;
+            left: 22px;
+          }
+          .position_stu:hover {
+            .importHover {
+              display: block;
+            }
+            .import {
+              display: none;
+            }
+          }
+          .position_stu {
+            position: absolute;
+            top: -14px;
+            left: 22px;
+            display: inline-flex;
+            .importHover {
+              display: none;
+            }
+            .import {
+              display: block;
+            }
+            img {
+              position: relative;
+              top: 25px;
+              right: 5px;
+              bottom: 1px;
+              width: 13px;
+              height: 13px;
+            }
+          }
+          .position_peo:hover {
+            .peopleHover {
+              display: block;
+            }
+            .people {
+              display: none;
+            }
+          }
+          .position_peo {
+            position: absolute;
+            top: -14px;
+            left: 22px;
+            display: inline-flex;
+            .peopleHover {
+              display: none;
+            }
+            .people {
+              display: block;
+            }
+            img {
+              position: relative;
+              top: 25px;
+              right: 5px;
+              bottom: 1px;
+              width: 13px;
+              height: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 添加学生弹框组件
+.addStudentModal {
+  :global {
+    .ant-modal-body {
+      padding: 30px;
+    }
+    .ant-form-item {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+  .item {
+    display: flex;
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e5e5;
+    .clearfix {
+      width: 80%;
+    }
+    span.itemTitle {
+      width: 95px;
+      padding-right: 30px;
+      color: #333;
+      font-size: @font-size-base;
+      line-height: 32px;
+      i {
+        color: #ff6e4a;
+        vertical-align: middle;
+      }
+    }
+    :global {
+      .ant-select-selection--single {
+        width: 180px;
+        margin-left: -11px;
+        border: 0;
+      }
+      .ant-radio-group {
+        position: relative;
+        top: 6px;
+      }
+    }
+    textarea.ant-input {
+      width: 200px;
+      &:focus {
+        border: 0;
+        outline: none;
+      }
+    }
+    input,
+    textarea {
+      width: 200px;
+      padding: 4px 0;
+      line-height: 25px;
+      border: 0;
+      outline: none;
+    }
+    .upload-box {
+      width: 100px;
+      height: 100px;
+      opacity: 0;
+    }
+  }
+  .theSame {
+    height: auto;
+    max-height: 126px;
+    padding: 10px;
+    overflow: hidden;
+    overflow-y: inherit;
+    background: #fff8e6;
+    border: 1px solid #fff8e6;
+    border-radius: 4px;
+
+    &::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    &::-ms-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    &::-moz-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+      width: 8px;
+      background: #ccc;
+      border: 1px solid #c4c4c4;
+      border-radius: 8px;
+    }
+    &::-ms-scrollbar-thumb {
+      width: 8px;
+      background: #ccc;
+      border: 1px solid #c4c4c4;
+      border-radius: 8px;
+    }
+    &::-moz-scrollbar-thumb {
+      width: 8px;
+      background: #ccc;
+      border: 1px solid #c4c4c4;
+      border-radius: 8px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background: #bcbcbc;
+      -webkit-transition: all 2s;
+      transition: all 2s;
+    }
+    &::-ms-scrollbar-thumb:hover {
+      background: #bcbcbc;
+      -webkit-transition: all 2s;
+      transition: all 2s;
+    }
+    &::-moz-scrollbar-thumb:hover {
+      background: #bcbcbc;
+      -webkit-transition: all 2s;
+      transition: all 2s;
+    }
+    &::-webkit-scrollbar-track {
+      background: #f3f3f3;
+      border-radius: 8px;
+    }
+    &::-ms-scrollbar-track {
+      background: #f3f3f3;
+      border-radius: 8px;
+    }
+    &::-moz-scrollbar-track {
+      background: #f3f3f3;
+      border-radius: 8px;
+    }
+    .itemTitle {
+      color: rgba(51, 51, 51, 1);
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 18px;
+    }
+    .itemTitle2 {
+      color: rgba(255, 110, 74, 1);
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 18px;
+    }
+    .itemTitle3 {
+      color: rgba(51, 51, 51, 1);
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 18px;
+    }
+    .clzss {
+      display: inline-block;
+      padding-right: 6px;
+      div {
+        display: flex;
+        width: 115px;
+        height: 32px;
+        margin-top: 6px;
+        line-height: 32px;
+        text-align: center;
+        background: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(204, 204, 204, 1);
+        border-radius: 16px;
+        .name {
+          display: block;
+          max-width: 60px;
+          padding: 0 5px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        img {
+          position: relative;
+          top: 3px;
+          left: 3px;
+          width: 24px;
+          height: 24px;
+          border-radius: 16px;
+        }
+      }
+    }
+  }
+}
+
+// 添加老师弹框
+.addTeacherModal {
+  :global {
+    .ant-btn-primary-disabled,
+    .ant-btn-primary.disabled,
+    .ant-btn-primary[disabled],
+    .ant-btn-primary-disabled:hover,
+    .ant-btn-primary.disabled:hover,
+    .ant-btn-primary[disabled]:hover,
+    .ant-btn-primary-disabled:focus,
+    .ant-btn-primary.disabled:focus,
+    .ant-btn-primary[disabled]:focus,
+    .ant-btn-primary-disabled:active,
+    .ant-btn-primary.disabled:active,
+    .ant-btn-primary[disabled]:active,
+    .ant-btn-primary-disabled.active,
+    .ant-btn-primary.disabled.active,
+    .ant-btn-primary[disabled].active {
+      color: rgba(0, 0, 0, 0.25);
+      text-shadow: none;
+      background-color: #f5f5f5;
+      border-color: #d9d9d9;
+      box-shadow: none;
+    }
+    .custom-searchbar .ant-input {
+      padding-right: 60px !important;
+    }
+    .custom-searchbar .Search {
+      position: relative;
+      margin-right: 0;
+      margin-left: 0;
+    }
+    .ant-modal-body {
+      padding: 30px;
+    }
+    .ant-form-item {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .ant-list-grid .ant-list-item {
+      margin-bottom: 0;
+    }
+  }
+
+  .scrollings {
+    position: relative;
+    height: auto;
+    max-height: 300px;
+    overflow: hidden;
+    overflow-y: inherit;
+    &::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    &::-ms-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    &::-moz-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+      width: 8px;
+      background: #ccc;
+      border: 1px solid #c4c4c4;
+      border-radius: 8px;
+    }
+    &::-ms-scrollbar-thumb {
+      width: 8px;
+      background: #ccc;
+      border: 1px solid #c4c4c4;
+      border-radius: 8px;
+    }
+    &::-moz-scrollbar-thumb {
+      width: 8px;
+      background: #ccc;
+      border: 1px solid #c4c4c4;
+      border-radius: 8px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background: #bcbcbc;
+      -webkit-transition: all 2s;
+      transition: all 2s;
+    }
+    &::-ms-scrollbar-thumb:hover {
+      background: #bcbcbc;
+      -webkit-transition: all 2s;
+      transition: all 2s;
+    }
+    &::-moz-scrollbar-thumb:hover {
+      background: #bcbcbc;
+      -webkit-transition: all 2s;
+      transition: all 2s;
+    }
+    &::-webkit-scrollbar-track {
+      background: #f3f3f3;
+      border-radius: 8px;
+    }
+    &::-ms-scrollbar-track {
+      background: #f3f3f3;
+      border-radius: 8px;
+    }
+    &::-moz-scrollbar-track {
+      background: #f3f3f3;
+      border-radius: 8px;
+    }
+  }
+  .item {
+    display: flex;
+    padding: 6px 0;
+    // border-bottom: 1px solid #e5e5e5;
+    .clearfix {
+      width: 80%;
+    }
+    span.itemTitle {
+      width: auto;
+      padding-right: 30px;
+      color: #333;
+      font-size: @font-size-base;
+      i {
+        color: #ff6e4a;
+        vertical-align: middle;
+      }
+    }
+    :global {
+      .ant-input-affix-wrapper .ant-input-suffix {
+        right: 0 !important;
+      }
+      .custom-searchbar .Search .clear {
+        right: 40px;
+      }
+      input.ant-input {
+        width: 440px;
+        &:focus {
+          border: 0;
+          outline: none;
+        }
+      }
+      .ant-select-selection--single {
+        width: 180px;
+        margin-left: -11px;
+        border: 0;
+      }
+      .ant-radio-group {
+        position: relative;
+        top: 0;
+      }
+    }
+  }
+  .clzss {
+    display: inline-block;
+    // margin: 0 10px;
+    .active {
+      display: flex;
+      width: 135px;
+      height: 40px;
+      margin: 10px 0;
+      line-height: 40px;
+      background: rgba(3, 196, 107, 0.1);
+      border: 1px solid rgba(3, 196, 107, 1);
+      border-radius: 20px;
+      cursor: pointer;
+      div:nth-child(1) {
+        flex: 1;
+        img {
+          position: relative;
+          bottom: 2px;
+          left: 10px;
+          width: 24px;
+          height: 24px;
+          border-radius: 16px;
+        }
+      }
+      div:nth-child(2) {
+        flex: 2;
+        height: 22px;
+        line-height: 22px;
+        .name {
+          display: inline-block;
+          width: auto;
+          max-width: 60px;
+          height: 17px;
+          padding-top: 2px;
+          overflow: hidden;
+          color: #333;
+          font-weight: 400;
+          line-height: 17px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        .phone {
+          color: rgba(136, 136, 136, 1);
+          font-weight: 400;
+          font-size: @font-size-sm;
+          line-height: 13px;
+        }
+      }
+    }
+    .region:hover {
+      background: rgba(223, 255, 240, 1) !important;
+      border: 1px solid rgba(223, 255, 240, 1);
+      cursor: pointer;
+    }
+    .region {
+      display: flex;
+      width: 135px;
+      height: 40px;
+      margin: 10px 0;
+      line-height: 40px;
+      background: rgba(245, 245, 245, 1);
+      border: 1px solid rgba(245, 245, 245, 1);
+      border-radius: 20px;
+      div:nth-child(1) {
+        flex: 1;
+        img {
+          position: relative;
+          bottom: 2px;
+          left: 10px;
+          width: 24px;
+          height: 24px;
+          border-radius: 16px;
+        }
+      }
+      div:nth-child(2) {
+        flex: 2;
+        height: 22px;
+        line-height: 22px;
+        .name {
+          display: inline-block;
+          width: auto;
+          max-width: 60px;
+          height: 17px;
+          padding-top: 2px;
+          overflow: hidden;
+          color: #333;
+          font-weight: 400;
+          line-height: 17px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        .phone {
+          color: rgba(136, 136, 136, 1);
+          font-weight: 400;
+          font-size: @font-size-sm;
+          line-height: 13px;
+        }
+      }
+    }
+  }
+
+  // 行政班空数据的情况下
+  .teacherNoData {
+    padding: 24px 0;
+    overflow: hidden;
+    color: rgba(136, 136, 136, 1);
+    font-weight: 400;
+    font-size: @font-size-base;
+    line-height: 20px;
+    text-align: center;
+    background: @body-background;
+    :global {
+      img {
+        display: block;
+        margin: 0 auto;
+        color: #888;
+        font-size: 66px;
+      }
+    }
+    .classImg {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+// 已经绑定学生弹框组件
+.boundEditorStudentModal {
+  :global {
+    .ant-modal-body {
+      padding: 30px;
+    }
+    .ant-form-item {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+  .seeItem {
+    display: flex;
+    height: 34px;
+    line-height: 34px;
+    background: rgba(245, 245, 245, 1);
+    border-radius: 5px;
+    span:nth-child(1) {
+      padding: 0 30px 0 10px;
+    }
+  }
+  .sexItem {
+    display: flex;
+    height: 34px;
+    margin-top: 22px;
+    line-height: 34px;
+    background: rgba(245, 245, 245, 1);
+    border-radius: 5px;
+    span:nth-child(1) {
+      padding: 0 30px 0 10px;
+    }
+  }
+  .item {
+    display: flex;
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e5e5;
+    .clearfix {
+      width: 80%;
+    }
+    span.itemTitle {
+      width: 95px;
+      padding-right: 30px;
+      color: #333;
+      font-size: @font-size-base;
+      line-height: 32px;
+      i {
+        color: #ff6e4a;
+        vertical-align: middle;
+      }
+    }
+    :global {
+      .ant-select-selection--single {
+        width: 180px;
+        margin-left: -11px;
+        border: 0;
+      }
+      .ant-radio-group {
+        position: relative;
+        top: 6px;
+      }
+    }
+    textarea.ant-input {
+      width: 200px;
+      &:focus {
+        border: 0;
+        outline: none;
+      }
+    }
+    input,
+    textarea {
+      width: 200px;
+      padding: 4px 0;
+      line-height: 25px;
+      border: 0;
+      outline: none;
+    }
+    .upload-box {
+      width: 100px;
+      height: 100px;
+      opacity: 0;
+    }
+  }
+}
+
+// 取消标记弹框组件
+.cancelMarkModal {
+  .prompts {
+    height: 34px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    line-height: 34px;
+    background: rgba(255, 241, 237, 1);
+    border-radius: 5px;
+    i {
+      color: rgba(255, 110, 74, 1);
+      font-weight: 400;
+      font-size: 13px;
+    }
+    span {
+      color: rgba(255, 110, 74, 1);
+      font-weight: 400;
+      font-size: 13px;
+    }
+  }
+  :global {
+    .ant-modal-body {
+      padding: 30px;
+    }
+    .ant-form-item {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+  .seeItem {
+    display: flex;
+    height: 34px;
+    line-height: 34px;
+    background: rgba(245, 245, 245, 1);
+    border-radius: 5px;
+    span:nth-child(1) {
+      padding: 0 30px 0 10px;
+    }
+  }
+  .sexItem {
+    display: flex;
+    height: 34px;
+    margin-top: 22px;
+    line-height: 34px;
+    background: rgba(245, 245, 245, 1);
+    border-radius: 5px;
+    span:nth-child(1) {
+      padding: 0 30px 0 10px;
+    }
+  }
+  .item {
+    display: flex;
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e5e5;
+    .clearfix {
+      width: 80%;
+    }
+    span.itemTitle {
+      width: auto;
+      padding-right: 30px;
+      color: #333;
+      font-size: @font-size-base;
+      line-height: 32px;
+      i {
+        color: #ff6e4a;
+        vertical-align: middle;
+      }
+    }
+    :global {
+      .ant-select-selection--single {
+        width: 180px;
+        margin-left: -11px;
+        border: 0;
+      }
+      .ant-radio-group {
+        position: relative;
+        top: 6px;
+      }
+    }
+    textarea.ant-input {
+      width: 200px;
+      &:focus {
+        border: 0;
+        outline: none;
+      }
+    }
+    input,
+    textarea {
+      width: 200px;
+      padding: 4px 0;
+      line-height: 25px;
+      border: 0;
+      outline: none;
+    }
+    .upload-box {
+      width: 100px;
+      height: 100px;
+      opacity: 0;
+    }
+  }
+}
+
+// 删除学生弹框组件
+.delTeacherModal {
+  :global {
+    .ant-modal-body {
+      padding: 30px !important;
+    }
+    .ant-form-item {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .ant-modal-footer > div > button:last-child {
+      background: rgba(255, 110, 74, 1);
+      border-color: rgba(255, 110, 74, 1);
+      border-radius: 18px;
+      box-shadow: 0 2px 5px 0 rgba(255, 110, 74, 0.5);
+    }
+  }
+  .tipsInfo {
+    span {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+    }
+    span:nth-child(1) {
+      color: rgba(51, 51, 51, 1);
+    }
+    span:nth-child(2) {
+      color: #03c46b;
+    }
+    span:nth-child(3) {
+      color: rgba(51, 51, 51, 1);
+    }
+  }
+}
+
+// 申请退学组件
+.dropOutSchoolModal {
+  :global {
+    .ant-modal-body {
+      padding: 30px;
+    }
+    .ant-form-item {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .ant-modal-footer > div > button:last-child {
+      background: rgba(255, 110, 74, 1);
+      border-color: rgba(255, 110, 74, 1);
+      border-radius: 18px;
+      box-shadow: 0 2px 5px 0 rgba(255, 110, 74, 0.5);
+    }
+    .ant-select-selection--single {
+      width: 240px !important;
+    }
+  }
+  .item {
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e5e5;
+    .clearfix {
+      width: 80%;
+    }
+    .student {
+      display: flex;
+      height: 54px;
+      margin: 5px 0;
+      padding: 0 10px;
+      color: rgba(51, 51, 51, 1);
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 54px;
+      background: rgba(255, 248, 230, 1);
+      border-radius: 5px;
+      .img {
+        position: relative;
+        top: 10px;
+        width: auto;
+        height: 32px;
+        margin: 0 10px;
+        background: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(204, 204, 204, 1);
+        border-radius: 16px;
+        .position {
+          position: relative;
+          bottom: 12px;
+          margin: 0 6px;
+          img {
+            width: 24px;
+            height: 24px;
+            border-radius: 12px;
+          }
+          span {
+            color: rgba(51, 51, 51, 1);
+            font-weight: 500;
+            font-size: @font-size-base;
+            line-height: 20px;
+          }
+          span:nth-child(1) {
+            margin: 0 4px;
+          }
+        }
+      }
+    }
+    span.itemTitle {
+      width: 95px;
+      padding-right: 30px;
+      color: #333;
+      font-size: @font-size-base;
+      line-height: 32px;
+      i {
+        color: #ff6e4a;
+        vertical-align: middle;
+      }
+    }
+    :global {
+      .ant-select-selection--single {
+        width: 180px;
+        margin-left: -11px;
+        border: 0;
+      }
+      .ant-radio-group {
+        position: relative;
+        top: 6px;
+      }
+    }
+    textarea.ant-input {
+      width: 200px;
+      &:focus {
+        border: 0;
+        outline: none;
+      }
+    }
+    input,
+    textarea {
+      width: 200px;
+      padding: 4px 0;
+      line-height: 25px;
+      border: 0;
+      outline: none;
+    }
+  }
+}
+
+// 设置别名弹框组件
+.editAliasesModal {
+  :global {
+    .ant-modal-body {
+      padding: 30px;
+    }
+    .ant-form-item {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+  .item {
+    display: flex;
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e5e5;
+    .clearfix {
+      width: 80%;
+    }
+    span.itemTitle {
+      width: 96px;
+      padding-right: 30px;
+      color: #333;
+      font-size: @font-size-base;
+      line-height: 32px;
+      i {
+        color: #ff6e4a;
+        vertical-align: middle;
+      }
+    }
+    textarea.ant-input {
+      width: 200px;
+      &:focus {
+        border: 0;
+        outline: none;
+      }
+    }
+    input,
+    textarea {
+      width: 200px;
+      padding: 4px 0;
+      overflow: hidden;
+      line-height: 25px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      border: 0;
+      outline: none;
+    }
+    :global {
+      .ant-select-selection--single {
+        width: 180px;
+        margin-left: -11px;
+        border: 0;
+      }
+    }
+  }
+}
+
+// 更新学生弹框组件
+.editorStudentModal,
+.editorContinueStudentModal {
+  :global {
+    .ant-modal-body {
+      padding: 30px;
+    }
+    .ant-form-item {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+  .item {
+    display: flex;
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e5e5;
+    .clearfix {
+      width: 80%;
+    }
+    span.itemTitle {
+      width: 95px;
+      padding-right: 30px;
+      color: #333;
+      font-size: @font-size-base;
+      line-height: 32px;
+      i {
+        color: #ff6e4a;
+        vertical-align: middle;
+      }
+    }
+    :global {
+      .ant-select-selection--single {
+        width: 180px;
+        margin-left: -11px;
+        border: 0;
+      }
+      .ant-radio-group {
+        position: relative;
+        top: 6px;
+      }
+    }
+    textarea.ant-input {
+      width: 200px;
+      &:focus {
+        border: 0;
+        outline: none;
+      }
+    }
+    input,
+    textarea {
+      width: 200px;
+      padding: 4px 0;
+      line-height: 25px;
+      border: 0;
+      outline: none;
+    }
+    .upload-box {
+      width: 100px;
+      height: 100px;
+      opacity: 0;
+    }
+  }
+  .theSame {
+    height: auto;
+    max-height: 126px;
+    margin-top: 14px;
+    padding: 10px;
+    overflow: hidden;
+    overflow-y: inherit;
+    background: #fff8e6;
+    border: 1px solid #fff8e6;
+    border-radius: 4px;
+
+    &::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    &::-ms-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    &::-moz-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+      width: 8px;
+      background: #ccc;
+      border: 1px solid #c4c4c4;
+      border-radius: 8px;
+    }
+    &::-ms-scrollbar-thumb {
+      width: 8px;
+      background: #ccc;
+      border: 1px solid #c4c4c4;
+      border-radius: 8px;
+    }
+    &::-moz-scrollbar-thumb {
+      width: 8px;
+      background: #ccc;
+      border: 1px solid #c4c4c4;
+      border-radius: 8px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background: #bcbcbc;
+      -webkit-transition: all 2s;
+      transition: all 2s;
+    }
+    &::-ms-scrollbar-thumb:hover {
+      background: #bcbcbc;
+      -webkit-transition: all 2s;
+      transition: all 2s;
+    }
+    &::-moz-scrollbar-thumb:hover {
+      background: #bcbcbc;
+      -webkit-transition: all 2s;
+      transition: all 2s;
+    }
+    &::-webkit-scrollbar-track {
+      background: #f3f3f3;
+      border-radius: 8px;
+    }
+    &::-ms-scrollbar-track {
+      background: #f3f3f3;
+      border-radius: 8px;
+    }
+    &::-moz-scrollbar-track {
+      background: #f3f3f3;
+      border-radius: 8px;
+    }
+    .itemTitle {
+      color: rgba(51, 51, 51, 1);
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 18px;
+    }
+    .itemTitle2 {
+      color: rgba(255, 110, 74, 1);
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 18px;
+    }
+    .itemTitle3 {
+      color: rgba(51, 51, 51, 1);
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 18px;
+    }
+    .clzss {
+      float: left;
+      padding-right: 6px;
+      div {
+        display: flex;
+        width: 115px;
+        height: 32px;
+        margin-top: 6px;
+        line-height: 32px;
+        text-align: center;
+        background: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(204, 204, 204, 1);
+        border-radius: 16px;
+        .name {
+          display: block;
+          max-width: 60px;
+          padding: 0 5px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        img {
+          position: relative;
+          top: 3px;
+          left: 3px;
+          width: 24px;
+          height: 24px;
+          border-radius: 16px;
+        }
+      }
+    }
+  }
+}
+.editorContinueStudentModal {
+  .theSame {
+    :global {
+      .icon-tip {
+        color: #ff6e4a;
+      }
+    }
+  }
+  :global {
+    .ant-modal-body {
+      padding-bottom: 0 !important;
+    }
+    .ant-modal-footer div {
+      width: 400px;
+      padding-right: 10px;
+      padding-bottom: 20px;
+      background: #fff8e6;
+    }
+    .ant-modal-footer > div > button:last-child {
+      background: rgba(255, 110, 74, 1);
+      border: 0;
+      box-shadow: 0 2px 5px 0 rgba(255, 110, 74, 0.5);
+    }
+  }
+}
+
+// 编辑老师弹框组件
+.editorTeacherModal {
+  :global {
+    .ant-modal-body {
+      padding: 30px;
+    }
+    .ant-form-item {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      label {
+        top: 4px;
+      }
+    }
+  }
+  .seeItem {
+    display: flex;
+    height: 34px;
+    line-height: 34px;
+    background: rgba(245, 245, 245, 1);
+    border-radius: 5px;
+    span:nth-child(1) {
+      display: inline-block;
+      width: 80px;
+      padding: 0 30px 0 10px;
+    }
+  }
+  .item {
+    display: flex;
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e5e5;
+    .clearfix {
+      width: 80%;
+    }
+    span.itemTitle {
+      width: 80px;
+      padding-left: 10px;
+      color: #333;
+      font-size: @font-size-base;
+      line-height: 32px;
+      i {
+        color: #ff6e4a;
+        vertical-align: middle;
+      }
+    }
+    :global {
+      .ant-select-selection--single {
+        width: 180px;
+        margin-left: -11px;
+        border: 0;
+      }
+      .ant-radio-group {
+        position: relative;
+        top: 6px;
+      }
+    }
+    textarea.ant-input {
+      width: 200px;
+      &:focus {
+        border: 0;
+        outline: none;
+      }
+    }
+    input,
+    textarea {
+      width: 200px;
+      padding: 4px 0;
+      line-height: 25px;
+      border: 0;
+      outline: none;
+    }
+  }
+}
+
+//导入学生
+.studentAvatar {
+  :global {
+    .ant-avatar {
+      width: 24px;
+      height: 24px;
+      margin-top: 4px;
+      margin-left: 4px;
+    }
+  }
+  .studentAvatar {
+    display: flex;
+    width: 120px;
+    height: 32px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: left;
+    background: @body-background;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    cursor: pointer;
+    &:hover {
+      background-color: #dffff0;
+    }
+  }
+  .classNum {
+    color: rgba(51, 51, 51, 1);
+    font-weight: 500;
+    font-size: @font-size-base;
+    line-height: 30px;
+  }
+  .userName {
+    width: 60px;
+    overflow: hidden;
+    color: rgba(51, 51, 51, 1);
+    font-weight: 500;
+    font-size: @font-size-base;
+    line-height: 30px;
+    white-space: nowrap;
+    text-align: center;
+    text-overflow: ellipsis;
+  }
+  .selected {
+    background-color: rgba(3, 196, 107, 0.1);
+    border-color: #03c46b;
+  }
+}
+
+// 调入学生弹框组件
+.transferStudentsModal {
+  :global {
+    .ant-modal-body {
+      display: flex;
+      padding: 20px 0 20px 30px !important;
+      background: @body-background;
+    }
+    .ant-btn-primary-disabled,
+    .ant-btn-primary.disabled,
+    .ant-btn-primary[disabled],
+    .ant-btn-primary-disabled:hover,
+    .ant-btn-primary.disabled:hover,
+    .ant-btn-primary[disabled]:hover,
+    .ant-btn-primary-disabled:focus,
+    .ant-btn-primary.disabled:focus,
+    .ant-btn-primary[disabled]:focus,
+    .ant-btn-primary-disabled:active,
+    .ant-btn-primary.disabled:active,
+    .ant-btn-primary[disabled]:active,
+    .ant-btn-primary-disabled.active,
+    .ant-btn-primary.disabled.active,
+    .ant-btn-primary[disabled].active {
+      color: rgba(0, 0, 0, 0.25);
+      text-shadow: none;
+      background-color: #f5f5f5;
+      border-color: @normal-color;
+      box-shadow: none;
+    }
+    .ant-collapse-content > .ant-collapse-content-box {
+      padding: 10px 0;
+    }
+    .ant-collapse-item {
+      margin-bottom: 10px;
+      background: #f5f5f5;
+    }
+    .ant-collapse > .ant-collapse-item {
+      border: 0;
+    }
+    .ant-collapse > .ant-collapse-item-active > .ant-collapse-header {
+      background: rgba(230, 249, 240, 1);
+      border-radius: 4px;
+      .current,
+      i {
+        color: #03c46b;
+      }
+    }
+    .ant-collapse > .ant-collapse-item > .ant-collapse-header {
+      padding: 0 0 0 40px;
+      color: rgba(0, 0, 0, 0.85);
+      line-height: 33px;
+    }
+    .ant-collapse-content,
+    .ant-collapse {
+      background: @body-background;
+      border: 0;
+    }
+    .ant-modal-title {
+      color: rgba(51, 51, 51, 1);
+      font-weight: 500;
+      font-size: 16px;
+    }
+    .custom-searchbar .Search {
+      margin: 0;
+    }
+    .custom-searchbar .ant-input {
+      border-top: 0;
+      border-right: 0;
+      border-left: 0;
+      border-radius: 0;
+    }
+  }
+  // 调入学生
+  .itemModal {
+    float: left;
+    width: 520px;
+    height: 452px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(229, 229, 229, 1);
+    border-radius: 4px;
+    .promptInfo {
+      position: relative;
+      top: 0;
+      color: rgba(136, 136, 136, 1);
+      font-weight: 400;
+      font-size: 13px;
+
+      i {
+        position: relative;
+        top: 1px;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: rgba(255, 236, 189, 1);
+        border: 1px solid rgba(255, 180, 0, 1);
+        border-radius: 10px;
+      }
+    }
+    .students {
+      width: 518px;
+      height: 420px;
+      max-height: 420px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      overflow: hidden;
+      .nostudent {
+        padding-top: 100px;
+      }
+    }
+    :global {
+      .ant-list {
+        width: 500px;
+        height: 410px;
+        max-height: 410px;
+        padding-right: 17px;
+        padding-bottom: 10px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        &::-webkit-scrollbar {
+          width: 8px;
+          height: 8px;
+        }
+        &::-ms-scrollbar {
+          width: 8px;
+          height: 8px;
+        }
+        &::-moz-scrollbar {
+          width: 8px;
+          height: 8px;
+        }
+        &::-webkit-scrollbar-thumb {
+          width: 8px;
+          background: #ccc;
+          border: 1px solid #c4c4c4;
+          border-radius: 8px;
+        }
+        &::-ms-scrollbar-thumb {
+          width: 8px;
+          background: #ccc;
+          border: 1px solid #c4c4c4;
+          border-radius: 8px;
+        }
+        &::-moz-scrollbar-thumb {
+          width: 8px;
+          background: #ccc;
+          border: 1px solid #c4c4c4;
+          border-radius: 8px;
+        }
+        &::-webkit-scrollbar-thumb:hover {
+          background: #bcbcbc;
+          -webkit-transition: all 2s;
+          transition: all 2s;
+        }
+        &::-ms-scrollbar-thumb:hover {
+          background: #bcbcbc;
+          -webkit-transition: all 2s;
+          transition: all 2s;
+        }
+        &::-moz-scrollbar-thumb:hover {
+          background: #bcbcbc;
+          -webkit-transition: all 2s;
+          transition: all 2s;
+        }
+        &::-webkit-scrollbar-track {
+          background: #f3f3f3;
+          border-radius: 8px;
+        }
+        &::-ms-scrollbar-track {
+          background: #f3f3f3;
+          border-radius: 8px;
+        }
+        &::-moz-scrollbar-track {
+          background: #f3f3f3;
+          border-radius: 8px;
+        }
+      }
+      .ant-list-split .ant-list-item {
+        width: 150px;
+        height: 32px;
+        margin-top: 10px;
+        margin-bottom: 0;
+        background: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(204, 204, 204, 1);
+        border-radius: 16px;
+        cursor: pointer;
+        .antd-pro-components-student-tip-index-studentTip {
+          width: auto;
+          height: 27px;
+          margin-top: 0;
+          margin-bottom: 0;
+          line-height: 27px;
+          cursor: pointer;
+        }
+        img {
+          width: 24px;
+          height: 24px;
+          margin: 0 4px;
+          border-radius: 24px;
+        }
+      }
+      .custom-searchbar {
+        .left-icon {
+          left: 5px;
+          width: 20px;
+          border: 0;
+        }
+        .clear {
+          right: 12px !important;
+        }
+        .ant-input {
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+  .classList {
+    position: relative;
+    float: left;
+    width: 400px;
+    height: 450px;
+    overflow: hidden;
+    overflow-y: visible;
+    &::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    &::-ms-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    &::-moz-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+      width: 8px;
+      background: #ccc;
+      border: 1px solid #c4c4c4;
+      border-radius: 8px;
+    }
+    &::-ms-scrollbar-thumb {
+      width: 8px;
+      background: #ccc;
+      border: 1px solid #c4c4c4;
+      border-radius: 8px;
+    }
+    &::-moz-scrollbar-thumb {
+      width: 8px;
+      background: #ccc;
+      border: 1px solid #c4c4c4;
+      border-radius: 8px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background: #bcbcbc;
+      -webkit-transition: all 2s;
+      transition: all 2s;
+    }
+    &::-ms-scrollbar-thumb:hover {
+      background: #bcbcbc;
+      -webkit-transition: all 2s;
+      transition: all 2s;
+    }
+    &::-moz-scrollbar-thumb:hover {
+      background: #bcbcbc;
+      -webkit-transition: all 2s;
+      transition: all 2s;
+    }
+    &::-webkit-scrollbar-track {
+      background: #f3f3f3;
+      border-radius: 8px;
+    }
+    &::-ms-scrollbar-track {
+      background: #f3f3f3;
+      border-radius: 8px;
+    }
+    &::-moz-scrollbar-track {
+      background: #f3f3f3;
+      border-radius: 8px;
+    }
+    .naturalDetail {
+      :global {
+        .ant-list-item {
+          position: relative;
+          display: inline-block;
+          width: 126px;
+          height: 60px;
+          margin-bottom: 10px;
+          padding: 10px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          background: rgba(255, 255, 255, 1);
+          border: 1px solid rgba(229, 229, 229, 1) !important;
+          border-radius: 8px;
+          cursor: pointer;
+        }
+      }
+      .checkedNatural {
+        color: #03c46b;
+        background: rgba(230, 249, 240, 1) !important;
+        border: 1px solid rgba(3, 196, 107, 0.3) !important;
+        border-radius: 8px;
+      }
+      .counts {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        height: 16px;
+        padding: 0 5px;
+        color: rgba(255, 255, 255, 1);
+        font-weight: 400;
+        font-size: @font-size-sm;
+        line-height: 16px;
+        background: rgba(3, 196, 107, 1);
+        border-radius: 8px;
+      }
+      .teacherInfo {
+        width: 90px;
+        overflow: hidden;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 14px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        word-break: break-all;
+        span {
+          display: block;
+          width: 90px;
+          padding-bottom: 10px;
+          overflow: hidden;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 14px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          word-break: break-all;
+        }
+      }
+    }
+  }
+  .region {
+    height: 500px;
+    .exhibition {
+      float: left;
+      width: 430px;
+      height: 472px;
+      border: 1px solid rgba(229, 229, 229, 1);
+      .grade {
+        position: relative;
+        height: 34px;
+        line-height: 34px;
+        background: #e6f9f0;
+        border-radius: 4px;
+        cursor: pointer;
+        .gradeTitle {
+          img {
+            width: 10px;
+            height: 10px;
+            margin: 0 10px;
+          }
+        }
+        div:nth-child(1) {
+          position: absolute;
+          left: 10px;
+          color: rgba(3, 196, 107, 1);
+          font-weight: 500;
+          font-size: @font-size-base;
+        }
+        div:nth-child(2) {
+          position: absolute;
+          right: 10px;
+        }
+      }
+      .class {
+        margin: 5px 0;
+        :global {
+          .ant-row {
+            text-align: center;
+            text-align: -webkit-center;
+            text-align: -moz-center;
+          }
+        }
+        .classInfo {
+          width: 130px;
+          height: 60px;
+          margin: 5px 0;
+          text-align: left;
+          background: rgba(255, 255, 255, 1);
+          border: 1px solid rgba(229, 229, 229, 1);
+          border-radius: 8px;
+          .circular {
+            position: relative;
+            left: 105px;
+            display: inline-block;
+            width: auto;
+            min-width: 18px;
+            height: 18px;
+            line-height: 18px;
+            background: #03c46b;
+            border-radius: 8px;
+            span {
+              position: relative;
+              left: 2px;
+              color: @white;
+              font-size: @font-size-sm;
+            }
+          }
+          .className {
+            position: relative;
+            top: 8px;
+          }
+          .teacher {
+            position: relative;
+            top: 10px;
+            margin-left: 10px;
+            color: rgba(136, 136, 136, 1);
+            font-weight: 400;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+    .query {
+      float: right;
+      width: 500px;
+      .queryList {
+        height: 472px;
+        background: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(229, 229, 229, 1);
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+// 批量更新学号弹框组件
+.updateNumberModal {
+  :global {
+    .ant-table-thead > tr:first-child > th:last-child {
+      color: #ff6e4a;
+    }
+    .ant-btn-primary-disabled,
+    .ant-btn-primary.disabled,
+    .ant-btn-primary[disabled],
+    .ant-btn-primary-disabled:hover,
+    .ant-btn-primary.disabled:hover,
+    .ant-btn-primary[disabled]:hover,
+    .ant-btn-primary-disabled:focus,
+    .ant-btn-primary.disabled:focus,
+    .ant-btn-primary[disabled]:focus,
+    .ant-btn-primary-disabled:active,
+    .ant-btn-primary.disabled:active,
+    .ant-btn-primary[disabled]:active,
+    .ant-btn-primary-disabled.active,
+    .ant-btn-primary.disabled.active,
+    .ant-btn-primary[disabled].active {
+      color: rgba(0, 0, 0, 0.25);
+      text-shadow: none;
+      background-color: #f5f5f5;
+      border-color: #d9d9d9;
+      box-shadow: none;
+    }
+    .ant-modal-header {
+      .ant-modal-title {
+        margin-bottom: 20px;
+        div {
+          span:nth-child(1) {
+            float: left;
+          }
+          span:nth-child(2) {
+            float: right;
+            color: rgba(34, 142, 255, 1);
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .ant-modal-body {
+      width: 100%;
+      padding: 20px;
+      .ant-table-scroll {
+        .ant-table-body {
+          position: relative;
+          &::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+          }
+          &::-ms-scrollbar {
+            width: 8px;
+            height: 8px;
+          }
+          &::-moz-scrollbar {
+            width: 8px;
+            height: 8px;
+          }
+          &::-webkit-scrollbar-thumb {
+            width: 8px;
+            background: #ccc;
+            border: 1px solid #c4c4c4;
+            border-radius: 8px;
+          }
+          &::-ms-scrollbar-thumb {
+            width: 8px;
+            background: #ccc;
+            border: 1px solid #c4c4c4;
+            border-radius: 8px;
+          }
+          &::-moz-scrollbar-thumb {
+            width: 8px;
+            background: #ccc;
+            border: 1px solid #c4c4c4;
+            border-radius: 8px;
+          }
+          &::-webkit-scrollbar-thumb:hover {
+            background: #bcbcbc;
+            -webkit-transition: all 2s;
+            transition: all 2s;
+          }
+          &::-ms-scrollbar-thumb:hover {
+            background: #bcbcbc;
+            -webkit-transition: all 2s;
+            transition: all 2s;
+          }
+          &::-moz-scrollbar-thumb:hover {
+            background: #bcbcbc;
+            -webkit-transition: all 2s;
+            transition: all 2s;
+          }
+          &::-webkit-scrollbar-track {
+            background: #f3f3f3;
+            border-radius: 8px;
+          }
+          &::-ms-scrollbar-track {
+            background: #f3f3f3;
+            border-radius: 8px;
+          }
+          &::-moz-scrollbar-track {
+            background: #f3f3f3;
+            border-radius: 8px;
+          }
+          .ant-table-tbody {
+            tr {
+              height: 36px;
+              line-height: 36px;
+              td {
+                padding: 0 0 0 0;
+                &:first-child {
+                  text-indent: 10px;
+                  .ant-input {
+                    height: 49px;
+                  }
+                }
+                .ant-form-explain {
+                  display: none;
+                }
+              }
+              td:nth-child(1) {
+                width: 130px;
+                max-width: 130px;
+              }
+              td:nth-child(2) {
+                width: 110px;
+                height: 49px;
+                overflow: hidden;
+                color: #333;
+                line-height: 49px;
+                white-space: nowrap;
+                text-align: left;
+                text-indent: 10px;
+                text-overflow: ellipsis;
+
+                span {
+                  padding-left: 0;
+                }
+                .ant-input {
+                  height: 49px;
+                }
+              }
+              td:nth-child(3),
+              td:nth-child(4) {
+                padding-left: 10px;
+              }
+            }
+          }
+        }
+        .ant-table-header {
+          // padding-bottom: 17px;
+          height: 38px;
+          margin-bottom: 0 !important;
+          overflow: hidden !important;
+
+          tr {
+            height: 36px;
+            line-height: 36px;
+            th {
+              height: 37px;
+              padding: 0 0 0 10px;
+            }
+            th:nth-child(1) {
+              width: 130px;
+              max-width: 130px;
+            }
+            th:nth-child(2) {
+              width: 110px;
+              max-width: 110px;
+            }
+          }
+          tr:first-child > th:last-child {
+            border-right: 1px solid #e8e8e8 !important;
+          }
+        }
+      }
+    }
+    .ant-modal-footer {
+      padding: 0 30px 30px 40px !important;
+    }
+  }
+}
+
+.checkedNatural {
+  color: #03c46b;
+  background: rgba(230, 249, 240, 1) !important;
+  border: 1px solid rgba(3, 196, 107, 0.3) !important;
+  border-radius: 8px;
+}
+
+.disableBtn {
+  color: #888;
+  background: rgba(229, 229, 229, 1) !important;
+  border: 1px solid rgba(204, 204, 204, 1) !important;
+  border-radius: 4px;
+  pointer-events: none;
+}
+
+.checkedStudent {
+  background: rgba(230, 249, 240, 1) !important;
+  border: 1px solid rgba(3, 196, 107, 1) !important;
+  border-radius: 16px;
+}
+
+.checkedCallOut {
+  background: rgba(255, 240, 204, 1) !important;
+  border: 1px solid rgba(255, 180, 0, 1) !important;
+  border-radius: 16px;
+}
+
+.warninginfo {
+  padding-left: 10px;
+  color: rgba(255, 110, 74, 1);
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.studentNameInfo {
+  display: block;
+  width: 90px;
+  padding-left: 10px;
+  overflow: hidden;
+  font-weight: 400;
+  font-size: 13px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+.teachList {
+  padding-top: 20px;
+
+  div {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 14px;
+  }
+  span {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 2px 5px;
+    background: rgba(245, 245, 245, 1);
+    border: 1px solid rgba(204, 204, 204, 1);
+    border-radius: 5px;
+  }
+}
+:global {
+  .mergeList {
+    .ant-modal-footer > div > button:first-child {
+      display: none;
+    }
+  }
+}

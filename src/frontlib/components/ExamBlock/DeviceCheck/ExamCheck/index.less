@@ -1,0 +1,134 @@
+.preExamCheck{
+  width: 100%;
+  background-color: #fff;
+  height: 100%;
+  position: relative;
+
+  .stepBox{
+    padding: 20px;
+    .title{
+      margin-bottom: 10px;
+      color: #333;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+
+  // 步骤一
+  .step1{
+    .example{
+      display: flex;
+      justify-content: flex-start;
+      .pic1{
+        width: 275px;
+        background: #fff;
+        margin-right: 55px;
+        .info{
+          margin-top: 5px;
+          padding: 12px 27px;
+          width: 275px;
+          background-color: #f5f5f5;
+          color: #333333;
+          font-size: 13px;
+          text-align: center;
+        }
+      }
+      .pic2{
+        width: 420px;
+        background: #fff;
+        .infoBox{
+          display: flex;
+          margin-top: 5px;
+          padding: 12px 0px;
+          width: 420px;
+          background-color: #f5f5f5;
+          .p{
+            width: 132px;
+            padding: 0 10px;
+            background-color: #f5f5f5;
+            color: #333333;
+            text-align: center;
+            font-size: 13px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  // 步骤二
+  .step2{
+    .notice{
+      padding: 5px 10px;
+      margin-bottom: 10px;
+      background:rgba(255,241,238,1);
+      border-radius:4px;
+      font-size:13px;
+      font-weight:500;
+      color:rgba(255,110,74,1);
+    }
+    .example{
+      width: 100%;
+      border: 1px solid #e5e5e5;
+      border-radius: 10px;
+      padding: 10px 10px 20px;
+      .tip{
+        padding: 5px 0px;
+        margin: 0px 10px 10px;
+        border-bottom: 1px solid #e5e5e5;
+        color: #888;
+        font-size: 14px;
+        >i{
+          font-size: 14px;
+          margin-right: 8px;
+        }
+        .tag{
+          padding:0px 3px;
+        }
+      }
+      .content {
+        padding: 5px 10px;
+        color: #333;
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  // 按钮区域
+  .btnBox{
+    display: flex;
+    justify-content: center;
+    .btn{
+      width: 120px;
+      height: 36px;
+      margin: 0px 10px;
+      color: #fff;
+      cursor: pointer;
+      &.blueBtn{
+        background-color: #03c46b;
+      }
+      &.yellowBtn{
+        background-color: #ff9900;
+        box-shadow: 0px 2px 5px 0px rgba(255, 153, 0, 0.5);
+      }
+    }
+  }
+
+  // 答题的进度条暂用区域
+  .footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 76px;
+    border-top: 1px solid rgba(229,229,229,1);
+    overflow: hidden;
+  }
+
+}
+
+
+.icon{
+  font-size: 80px;
+  color : rgba(136,136,136,1);
+}

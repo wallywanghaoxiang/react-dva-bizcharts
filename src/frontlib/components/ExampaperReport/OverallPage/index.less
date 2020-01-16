@@ -1,0 +1,146 @@
+
+:global
+.overallPage{
+    .heard{
+
+        .title{
+            font-size: 24px;
+            font-weight:bold;
+        }
+        .time{
+            margin-top: 15px;
+        }
+
+    }
+    .content{
+        background-color: white;
+        // 头部统计部分，宽度不一致
+        // width:846px;
+        min-height: 300px;
+        margin-top: 15px;
+        border-top:3px solid #03C46B;
+        position: relative;
+        .smalllogo{
+            position: absolute;
+            margin-left: 721px;
+            margin-top: -59px;
+        }
+    }
+    .showfont{
+         font-size: 14px;
+         font-weight:bold;
+    }
+    .heard-score{
+        display: flex;
+        .score.first{
+            border-left:0px solid #E5E5E5;
+        }
+        .score{
+            align-items: center;
+            width: 282px;
+            height: 57px;
+            margin-top: 28px;
+            border-left:1px solid #E5E5E5;
+            padding-left: 28px;
+            .title{
+                // font-size: 14px;
+                // font-weight:bold;
+            }
+            .overall{
+                font-size: 30px;
+                font-weight:bold;
+            }
+            .red{
+                color: #FF6E4A;
+            }
+        }
+
+    }
+    .line{
+      width: 94%;
+      /*width: 786px;*/
+      height: 1px;
+      background: #E5E5E5;
+      margin: 0 auto;
+      margin-top: 30px;
+      /* margin-left: 30px; */
+    }
+    .subscore{
+        align-items: center;
+        margin-left: 27px;
+        padding-top:15px;
+        .tab-title{
+            margin-top: 8px;
+        }
+        .left{
+            vertical-align: top;
+            width: 176px;
+            .item-left{
+                width: 170px;
+                height: 28px;
+                text-align: center;
+                background-color: #E9FBF3;
+                border-radius: 10px;
+            }
+
+        }
+        .right{
+            width: 623px;
+            display: flex;
+            flex-wrap: wrap;
+            .toGroup{
+                display: flex;
+                background:rgba(255,255,255,1);
+                border:1px solid rgba(204, 204, 204, 1);
+                border-radius:14px;
+                margin-left: 15px;
+                margin-bottom: 10px;
+                flex-wrap: wrap;
+                padding-right: 10px;
+                .item-right{
+                    width: fit-content;
+                    height: 28px;
+                    display: flex;
+                    .number{
+                        text-align: center;
+                        width:26px;
+                        height:26px;
+                        background:rgba(245,245,245,1);
+                        border-radius:50%;
+                        margin-top: 1px;
+                        margin-left: 2px;
+                        padding-top: 2px;
+                        margin-right: 4px;
+                    }
+                    .item-score{
+                        margin-left: 2px;
+                        padding-top: 3px;
+                        font-weight: 500;
+                        color: rgba(51,51,51,1);
+                        .light{
+                            color:rgba(136,136,136,1);
+                        }
+                    }
+                    img{
+                        margin-bottom: 2px;
+                        margin-right: 5px;
+                    }
+                }
+
+
+            }
+
+
+        }
+    }
+    .icon-close{
+        color: #FF6E4A;
+    }
+    .icon-right{
+        color: #03C46B;
+    }
+    .iconfont{
+        width: 13px;
+        margin-right: 8px;
+    }
+}

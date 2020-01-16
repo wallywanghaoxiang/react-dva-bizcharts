@@ -1,0 +1,153 @@
+.taskItem {
+    position: relative;
+    width: 100%;
+    background:rgba(255,255,255,1);
+    box-shadow:0px 2px 4px 0px rgba(0,0,0,0.1);
+    border-radius:10px;
+    padding: 20px 30px 20px 20px;
+}
+.expireTaskItem {
+    position: relative;
+    width: 100%;
+    background:rgba(255,230,230,1);
+    box-shadow:0px 5px 20px 0px rgba(193,206,216,0.2);
+    border-radius:10px;
+    padding: 20px 30px 20px 20px;
+}
+.stopTaskItem {
+    position: relative;
+    width: 100%;
+    background:rgba(255,230,230,1);
+    box-shadow:0px 5px 20px 0px rgba(193,206,216,0.2);
+    border-radius:10px;
+    padding: 20px 30px 20px 20px;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.taskTit {
+    margin-top: 10px;
+    font-size:20px;
+    font-weight:500;
+    color: #333333;
+}
+.type {
+    margin-right: 10px;
+}
+.tag {
+    display: inline-block;
+    padding: 0px 5px;
+    background:rgba(255,255,255,1);
+    border-radius:5px;
+    border:1px solid rgba(204,204,204,1); 
+    font-size:12px;
+    color: #333333;
+}
+.scoreRateBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .score {
+        font-size:30px;
+        color: #333;
+        font-weight: bold;
+    }
+    .scoreUnit {
+        font-size: 13px;
+        color: #333;
+    }
+}
+.closeDate {
+    margin-top: 10px;
+    color: #333;
+    font-size: 14px;
+    i {
+        font-size: 14px !important;
+        color: #333;
+    }
+}
+
+
+.medalBox {
+    position: absolute;
+    right: -45px;
+    top: -40px;
+    img {
+        width: 90px;
+        height: 90px;
+    }
+}
+.right {
+    display: flex;
+    align-items: center;
+}
+.examStatus {
+    color: #333333;
+    font-size: 13px;
+    i {
+        color: #333333;
+        font-size: 13px !important;
+    }
+    span {
+        padding-left: 4px;
+    }
+}
+.makeup {
+    width:100px;
+    line-height: 36px;
+    background:rgba(255,110,74,1);
+    box-shadow:0px 2px 4px 0px rgba(255,110,74,0.5);
+    border-radius:20px;
+    border:2px solid rgba(255,110,74,1);
+    text-align: center;
+    span {
+        padding-left:0px;
+        color: #fff !important;
+    }
+    &:hover span {
+        color: #fff;
+    }
+}
+.reportBtn {
+    margin-left: 30px;
+    width:100px;
+    height:40px;
+    background:rgba(3,196,107,1);
+    box-shadow:0px 5px 10px 0px rgba(3,196,107,0.5);
+    border-radius:20px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.goAnswer {
+    display: flex;
+    justify-content: space-around;
+    height:40px;
+    background:rgba(245,245,245,1);
+    border-radius:20px;
+}
+.finishNum {
+    padding: 0px 20px;
+    line-height: 40px;
+    color: #333;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+}
+.answerBtn {
+    width:100px;
+    height:40px;
+    background:rgba(255,180,0,1);
+    box-shadow:0px 5px 10px 0px rgba(255,180,0,0.5);
+    color: #ffffff;
+    font-size: 13px;
+    text-align: center;
+    line-height: 40px;
+    border-radius:0px 20px 20px 0px;
+    cursor: pointer;
+}
+

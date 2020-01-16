@@ -1,0 +1,45 @@
+@import '~antd/lib/style/themes/default.less';
+
+.globalFooter {
+  padding: 0 16px;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -318px;
+  z-index: 4;
+  .links {
+    margin-bottom: 8px;
+
+    a {
+      color: @text-color-secondary;
+      transition: all 0.3s;
+
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+
+      &:hover {
+        color: @text-color;
+      }
+    }
+  }
+
+  .copyright {
+    color: @text-color-secondary;
+    font-size: @font-size-base;
+  }
+  .recordNumber {
+    padding-left: 8px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .police {
+    padding-left: 4px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+}

@@ -1,0 +1,244 @@
+@import '~antd/lib/style/themes/default.less';
+
+.administrator {
+  .nostudent {
+    width: 100%;
+    margin: 120px 0;
+    color: #888;
+    font-weight: 400;
+    font-size: @font-size-base;
+    text-align: center;
+  }
+  .menuName {
+    margin-bottom: 15px;
+    color: @white;
+    font-size: 20px;
+    span {
+      color: @white;
+      font-weight: 500;
+      font-size: 13px;
+      i {
+        padding: 0 10px;
+      }
+    }
+  }
+  :global {
+    .wrapperMain {
+      position: relative;
+      min-height: 82vh;
+    }
+  }
+  .students {
+    :global {
+      .ant-list {
+        .ant-row::before {
+          display: initial !important;
+        }
+        .ant-list-empty-text {
+          padding: 0;
+          color: rgba(0, 0, 0, 0);
+          .ant-empty-normal {
+            display: none;
+            margin: 100px 0;
+            .ant-empty-image {
+              display: none;
+              height: 0;
+            }
+          }
+        }
+
+        @media (min-width: 576px){
+          .ant-col {
+            display: block;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            width: 50%;
+          }
+        }
+        @media (min-width: 992px){
+          .ant-col {
+            display: block;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            width: 33.33333333%;
+          }
+        }
+        @media (min-width: 1200px) {
+          .ant-col {
+            display: block;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            width: 25%;
+          }
+        }
+        .ant-list-item {
+          width: auto;
+          max-width: 384px;
+          margin-bottom: 20px;
+          background: @body-background;
+          .ant-card-bordered {
+            height: 70px;
+            background: @body-background;
+            border: 1px solid rgba(229, 229, 229, 1);
+            border-radius: 4px;
+          
+            cursor: pointer;
+            .ant-card-body {
+              padding: 0;
+            }
+            &:hover{
+              border: 1px solid #fff;
+              box-shadow:0px 2px 4px 0px rgba(0,0,0,0.1);
+            }
+          }
+        }
+      }
+    }
+    .cardItemContent {
+      display: block;
+      height: 20px;
+      margin-top: 0;
+      margin-bottom: 0;
+      line-height: 20px;
+      & > span {
+        flex: 1;
+        color: @text-color-secondary;
+        font-size: @font-size-sm;
+      }
+      .admin:hover {
+        .setting {
+          display: block !important;
+        }
+      }
+      .admin {
+        display: flex;
+        .adminInfo {
+          position: relative;
+          flex: 5;
+          margin-top: 0;
+          margin-left: 0;
+          padding-right: 8px;
+          cursor: default;
+          .borrowing {
+            position: absolute;
+            right: 10px;
+            div {
+              width: 40px;
+              height: 20px;
+              line-height: 20px;
+              text-align: center;
+              background: #E5E5E5;
+              border: 1px solid rgba(229, 229, 229, 1);
+              border-radius: 0 0 5px 5px;
+              span {
+                position: relative;
+                bottom: 1px;
+                font-size: @font-size-sm;
+              }
+            }
+            div:nth-child(1) {
+              background: #E5E5E5;
+              border: 1px solid rgba(229, 229, 229, 1);
+            }
+            div:nth-child(2) {
+              background: @body-background;
+              border: 1px solid @body-background;
+            }
+          }
+          .studentInfo {
+            display: flex;
+            position: relative;
+            top: 10px;
+            left: 10px;
+            .num {
+              width: 40px;
+              flex: 1;
+              height: 48px;
+              color: #333;
+              padding: 0 3px;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 48px;
+              text-align: center;
+            }
+            .portrait {
+              position: relative;
+              right: 5px;
+              flex: 1;
+              img {
+                width: 48px;
+                height: 48px;
+                margin-right: 2px;
+                margin-left: 4px;
+                border-radius: 24px;
+              }
+            }
+            .name {
+              flex: 3;
+              color: rgba(51, 51, 51, 1);
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 20px;
+              .names {
+                display: inline-block;
+              
+                max-width: 90px;
+                overflow: hidden;
+                color: #333;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+              }
+              .sexLady {
+                position: relative;
+                bottom: 5px;
+                left: 4px;
+                color: #FF6E4A;
+                font-size: 13px;
+              }
+              .sexMan {
+                position: relative;
+                bottom: 5px;
+                left: 4px;
+                color: #228EFF;
+                font-size: 13px;
+              }
+              .state {
+                .unbinding {
+                  color: rgba(255, 110, 74, 1);
+                  font-weight: 400;
+                  font-size: 13px;
+                  line-height: 18px;
+                }
+                .binding {
+                  display: flex;
+                  width: 120px;
+                  height: 18px;
+                  color: rgba(136, 136, 136, 1);
+                  font-weight: 400;
+                  font-size: 13px;
+                  line-height: 18px;
+                }
+              }
+            }
+          }
+        }
+        .setting {
+          position: relative;
+          display: none;
+          flex: 1;
+          height: 68px;
+          line-height: 68px;
+          text-align: center;
+          text-align: -webkit-center;
+          text-align: -moz-center;
+          background: @body-background;
+          border-left: 1px solid #e5e5e5;
+          img {
+            width: 15px;
+            height: 15px;
+          }
+        }
+      }
+    }
+  }
+}

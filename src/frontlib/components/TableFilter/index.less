@@ -1,0 +1,74 @@
+.tableHeaderSearchBox {
+  padding: 15px;
+
+  .radioContainer {
+    max-height: 210px;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      width: 6px;
+      background: rgba(204, 204, 204, 1);
+      border-radius: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #fff;
+      border-radius: 0;
+    }
+  }
+
+  .footer {
+    padding-top: 10px;
+    text-align: right;
+
+    :global {
+      .ant-btn {
+        width: 66px;
+        height: 36px;
+        border: 1px solid #CCC;
+        border-radius: 18px;
+
+        &:last-child {
+          margin-left: 10px;
+        }
+      }
+    }
+
+    .btnOk {
+      color: #FFF;
+      background: rgba(3, 196, 107, 1);
+      border: none;
+      border-radius: 18px;
+      box-shadow: 0 2px 5px 0 rgba(3, 196, 107, 0.5);
+    }
+  }
+
+  :global {
+    .ant-input {
+      width: 260px;
+      height: 36px;
+      border: 1px solid #CCC;
+      border-radius: 18px;
+    }
+
+    .ant-divider-horizontal {
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+  }
+}
+
+//! TODO 全局设置filter弹窗位置，不确定是否会影响到其他组件定位问题 [无奈.gif]...
+:global {
+  .ant-dropdown-placement-bottomRight {
+    height: 0;
+  }
+
+  .ant-table-filter-dropdown {
+    transform: translateX(100%);
+  }
+}

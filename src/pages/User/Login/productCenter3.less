@@ -1,0 +1,326 @@
+#transition(@property: all; @delay: 0s) {
+  opacity: 0;
+  transition: @property 0.3s ease-in-out @delay;
+}
+
+#itemTransition() {
+  width: 120px;
+  height: 120px;
+  opacity: 1;
+}
+
+#hoverTransitionRight() {
+  width: 400px;
+  height: 140px;
+  padding-right: 120px;
+  padding-left: 30px;
+  background: #eef2f6;
+  border-radius: 70px;
+}
+
+#hoverTransitionLeft() {
+  width: 400px;
+  height: 140px;
+  padding-left: 150px;
+  background: #eef2f6;
+  border-radius: 70px;
+}
+
+.productCenter3Container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+
+  // 进场动画
+  &#enterName {
+    .top {
+      top: 10vh;
+      opacity: 1;
+    }
+
+    .bottom {
+      bottom: 0;
+      opacity: 1;
+    }
+
+    .train,
+    .rectify,
+    .paperGenerate,
+    .classSystem,
+    .oneKeyTest,
+    .comment,
+    .instantUse,
+    .score {
+      #itemTransition();
+    }
+  }
+
+  .top {
+    position: absolute;
+    top: 12vh;
+    left: calc(~'50% - 248px');
+    width: 496px;
+    color: #333;
+    #transition();
+
+    .leftIcon {
+      position: absolute;
+      top: 10px;
+      left: -34px;
+    }
+
+    .rightIcon {
+      position: absolute;
+      right: -40px;
+      bottom: -10px;
+    }
+
+    :global {
+      .ant-divider {
+        top: -0.46em;
+        height: 24px;
+        margin: 0 10px;
+        background: #333;
+      }
+    }
+
+    .title {
+      font-weight: bold;
+      font-size: 40px;
+    }
+
+    .subTitle {
+      font-size: 26px;
+    }
+  }
+
+  .content {
+    position: absolute;
+    bottom: 0;
+    left: 17vw;
+    width: 66vw;
+    height: 74vh;
+    background-image: url('../../../assets/productCenter/idnex_page_4_line.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+
+    .circularItem {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      border-radius: 60px;
+      cursor: pointer;
+
+      &:hover {
+        .function {
+          width: 140px;
+          height: 140px;
+          background: #ffb400;
+          border-radius: 70px;
+        }
+      }
+
+      .function {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        height: 120px;
+        color: #fff;
+        font-size: 26px;
+        background: #03c46b;
+        border-radius: 60px;
+        transition: all 0.5s ease-in-out;
+      }
+
+      .description {
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        width: 120px;
+        height: 120px;
+        padding: 0 0;
+        overflow: hidden;
+        border-radius: 60px;
+        transition: all 0.5s ease-in-out;
+
+        .descriptionTitle {
+          margin-bottom: 10px;
+          color: #ffb400;
+          font-size: 20px;
+          text-align: left;
+        }
+
+        .descriptionContent {
+          color: #888;
+          font-size: 13px;
+          white-space: pre;
+          text-align: left;
+        }
+      }
+    }
+
+    .train {
+      bottom: 28vh;
+      left: 15vw;
+      #transition(all, 0.4s);
+
+      .description {
+        left: 0;
+      }
+
+      &:hover {
+        z-index: 2;
+
+        .description {
+          #hoverTransitionLeft();
+        }
+      }
+    }
+
+    .rectify {
+      bottom: 40vh;
+      left: calc(~'50% - 60px');
+      #transition(all, 0.5s);
+
+      .description {
+        left: 0;
+      }
+
+      &:hover {
+        z-index: 2;
+
+        .description {
+          #hoverTransitionLeft();
+        }
+      }
+    }
+
+    .paperGenerate {
+      right: 15vw;
+      bottom: 28vh;
+
+      #transition(all, 0.6s);
+
+      .description {
+        right: 0;
+      }
+
+      &:hover {
+        z-index: 2;
+
+        .description {
+          #hoverTransitionRight();
+        }
+      }
+    }
+
+    .classSystem {
+      bottom: 10vh;
+      left: 4vw;
+      #transition(all, 0.3s); // 入场动画
+
+      .description {
+        left: 0;
+      }
+
+      &:hover {
+        z-index: 2;
+
+        .description {
+          #hoverTransitionLeft();
+        }
+      }
+    }
+
+    .oneKeyTest {
+      right: 4vw;
+      bottom: 10vh;
+      #transition(all, 0.7s);
+
+      .description {
+        right: 0;
+      }
+
+      &:hover {
+        z-index: 2;
+
+        .description {
+          #hoverTransitionRight();
+        }
+      }
+    }
+
+    .comment {
+      top: 12vh;
+      left: 8vw;
+      #transition(all, 0s); // 入场动画
+
+      .description {
+        left: 0;
+      }
+
+      &:hover {
+        z-index: 2;
+
+        .description {
+          #hoverTransitionLeft();
+        }
+      }
+    }
+
+    .instantUse {
+      top: -4vh;
+      left: calc(~'50% - 60px');
+      #transition(all, 0.1s); // 入场动画
+
+      .description {
+        left: 0;
+      }
+
+      &:hover {
+        z-index: 2;
+
+        .description {
+          #hoverTransitionLeft();
+        }
+      }
+    }
+
+    .score {
+      top: 12vh;
+      right: 8vw;
+      #transition(all, 0.2s);
+
+      .description {
+        right: 0;
+      }
+
+      &:hover {
+        z-index: 2;
+
+        .description {
+          #hoverTransitionRight();
+        }
+      }
+    }
+  }
+
+  .bottom {
+    position: absolute;
+    bottom: -200px;
+    left: 40vw;
+    width: 20vw;
+    #transition();
+
+    img {
+      width: 20vw;
+    }
+  }
+}

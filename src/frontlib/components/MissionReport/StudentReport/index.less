@@ -1,0 +1,72 @@
+@import '~antd/lib/style/themes/default.less';
+
+.reportStudent {
+
+  // padding-bottom: 20px;
+  :global {
+    .wrapperMain {
+      padding-top: 20px;
+      margin: 0px 0px !important;
+      position: relative;
+      min-height: calc(100vh - 98px);
+      background: #fff;
+      overflow: hidden;
+      border-radius: 5px;
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+
+      &>div:first-child {
+        display: none;
+      }
+
+      &>div>div {
+        max-width: 100% !important;
+      }
+    }
+  }
+
+  .menuName {
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 20px;
+
+    span {
+      color: rgba(255, 255, 255, 1);
+      font-weight: 500;
+      font-size: 13px;
+
+      i {
+        padding: 0 10px;
+      }
+    }
+  }
+
+  .reportContent {}
+
+  .backtop {
+    width: 40px;
+    height: 40px;
+    color: #FFFFFF;
+    background: rgba(0, 0, 0, 0.65);
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    text-align: center;
+
+    .text {
+      font-size: 14px;
+      line-height: 38px;
+    }
+
+    :global {
+      .iconfont {
+        font-size: 24px;
+      }
+    }
+  }
+
+  :global {
+    .ant-back-top {
+      right: 24px;
+      bottom: 24px;
+    }
+  }
+}

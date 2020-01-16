@@ -1,0 +1,65 @@
+@import '~@/utils/utils.less';
+:global {
+  .menuLeft {
+    width: 200px;
+    overflow: auto;
+    // border: 1px solid rgba(0, 0, 0, 0.15);
+    // box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.15);
+    .mission-selecter-box {
+      padding: 20px 20px 10px 20px;
+      background: rgba(245, 245, 245, 1);
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+    .inputRate{
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      color:rgba(136,136,136,1);     
+      font-size:12px;    
+      background:rgba(245,245,245,1);
+      border-top: 1px solid #ccc;
+      .scoreRate {
+        width: 40px;
+        height: 24px;
+        padding: 0;
+        line-height: 20px;
+        text-align: center;
+        border: 1px solid #ccc;
+      }
+    }
+
+    .left-content_menuLeft {
+      max-height: 650px;
+      padding: 10px 20px 10px 20px;
+      overflow-y: auto;
+      background: rgba(245, 245, 245, 1);
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+      .title {
+        margin-bottom: 8px;
+        color: @black;
+        font-size: @font-normal;
+      }
+
+      .marginTop20-dot {
+        margin-top: 10px;
+      }
+
+      .flex {
+        display: flex;
+      }
+
+      .marginLeft {
+        //margin-left: 4px;
+        display: inline-block;
+        max-width: 150px;
+      }
+    }
+    .ant-select-selection {
+      width: 140px;
+      height: 30px;
+      border-radius: 15px; //float: right;
+    }
+  }
+}

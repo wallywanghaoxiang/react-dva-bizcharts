@@ -1,0 +1,235 @@
+.OneClickArrange{
+    .selectTitle{
+        font-size:13px;
+        color:rgba(136,136,136,1);
+        margin-bottom: 8px;
+    }
+    .waitArrange{
+        width:300px;
+        padding: 0 10px;
+        height:32px;
+        line-height: 32px;
+        background:rgba(245,245,245,1);
+        border-radius:5px;
+        margin-bottom: 17px;
+    }
+    .warning{
+       
+        background:rgba(255,248,230,1);
+        border-radius:5px;
+        padding: 10px 10px 10px 33px;
+        position: relative;
+        i{color: #FF6E4A;position: absolute;left:10px;top: 10px}
+        margin-bottom: 17px;
+    }
+    :global{
+        .ant-select{margin-bottom: 17px;}
+        .ant-select-selection{
+            border-radius:18px;
+            
+        }
+        .ant-btn-primary-disabled, .ant-btn-primary.disabled, .ant-btn-primary[disabled], .ant-btn-primary-disabled:hover, .ant-btn-primary.disabled:hover, .ant-btn-primary[disabled]:hover, .ant-btn-primary-disabled:focus, .ant-btn-primary.disabled:focus, .ant-btn-primary[disabled]:focus, .ant-btn-primary-disabled:active, .ant-btn-primary.disabled:active, .ant-btn-primary[disabled]:active, .ant-btn-primary-disabled.active, .ant-btn-primary.disabled.active, .ant-btn-primary[disabled].active {
+            color: rgba(0, 0, 0, 0.25);
+            background-color: #f5f5f5!important;
+            border-color: #d9d9d9!important;
+            text-shadow: none!important;
+            box-shadow: none!important;
+          }
+    }
+}
+.ManualArrange{
+    .manualDetail{
+        border-bottom: 1px solid #e5e5e5;
+        padding-bottom:10px; 
+        :global{
+            .ant-tabs-ink-bar{
+                width:10px!important;
+                height:4px;
+                background:rgba(3,196,107,1);
+                border-radius:2px;
+                left: 28px;
+            }
+        }
+    }
+    .planPeople{
+        display: inline-block;
+        min-width: 40px;
+        padding-right: 20px;
+        p{margin-bottom: 0;}
+        span{
+            font-size:30px;
+        }
+        font-size:12px;
+        color:rgba(51,51,51,1);
+    }
+    :global{
+        .ant-select-selection{
+            border-radius:18px;
+            
+        }
+        .ant-tabs-ink-bar{
+            width:10px!important;
+            height:4px;
+            background:rgba(3,196,107,1);
+            border-radius:2px;
+            left: 6px;
+        }
+        .ant-tabs-nav .ant-tabs-tab{padding: 12px 0;}
+        .ant-tabs-bar{
+            border-bottom: 0;
+        }
+    }
+    .examAddress{
+        position: relative;
+        top: -11px;
+        height: 44px;
+        border-left: 1px solid #e5e5e5;
+        padding-left: 20px;
+        padding-top: 10px;
+        display: inline-block;
+    }
+    .mainManual{
+        display: flex;       
+        border-radius:5px;
+        border:1px solid rgba(229,229,229,1);
+    }
+    .manualLeft{
+        padding: 11px;
+        width: 120px;
+        flex: 0 0 142px ;
+        max-height: 300px;
+        overflow: auto;
+        :global{
+            .ant-list-split .ant-list-item{
+                padding: 8px 10px;
+                height: 36px;
+                cursor: pointer;
+                border-bottom: 0;
+                font-size: 14px;
+                span{font-size: 12px;float: right;}
+                border-radius:5px;
+            }
+        }
+        .checkedBatch{
+            background:rgba(228,255,243,1);
+            color: #03C46B;
+        }
+        .disabledBatch{
+            cursor: not-allowed!important;
+            opacity: 0.3;
+        }
+
+    }
+    .manualRight{
+        max-height: 300px;
+        overflow: hidden;
+        overflow-y: auto;
+        width:calc(~'100% - 142px');
+        .roomName{
+            line-height: 25px;
+            border-bottom: 1px solid #DFEFFF;
+            font-size:12px;
+            text-align: center;
+            height: 25px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .roomNumber{
+            font-size:30px;
+            margin-bottom: 0;
+            text-align: center;
+            line-height: 40px;
+        }
+        .roomOnly{
+            font-size:12px;
+            text-align: center;
+            line-height: 20px;
+        }
+        .selected{
+            font-size:10px;
+            color:rgba(255,255,255,1);
+            position: absolute;
+            width:0;
+            height:0;
+            border-bottom: 26px solid rgba(34,142,255,1);
+            border-left: 26px solid transparent;
+            right: 0;
+            bottom: 0;
+        }
+    
+        .normalBatch{
+            .sizes{
+                display: none;
+            }
+        }
+        .checkedBatch{
+            .sizes{
+                display: block;
+            }
+        }
+       
+        :global{
+            .ant-list-items{width: 452px;}
+            .ant-list-item{
+                cursor: pointer;
+                position: relative;
+                width:80px;
+                height:90px;
+                text-align: center;
+                background:rgba(246,250,255,1);
+                border-radius:5px;
+                border:1px solid rgba(34,142,255,1);
+                padding: 0;
+                display: inline-block;
+                margin:10px 8px 10px 0;
+                color: #228EFF;
+                overflow: hidden;
+                i{
+                    color: #fff;
+                    font-size: 10px;
+                    font-style: normal;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    width: 16px;
+                    text-align: center;
+                    line-height: 14px;
+                    z-index: 10;
+                }
+            }
+            .ant-btn-primary-disabled, .ant-btn-primary.disabled, .ant-btn-primary[disabled], .ant-btn-primary-disabled:hover, .ant-btn-primary.disabled:hover, .ant-btn-primary[disabled]:hover, .ant-btn-primary-disabled:focus, .ant-btn-primary.disabled:focus, .ant-btn-primary[disabled]:focus, .ant-btn-primary-disabled:active, .ant-btn-primary.disabled:active, .ant-btn-primary[disabled]:active, .ant-btn-primary-disabled.active, .ant-btn-primary.disabled.active, .ant-btn-primary[disabled].active {
+                color: rgba(0, 0, 0, 0.25)!important;
+                background-color: #f5f5f5!important;
+                border-color: #d9d9d9!important;
+                text-shadow: none!important;
+                box-shadow: none!important;
+              }
+        }
+        .disabledBatch{
+            cursor: not-allowed;
+            background:rgba(245,245,245,1);
+            border-radius:5px;
+            border:1px solid rgba(204,204,204,1);
+            color:#888888;
+            .roomName{border-bottom: 1px solid #e5e5e5;}
+            .sizes{
+                display: none;
+            }
+        }
+    }
+}
+.batchDate{
+    font-size:20px;color:#333;
+    text-align: center;
+    span{display: block;font-size:12px;color: #888;}
+}
+.expired{float: right;}
+:global{
+    .giveUp{
+         .ant-modal-confirm-btns > button:last-child{
+            background:rgba(3,196,107,1)!important;
+            box-shadow:0px 2px 5px 0px rgba(3,196,107,0.5)!important;
+         }
+    }
+}

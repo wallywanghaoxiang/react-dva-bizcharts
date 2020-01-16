@@ -1,0 +1,97 @@
+.scoreRateTrace {
+    .headerBtns {
+        padding: 10px 0px;
+        text-align: right;
+        width: 100%;
+
+        a {
+            color: #228EFF;
+            font-weight: 500;
+        }
+    }
+
+    .scoreRateTraceBox {
+        color: #888888;
+        font-size: 13px;
+        overflow: hidden;
+        .traceBarItem {
+            .taskName {
+                padding-bottom: 10px;
+            }
+
+            .timeline {
+
+                .flag {
+                    color: #333333;
+                    font-weight: 500;
+                    position: relative;
+                    /* top: 0px; */
+                    height: 16px;
+                    width: 2px;
+                    background: #FF6E4A;
+
+                    .score {
+                        top: -5px;
+                        left: 12px;
+                        position: absolute;
+                    }
+                }
+
+                .flag::before {
+                    width: 0;
+                    height: 0;
+                    position: absolute;
+                    left: -6px;
+                    top: 20px;
+                    border-right: solid 11px transparent;
+                    border-left: solid 11px #FF6E4A;
+                    border-bottom: solid 11px transparent;
+                    transform: rotate(45deg);
+                    content: ' ';
+                }
+
+                .flag::after {
+                    width: 0;
+                    height: 0;
+                    position: absolute;
+                    top: -2px;
+                    border-right: solid 8px transparent;
+                    border-left: solid 8px #FF6E4A;
+                    border-top: solid 10px transparent;
+                    content: ' ';
+                }
+
+                .ticks {
+                    height: 30px;
+                    margin-top: -10px;
+
+                    .start {
+                        width: 20px;
+                        float: left;
+                    }
+
+                    .end {
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modalBtns {
+    :global {
+        .ant-btn[disabled] {
+            background-color: #B2B2B2;
+            color: #fff;
+            box-shadow: none !important;
+        }
+    }
+}
+
+.scoreInput {
+    border: 0;
+    border-radius: 0;
+    padding: 4px 0px;
+    border-bottom: 1px solid #ccc;
+}

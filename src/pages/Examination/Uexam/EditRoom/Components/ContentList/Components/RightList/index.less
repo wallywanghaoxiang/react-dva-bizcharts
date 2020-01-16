@@ -1,0 +1,70 @@
+.rightList{
+  padding: 10px;
+  min-width: 570px;
+  border:1px solid rgba(229,229,229,1);
+  height: 570px;
+  overflow-y: auto;
+  .head{
+    display: flex;
+    justify-content: space-between;
+    height: 37px;
+    .left{
+      a{
+        color:rgba(34,142,255,1);
+      }
+      :global {
+        .ant-select-selection{
+          border: none;
+        }
+      }
+
+    }
+
+    .right{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+        .btn{
+          border-radius:5px;
+          border:1px solid rgba(3,196,107,1);
+          font-size:13px;
+          font-weight:400;
+          color:rgba(3,196,107,1);
+          margin-left: 5px;
+          width:84px;
+          height:26px;
+        }
+    }
+  }
+  .info{
+    font-size:12px;
+    font-weight:400;
+    color:rgba(136,136,136,1);
+  }
+  .studentName{
+    font-size:14px;
+    font-weight:500;
+    color:rgba(51,51,51,1);       
+  }
+  .bubm{
+    border-radius:50%;
+    font-size:10px;
+    font-weight:400;
+    color:rgba(51,51,51,1);  
+    background:rgba(229,229,229,1);     
+  }
+  :global {
+    .ant-table-pagination.ant-pagination{
+      float: left;
+      margin-top: 10px;
+      margin-bottom: 0px;
+      li{
+        border: none;
+      }
+    }
+    .ant-table-body{
+      white-space: nowrap;
+    }
+  }
+}
+

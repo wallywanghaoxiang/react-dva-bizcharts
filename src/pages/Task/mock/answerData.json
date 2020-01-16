@@ -1,0 +1,22 @@
+{
+    "data": {
+        "taskId": "49694346793975964",
+        "paperFullMark": 100,
+        "paperFullTime": 91,
+        "exerciseType": "EXER_MODEL",
+        "snapshotId": "49694347867718812",
+        "name": "初2(5)班模考20190620",
+        "type": "TT_5",
+        "typeValue": null,
+        "examTime": 1561017467506,
+        "paperId": "48190279311690981",
+        "paperMd5": "2de551acd4953f4502cfeb779bb94e7d",
+        "exerciseTypeValue": null,
+        "answers": [],
+        "examStatus": "ES_1",
+        "examStatusValue": null,
+        "answeringNo": null
+    },
+
+    "responseCode": "200"
+}

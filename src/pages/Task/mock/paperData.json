@@ -1,0 +1,2042 @@
+{
+  "data": {
+    "dataVersion": 1000100,
+    "id": "42911850404250624",
+    "name": "北京B卷",
+    "templateId": "42548845137100800",
+    "templateName": "sp11北京卷第二卷",
+    "description": "123",
+    "config": {
+      "lockForm": "Y",
+      "showOrdinal": "N",
+      "mainGuideSinglePage": "Y",
+      "recordHints": { "start": "Y", "end": "Y" }
+    },
+    "coverRate": 100.0,
+    "allowChooseQuestion": "N",
+    "difficultLevel": null,
+    "difficultLevelValue": null,
+    "paperTaskStatus": "400",
+    "templateTime": 208.29599999999996,
+    "paperTime": 1627.0,
+    "paperHead": {
+      "paperHeadName": "同学们，欢迎参加北京市高级中等学校招生考试英语听说考试，试题共包括四道大题。下面请看第一题。",
+      "paperHeadAudio": "42911957778433024",
+      "paperHeadAudioTime": 14.688,
+      "paperHeadDelay": 0.0,
+      "paperHeadNavTime": 3
+    },
+    "paperInstance": [
+      {
+        "type": "PATTERN",
+        "pattern": {
+          "questionPatternId": "41783704229511168",
+          "questionPatternName": "sp11北京听后选择",
+          "questionPatternType": "TWO_LEVEL",
+          "questionPatternCode": "1",
+          "questionPatternDescription": "123",
+          "mainPatterns": {
+            "fullMark": 8.0,
+            "questionMark": 0.0,
+            "questionCount": 4,
+            "stemListening": 2,
+            "readTime": 10,
+            "prepareTime": 0,
+            "subFullMark": 0.0,
+            "subQuestionMark": 1.0,
+            "subQuestionCount": 0,
+            "subQuestionStemListening": 0,
+            "subQuestionReadTime": 0,
+            "subQuestionPrepareTime": 10,
+            "answerTime": 10,
+            "aheadDelivery": 0,
+            "questionPatternInstanceSequence": "一、",
+            "questionPatternInstanceName": "听后选择",
+            "questionPatternInstanceAudioTime": 0.0,
+            "questionPatternInstanceHint": "(共8小题；每小题1分，共8分)",
+            "answerGuideText": "听对话或独白，根据所听内容从每题所给的A、B、C三个选项中选择最佳选项，并用鼠标点击该选项。听每段对话或独白前，你有5秒钟的时间阅读每小题。听完后，你有5秒钟的时间作答。每段对话或独白你将听两遍。",
+            "answerGuideAudio": "41785451207459840",
+            "answerGuideAudioTime": 28.26,
+            "answerGuideDelay": 0,
+            "markRatio": "1"
+          },
+          "sequenceNumber": [["1", "2"], ["3", "4"], ["5", "6"], ["7", "8"]],
+          "hints": [
+            {
+              "mainHints": [
+                { "name": "stemListening", "text": "", "audio": "", "audioTime": null },
+                {
+                  "name": "readTime",
+                  "text": "听下面一段对话，回答第1至第2小题。现在，你有10秒中的时间阅读这两道小题。",
+                  "audio": "41785489862164480",
+                  "audioTime": 10.728
+                },
+                { "name": "subQuestionPrepareTime", "text": "", "audio": "", "audioTime": null },
+                { "name": "answerTime", "text": "", "audio": "", "audioTime": null }
+              ],
+              "subHints": null
+            },
+            {
+              "mainHints": [
+                { "name": "stemListening", "text": "", "audio": "", "audioTime": null },
+                {
+                  "name": "readTime",
+                  "text": "听下面一段对话，回答第3至第4小题。现在，你有10秒中的时间阅读这两道小题。",
+                  "audio": "41785503820809216",
+                  "audioTime": 8.784
+                },
+                { "name": "subQuestionPrepareTime", "text": "", "audio": "", "audioTime": null },
+                { "name": "answerTime", "text": "", "audio": "", "audioTime": null }
+              ],
+              "subHints": null
+            },
+            {
+              "mainHints": [
+                { "name": "stemListening", "text": "", "audio": "", "audioTime": null },
+                {
+                  "name": "readTime",
+                  "text": "听下面一段对话，回答第5至第6小题。现在，你有10秒中的时间阅读这两道小题。",
+                  "audio": "41785514558227456",
+                  "audioTime": 8.568
+                },
+                { "name": "subQuestionPrepareTime", "text": "", "audio": "", "audioTime": null },
+                { "name": "answerTime", "text": "", "audio": "", "audioTime": null }
+              ],
+              "subHints": null
+            },
+            {
+              "mainHints": [
+                { "name": "stemListening", "text": "", "audio": "", "audioTime": null },
+                {
+                  "name": "readTime",
+                  "text": "听下面一段对话，回答第7至第8小题。现在，你有10秒中的时间阅读这两道小题。",
+                  "audio": "41785527443128320",
+                  "audioTime": 8.028
+                },
+                { "name": "subQuestionPrepareTime", "text": "", "audio": "", "audioTime": null },
+                { "name": "answerTime", "text": "", "audio": "", "audioTime": null }
+              ],
+              "subHints": null
+            }
+          ],
+          "subQuestionPatterns": [
+            {
+              "subFullMark": 0.0,
+              "subQuestionMark": 0.0,
+              "subQuestionCount": 2,
+              "subQuestionStemListening": 0,
+              "subQuestionReadTime": 0.0,
+              "subQuestionPrepareTime": 0.0,
+              "answerTime": 0.0,
+              "aheadDelivery": 0.0,
+              "hintAudioTime": 0.0
+            },
+            {
+              "subFullMark": 0.0,
+              "subQuestionMark": 0.0,
+              "subQuestionCount": 2,
+              "subQuestionStemListening": 0,
+              "subQuestionReadTime": 0.0,
+              "subQuestionPrepareTime": 0.0,
+              "answerTime": 0.0,
+              "aheadDelivery": 0.0,
+              "hintAudioTime": 0.0
+            },
+            {
+              "subFullMark": 0.0,
+              "subQuestionMark": 0.0,
+              "subQuestionCount": 2,
+              "subQuestionStemListening": 0,
+              "subQuestionReadTime": 0.0,
+              "subQuestionPrepareTime": 0.0,
+              "answerTime": 0.0,
+              "aheadDelivery": 0.0,
+              "hintAudioTime": 0.0
+            },
+            {
+              "subFullMark": 0.0,
+              "subQuestionMark": 0.0,
+              "subQuestionCount": 2,
+              "subQuestionStemListening": 0,
+              "subQuestionReadTime": 0.0,
+              "subQuestionPrepareTime": 0.0,
+              "answerTime": 0.0,
+              "aheadDelivery": 0.0,
+              "hintAudioTime": 0.0
+            }
+          ],
+          "subjectiveAndObjective": "OBJECTIVE",
+          "answerType": "CHOICE"
+        },
+        "splitter": null,
+        "recall": null,
+        "questions": [
+          {
+            "dataVersion": null,
+            "id": "42912156420669440",
+            "code": "",
+            "questionPatternId": "41783704229511168",
+            "questionTime": 87.31,
+            "mainOrderIndex": 0,
+            "rawOrderIndex": 0,
+            "relationType": "NEW",
+            "difficultLevel": "LVL_1",
+            "difficultLevelValue": "易",
+            "checkAbility": "",
+            "checkAbilityValue": "",
+            "data": {
+              "id": null,
+              "patternType": "TWO_LEVEL",
+              "subjectiveAndObjective": "OBJECTIVE",
+              "mainQuestion": {
+                "stemText": "",
+                "stemImage": "",
+                "stemAudio": "42912097364870144",
+                "stemAudioTime": 28.656,
+                "stemAudioText": "",
+                "stemVideo": "",
+                "stemVideoText": "",
+                "stemVideoTime": 0.0,
+                "stemAudio2": "",
+                "stemAudioTime2": 0.0,
+                "guidePrefixText": "",
+                "guidePrefixImage": "",
+                "guidePrefixAudio": "",
+                "guidePrefixAudioTime": 0.0,
+                "guideSuffixText": "",
+                "guideSuffixImage": "",
+                "guideSuffixAudio": "",
+                "guideSuffixAudioTime": 0.0,
+                "guideMiddleText": "",
+                "guideMiddleImage": "",
+                "guideMiddleAudio": "",
+                "guideMiddleAudioTime": 0.0,
+                "answerType": "CHOICE",
+                "choiceQuestionAnswerInfo": { "floatMode": null, "options": null },
+                "gapFillingQuestionAnswerInfo": {
+                  "gapMode": null,
+                  "gapFloatMode": null,
+                  "answers": null
+                },
+                "closeOralQuestionAnswerInfo": {
+                  "referenceText": null,
+                  "referenceAudio": null,
+                  "referenceAudioTime": null,
+                  "referenceTextMark": null,
+                  "allowEnter": null
+                },
+                "openOralQuestionAnswerInfo": {
+                  "referenceAnswer": null,
+                  "referenceMachineEvaluation": null,
+                  "keywords": null
+                },
+                "halfOpenOralQuestionAnswerInfo": {
+                  "referenceAnswer": null,
+                  "referenceMachineEvaluation": null,
+                  "keywords": null,
+                  "errorReferenceMachineEvaluation": null,
+                  "hintReferenceMachineEvaluation": null
+                },
+                "evaluationEngineInfo": {
+                  "evaluationEngine": null,
+                  "fourDimensionEvaluationMode": null
+                },
+                "answerExplanation": ""
+              },
+              "subQuestion": [
+                {
+                  "id": "69e25cf3813d4b99a2f8a21df60dbe35",
+                  "subQuestionStemText": "When does Mr White usually practise table tennis?",
+                  "subQuestionStemImage": null,
+                  "subQuestionStemAudio": null,
+                  "subQuestionStemAudioTime": 0.0,
+                  "subQuestionStemAudio2": null,
+                  "subQuestionStemAudioTime2": 0.0,
+                  "subQuestionStemAudioText": null,
+                  "askAnswerSection": null,
+                  "answerType": "CHOICE",
+                  "choiceQuestionAnswerInfo": {
+                    "floatMode": "HORIZENTAL",
+                    "options": [
+                      { "id": "1554700897336", "text": "At night.*", "image": "", "isAnswer": "N" },
+                      {
+                        "id": "1554700897337",
+                        "text": "On Friday.*",
+                        "image": "",
+                        "isAnswer": "N"
+                      },
+                      {
+                        "id": "1554700897338",
+                        "text": "At weekends.",
+                        "image": "",
+                        "isAnswer": "Y"
+                      }
+                    ]
+                  },
+                  "gapFillingQuestionAnswerInfo": null,
+                  "closeOralQuestionAnswerInfo": null,
+                  "openOralQuestionAnswerInfo": null,
+                  "halfOpenOralQuestionAnswerInfo": null,
+                  "evaluationEngineInfo": null,
+                  "answerExplanation": "123"
+                },
+                {
+                  "id": "aa7db321c6464a6885c0d793654de8ec",
+                  "subQuestionStemText": "How long does the girl usually fish?",
+                  "subQuestionStemImage": null,
+                  "subQuestionStemAudio": null,
+                  "subQuestionStemAudioTime": 0.0,
+                  "subQuestionStemAudio2": null,
+                  "subQuestionStemAudioTime2": 0.0,
+                  "subQuestionStemAudioText": null,
+                  "askAnswerSection": null,
+                  "answerType": "CHOICE",
+                  "choiceQuestionAnswerInfo": {
+                    "floatMode": "VERTICAL",
+                    "options": [
+                      {
+                        "id": "1554700897339",
+                        "text": "For more than 6 hours.",
+                        "image": "",
+                        "isAnswer": "Y"
+                      },
+                      {
+                        "id": "1554700897340",
+                        "text": "*For more than 8 hours.*",
+                        "image": "",
+                        "isAnswer": "N"
+                      },
+                      {
+                        "id": "1554700897341",
+                        "text": "For more than 9 hours.",
+                        "image": "",
+                        "isAnswer": "N"
+                      }
+                    ]
+                  },
+                  "gapFillingQuestionAnswerInfo": null,
+                  "closeOralQuestionAnswerInfo": null,
+                  "openOralQuestionAnswerInfo": null,
+                  "halfOpenOralQuestionAnswerInfo": null,
+                  "evaluationEngineInfo": null,
+                  "answerExplanation": null
+                }
+              ],
+              "groups": [],
+              "pluginParameters": null
+            }
+          },
+          {
+            "dataVersion": null,
+            "id": "42912212255244288",
+            "code": "",
+            "questionPatternId": "41783704229511168",
+            "questionTime": 93.94,
+            "mainOrderIndex": 0,
+            "rawOrderIndex": 1,
+            "relationType": "NEW",
+            "difficultLevel": "",
+            "difficultLevelValue": "",
+            "checkAbility": "",
+            "checkAbilityValue": "",
+            "data": {
+              "id": null,
+              "patternType": "TWO_LEVEL",
+              "subjectiveAndObjective": "OBJECTIVE",
+              "mainQuestion": {
+                "stemText": "",
+                "stemImage": "",
+                "stemAudio": "42912168231830528",
+                "stemAudioTime": 31.968,
+                "stemAudioText": "",
+                "stemVideo": "",
+                "stemVideoText": "",
+                "stemVideoTime": 0.0,
+                "stemAudio2": "",
+                "stemAudioTime2": 0.0,
+                "guidePrefixText": "",
+                "guidePrefixImage": "",
+                "guidePrefixAudio": "",
+                "guidePrefixAudioTime": 0.0,
+                "guideSuffixText": "",
+                "guideSuffixImage": "",
+                "guideSuffixAudio": "",
+                "guideSuffixAudioTime": 0.0,
+                "guideMiddleText": "",
+                "guideMiddleImage": "",
+                "guideMiddleAudio": "",
+                "guideMiddleAudioTime": 0.0,
+                "answerType": "CHOICE",
+                "choiceQuestionAnswerInfo": { "floatMode": null, "options": null },
+                "gapFillingQuestionAnswerInfo": {
+                  "gapMode": null,
+                  "gapFloatMode": null,
+                  "answers": null
+                },
+                "closeOralQuestionAnswerInfo": {
+                  "referenceText": null,
+                  "referenceAudio": null,
+                  "referenceAudioTime": null,
+                  "referenceTextMark": null,
+                  "allowEnter": null
+                },
+                "openOralQuestionAnswerInfo": {
+                  "referenceAnswer": null,
+                  "referenceMachineEvaluation": null,
+                  "keywords": null
+                },
+                "halfOpenOralQuestionAnswerInfo": {
+                  "referenceAnswer": null,
+                  "referenceMachineEvaluation": null,
+                  "keywords": null,
+                  "errorReferenceMachineEvaluation": null,
+                  "hintReferenceMachineEvaluation": null
+                },
+                "evaluationEngineInfo": {
+                  "evaluationEngine": null,
+                  "fourDimensionEvaluationMode": null
+                },
+                "answerExplanation": ""
+              },
+              "subQuestion": [
+                {
+                  "id": "84e8d8f8c2fb451bae45d3616ce48ae2",
+                  "subQuestionStemText": "How does Sam go to the Children's Palace?",
+                  "subQuestionStemImage": null,
+                  "subQuestionStemAudio": null,
+                  "subQuestionStemAudioTime": 0.0,
+                  "subQuestionStemAudio2": null,
+                  "subQuestionStemAudioTime2": 0.0,
+                  "subQuestionStemAudioText": null,
+                  "askAnswerSection": null,
+                  "answerType": "CHOICE",
+                  "choiceQuestionAnswerInfo": {
+                    "floatMode": "HORIZENTAL",
+                    "options": [
+                      { "id": "1554701067950", "text": "On foot.*", "image": "", "isAnswer": "Y" },
+                      { "id": "1554701067951", "text": "By bus.*", "image": "", "isAnswer": "N" },
+                      { "id": "1554701067952", "text": "By bike.", "image": "", "isAnswer": "N" }
+                    ]
+                  },
+                  "gapFillingQuestionAnswerInfo": null,
+                  "closeOralQuestionAnswerInfo": null,
+                  "openOralQuestionAnswerInfo": null,
+                  "halfOpenOralQuestionAnswerInfo": null,
+                  "evaluationEngineInfo": null,
+                  "answerExplanation": null
+                },
+                {
+                  "id": "938b4d14472747a2949e67ddf1f037d7",
+                  "subQuestionStemText": "What does Sam usually do on Saturday afternoon?",
+                  "subQuestionStemImage": null,
+                  "subQuestionStemAudio": null,
+                  "subQuestionStemAudioTime": 0.0,
+                  "subQuestionStemAudio2": null,
+                  "subQuestionStemAudioTime2": 0.0,
+                  "subQuestionStemAudioText": null,
+                  "askAnswerSection": null,
+                  "answerType": "CHOICE",
+                  "choiceQuestionAnswerInfo": {
+                    "floatMode": "HORIZENTAL",
+                    "options": [
+                      {
+                        "id": "1554701067952",
+                        "text": "He has classes.*",
+                        "image": "",
+                        "isAnswer": "N"
+                      },
+                      {
+                        "id": "1554701067953",
+                        "text": "He has a picnic.*",
+                        "image": "",
+                        "isAnswer": "N"
+                      },
+                      {
+                        "id": "1554701067954",
+                        "text": "He climbs mountains.",
+                        "image": "",
+                        "isAnswer": "Y"
+                      }
+                    ]
+                  },
+                  "gapFillingQuestionAnswerInfo": null,
+                  "closeOralQuestionAnswerInfo": null,
+                  "openOralQuestionAnswerInfo": null,
+                  "halfOpenOralQuestionAnswerInfo": null,
+                  "evaluationEngineInfo": null,
+                  "answerExplanation": null
+                }
+              ],
+              "groups": [],
+              "pluginParameters": null
+            }
+          },
+          {
+            "dataVersion": null,
+            "id": "42912264868593664",
+            "code": "",
+            "questionPatternId": "41783704229511168",
+            "questionTime": 93.94,
+            "mainOrderIndex": 0,
+            "rawOrderIndex": 2,
+            "relationType": "NEW",
+            "difficultLevel": "LVL_1",
+            "difficultLevelValue": "易",
+            "checkAbility": "",
+            "checkAbilityValue": "",
+            "data": {
+              "id": null,
+              "patternType": "TWO_LEVEL",
+              "subjectiveAndObjective": "OBJECTIVE",
+              "mainQuestion": {
+                "stemText": "",
+                "stemImage": "",
+                "stemAudio": "42912221918921728",
+                "stemAudioTime": 31.968,
+                "stemAudioText": "",
+                "stemVideo": "",
+                "stemVideoText": "",
+                "stemVideoTime": 0.0,
+                "stemAudio2": "",
+                "stemAudioTime2": 0.0,
+                "guidePrefixText": "",
+                "guidePrefixImage": "",
+                "guidePrefixAudio": "",
+                "guidePrefixAudioTime": 0.0,
+                "guideSuffixText": "",
+                "guideSuffixImage": "",
+                "guideSuffixAudio": "",
+                "guideSuffixAudioTime": 0.0,
+                "guideMiddleText": "",
+                "guideMiddleImage": "",
+                "guideMiddleAudio": "",
+                "guideMiddleAudioTime": 0.0,
+                "answerType": "CHOICE",
+                "choiceQuestionAnswerInfo": { "floatMode": null, "options": null },
+                "gapFillingQuestionAnswerInfo": {
+                  "gapMode": null,
+                  "gapFloatMode": null,
+                  "answers": null
+                },
+                "closeOralQuestionAnswerInfo": {
+                  "referenceText": null,
+                  "referenceAudio": null,
+                  "referenceAudioTime": null,
+                  "referenceTextMark": null,
+                  "allowEnter": null
+                },
+                "openOralQuestionAnswerInfo": {
+                  "referenceAnswer": null,
+                  "referenceMachineEvaluation": null,
+                  "keywords": null
+                },
+                "halfOpenOralQuestionAnswerInfo": {
+                  "referenceAnswer": null,
+                  "referenceMachineEvaluation": null,
+                  "keywords": null,
+                  "errorReferenceMachineEvaluation": null,
+                  "hintReferenceMachineEvaluation": null
+                },
+                "evaluationEngineInfo": {
+                  "evaluationEngine": null,
+                  "fourDimensionEvaluationMode": null
+                },
+                "answerExplanation": ""
+              },
+              "subQuestion": [
+                {
+                  "id": "245503ddafd34b479d09a076c4b8c9f7",
+                  "subQuestionStemText": "What does Lingling do?",
+                  "subQuestionStemImage": null,
+                  "subQuestionStemAudio": null,
+                  "subQuestionStemAudioTime": 0.0,
+                  "subQuestionStemAudio2": null,
+                  "subQuestionStemAudioTime2": 0.0,
+                  "subQuestionStemAudioText": null,
+                  "askAnswerSection": null,
+                  "answerType": "CHOICE",
+                  "choiceQuestionAnswerInfo": {
+                    "floatMode": "HORIZENTAL",
+                    "options": [
+                      {
+                        "id": "1554701116053",
+                        "text": "A student.*",
+                        "image": "",
+                        "isAnswer": "Y"
+                      },
+                      { "id": "1554701116054", "text": "A nurse.*", "image": "", "isAnswer": "N" },
+                      { "id": "1554701116055", "text": "A farmer.", "image": "", "isAnswer": "N" }
+                    ]
+                  },
+                  "gapFillingQuestionAnswerInfo": null,
+                  "closeOralQuestionAnswerInfo": null,
+                  "openOralQuestionAnswerInfo": null,
+                  "halfOpenOralQuestionAnswerInfo": null,
+                  "evaluationEngineInfo": null,
+                  "answerExplanation": null
+                },
+                {
+                  "id": "14fb366588494e3caaabf3a5e5014bb9",
+                  "subQuestionStemText": "Who make birthday cards for Lingling?",
+                  "subQuestionStemImage": null,
+                  "subQuestionStemAudio": null,
+                  "subQuestionStemAudioTime": 0.0,
+                  "subQuestionStemAudio2": null,
+                  "subQuestionStemAudioTime2": 0.0,
+                  "subQuestionStemAudioText": null,
+                  "askAnswerSection": null,
+                  "answerType": "CHOICE",
+                  "choiceQuestionAnswerInfo": {
+                    "floatMode": "VERTICAL",
+                    "options": [
+                      {
+                        "id": "1554701116055",
+                        "text": "Her parents.*",
+                        "image": "",
+                        "isAnswer": "N"
+                      },
+                      {
+                        "id": "1554701116056",
+                        "text": "Her friends.*",
+                        "image": "",
+                        "isAnswer": "Y"
+                      },
+                      {
+                        "id": "1554701116057",
+                        "text": "Her cousins.",
+                        "image": "",
+                        "isAnswer": "N"
+                      }
+                    ]
+                  },
+                  "gapFillingQuestionAnswerInfo": null,
+                  "closeOralQuestionAnswerInfo": null,
+                  "openOralQuestionAnswerInfo": null,
+                  "halfOpenOralQuestionAnswerInfo": null,
+                  "evaluationEngineInfo": null,
+                  "answerExplanation": "123"
+                }
+              ],
+              "groups": [],
+              "pluginParameters": null
+            }
+          },
+          {
+            "dataVersion": null,
+            "id": "42912313186975744",
+            "code": "",
+            "questionPatternId": "41783704229511168",
+            "questionTime": 98.33,
+            "mainOrderIndex": 0,
+            "rawOrderIndex": 3,
+            "relationType": "NEW",
+            "difficultLevel": "",
+            "difficultLevelValue": "",
+            "checkAbility": "",
+            "checkAbilityValue": "",
+            "data": {
+              "id": null,
+              "patternType": "TWO_LEVEL",
+              "subjectiveAndObjective": "OBJECTIVE",
+              "mainQuestion": {
+                "stemText": "",
+                "stemImage": "",
+                "stemAudio": "42912270237303808",
+                "stemAudioTime": 34.164,
+                "stemAudioText": "",
+                "stemVideo": "",
+                "stemVideoText": "",
+                "stemVideoTime": 0.0,
+                "stemAudio2": "",
+                "stemAudioTime2": 0.0,
+                "guidePrefixText": "",
+                "guidePrefixImage": "",
+                "guidePrefixAudio": "",
+                "guidePrefixAudioTime": 0.0,
+                "guideSuffixText": "",
+                "guideSuffixImage": "",
+                "guideSuffixAudio": "",
+                "guideSuffixAudioTime": 0.0,
+                "guideMiddleText": "",
+                "guideMiddleImage": "",
+                "guideMiddleAudio": "",
+                "guideMiddleAudioTime": 0.0,
+                "answerType": "CHOICE",
+                "choiceQuestionAnswerInfo": { "floatMode": null, "options": null },
+                "gapFillingQuestionAnswerInfo": {
+                  "gapMode": null,
+                  "gapFloatMode": null,
+                  "answers": null
+                },
+                "closeOralQuestionAnswerInfo": {
+                  "referenceText": null,
+                  "referenceAudio": null,
+                  "referenceAudioTime": null,
+                  "referenceTextMark": null,
+                  "allowEnter": null
+                },
+                "openOralQuestionAnswerInfo": {
+                  "referenceAnswer": null,
+                  "referenceMachineEvaluation": null,
+                  "keywords": null
+                },
+                "halfOpenOralQuestionAnswerInfo": {
+                  "referenceAnswer": null,
+                  "referenceMachineEvaluation": null,
+                  "keywords": null,
+                  "errorReferenceMachineEvaluation": null,
+                  "hintReferenceMachineEvaluation": null
+                },
+                "evaluationEngineInfo": {
+                  "evaluationEngine": null,
+                  "fourDimensionEvaluationMode": null
+                },
+                "answerExplanation": ""
+              },
+              "subQuestion": [
+                {
+                  "id": "fe91322a06a243218407d4cf9580d7db",
+                  "subQuestionStemText": "What time does Cindy have her birthday party?",
+                  "subQuestionStemImage": null,
+                  "subQuestionStemAudio": null,
+                  "subQuestionStemAudioTime": 0.0,
+                  "subQuestionStemAudio2": null,
+                  "subQuestionStemAudioTime2": 0.0,
+                  "subQuestionStemAudioText": null,
+                  "askAnswerSection": null,
+                  "answerType": "CHOICE",
+                  "choiceQuestionAnswerInfo": {
+                    "floatMode": "HORIZENTAL",
+                    "options": [
+                      { "id": "1554701162314", "text": "At 2:00.*", "image": "", "isAnswer": "N" },
+                      { "id": "1554701162315", "text": "At 3:00.*", "image": "", "isAnswer": "Y" },
+                      { "id": "1554701162316", "text": "At 4:00.", "image": "", "isAnswer": "N" }
+                    ]
+                  },
+                  "gapFillingQuestionAnswerInfo": null,
+                  "closeOralQuestionAnswerInfo": null,
+                  "openOralQuestionAnswerInfo": null,
+                  "halfOpenOralQuestionAnswerInfo": null,
+                  "evaluationEngineInfo": null,
+                  "answerExplanation": null
+                },
+                {
+                  "id": "1aa973f1f014494b87e8b9f772678541",
+                  "subQuestionStemText": "Where are the hamburgers?",
+                  "subQuestionStemImage": null,
+                  "subQuestionStemAudio": null,
+                  "subQuestionStemAudioTime": 0.0,
+                  "subQuestionStemAudio2": null,
+                  "subQuestionStemAudioTime2": 0.0,
+                  "subQuestionStemAudioText": null,
+                  "askAnswerSection": null,
+                  "answerType": "CHOICE",
+                  "choiceQuestionAnswerInfo": {
+                    "floatMode": "HORIZENTAL",
+                    "options": [
+                      {
+                        "id": "1554701162315",
+                        "text": "On the table.*",
+                        "image": "",
+                        "isAnswer": "N"
+                      },
+                      {
+                        "id": "1554701162316",
+                        "text": "In the box.*",
+                        "image": "",
+                        "isAnswer": "Y"
+                      },
+                      {
+                        "id": "1554701162317",
+                        "text": "On the sofa.",
+                        "image": "",
+                        "isAnswer": "N"
+                      }
+                    ]
+                  },
+                  "gapFillingQuestionAnswerInfo": null,
+                  "closeOralQuestionAnswerInfo": null,
+                  "openOralQuestionAnswerInfo": null,
+                  "halfOpenOralQuestionAnswerInfo": null,
+                  "evaluationEngineInfo": null,
+                  "answerExplanation": null
+                }
+              ],
+              "groups": [],
+              "pluginParameters": null
+            }
+          }
+        ]
+      },
+      {
+        "type": "PATTERN",
+        "pattern": {
+          "questionPatternId": "41784028499542016",
+          "questionPatternName": "sp11北京听后回答",
+          "questionPatternType": "NORMAL",
+          "questionPatternCode": "2",
+          "questionPatternDescription": "123",
+          "mainPatterns": {
+            "fullMark": 5.0,
+            "questionMark": 1.0,
+            "questionCount": 5,
+            "stemListening": 2,
+            "readTime": 0,
+            "prepareTime": 0,
+            "subFullMark": 0.0,
+            "subQuestionMark": 0.0,
+            "subQuestionCount": 0,
+            "subQuestionStemListening": 0,
+            "subQuestionReadTime": 0,
+            "subQuestionPrepareTime": 0,
+            "answerTime": 10,
+            "aheadDelivery": 0,
+            "questionPatternInstanceSequence": "二、",
+            "questionPatternInstanceName": "听后回答",
+            "questionPatternInstanceAudioTime": 0.0,
+            "questionPatternInstanceHint": "(共5小题；每小题1分，共5分)",
+            "answerGuideText": "听对话,根据所听内容口头回答问题。在听到录音提示音后，你有10秒钟的时间作答。每段对话你将听两遍。",
+            "answerGuideAudio": "41785602605057024",
+            "answerGuideAudioTime": 14.472,
+            "answerGuideDelay": 0,
+            "markRatio": "1"
+          },
+          "sequenceNumber": [["1"], ["2"], ["3"], ["4"], ["5"]],
+          "pageSplit": [0, 1, 2, 3],
+          "hints": [
+            {
+              "mainHints": [
+                {
+                  "name": "stemListening",
+                  "text": "听下面一段对话，回答第1小题。",
+                  "audio": "41785633743569920",
+                  "audioTime": 4.464
+                },
+                {
+                  "name": "answerTime",
+                  "text": "下面，请准备录音。听到录音提示音后，在10秒钟内完成作答。",
+                  "audio": "41785642333504512",
+                  "audioTime": 8.568
+                }
+              ],
+              "subHints": null
+            },
+            {
+              "mainHints": [
+                {
+                  "name": "stemListening",
+                  "text": "听下面一段对话，回答第2小题。",
+                  "audio": "41785651997180928",
+                  "audioTime": 3.888
+                },
+                {
+                  "name": "answerTime",
+                  "text": "下面，请准备录音。听到录音提示音后，在10秒钟内完成作答。",
+                  "audio": "41785659513373696",
+                  "audioTime": 8.568
+                }
+              ],
+              "subHints": null
+            },
+            {
+              "mainHints": [
+                {
+                  "name": "stemListening",
+                  "text": "听下面一段对话，回答第3小题。",
+                  "audio": "41785668103308288",
+                  "audioTime": 3.672
+                },
+                {
+                  "name": "answerTime",
+                  "text": "下面，请准备录音。听到录音提示音后，在10秒钟内完成作答。",
+                  "audio": "41785676693242880",
+                  "audioTime": 8.568
+                }
+              ],
+              "subHints": null
+            },
+            {
+              "mainHints": [
+                {
+                  "name": "stemListening",
+                  "text": "听下面一段对话，回答第4小题。",
+                  "audio": "41785687430661120",
+                  "audioTime": 3.96
+                },
+                {
+                  "name": "answerTime",
+                  "text": "下面，请准备录音。听到录音提示音后，在10秒钟内完成作答。",
+                  "audio": "41785693873112064",
+                  "audioTime": 8.568
+                }
+              ],
+              "subHints": null
+            },
+            {
+              "mainHints": [
+                {
+                  "name": "stemListening",
+                  "text": "听下面一段对话，回答第5小题。",
+                  "audio": "41785703536788480",
+                  "audioTime": 3.744
+                },
+                {
+                  "name": "answerTime",
+                  "text": "下面，请准备录音。听到录音提示音后，在10秒钟内完成作答。",
+                  "audio": "41785711052981248",
+                  "audioTime": 8.568
+                }
+              ],
+              "subHints": null
+            }
+          ],
+          "subjectiveAndObjective": "SUBJECTIVE_ORAL",
+          "answerType": "HALF_OPEN_ORAL"
+        },
+        "splitter": null,
+        "recall": null,
+        "questions": [
+          {
+            "dataVersion": null,
+            "id": "42912420561158144",
+            "code": "",
+            "questionPatternId": "41784028499542016",
+            "questionTime": 51.16,
+            "mainOrderIndex": 1,
+            "rawOrderIndex": 0,
+            "relationType": "NEW",
+            "difficultLevel": "LVL_1",
+            "difficultLevelValue": "易",
+            "checkAbility": "ABILITY_REFERENCE ,ABILITY_EXPRESSION ,ABILITY_GUESSMEANING,",
+            "checkAbilityValue": "指代关系 / 表达能力 / 词意猜测",
+            "data": {
+              "id": null,
+              "patternType": "NORMAL",
+              "subjectiveAndObjective": "SUBJECTIVE_ORAL",
+              "mainQuestion": {
+                "stemText": "How much is the skirt?~",
+                "stemImage": "",
+                "stemAudio": "42912385127678976",
+                "stemAudioTime": 19.08,
+                "stemAudioText": "",
+                "stemVideo": "",
+                "stemVideoText": "",
+                "stemVideoTime": 0.0,
+                "stemAudio2": "",
+                "stemAudioTime2": 0.0,
+                "guidePrefixText": "",
+                "guidePrefixImage": "",
+                "guidePrefixAudio": "",
+                "guidePrefixAudioTime": 0.0,
+                "guideSuffixText": "",
+                "guideSuffixImage": "",
+                "guideSuffixAudio": "",
+                "guideSuffixAudioTime": 0.0,
+                "guideMiddleText": "",
+                "guideMiddleImage": "",
+                "guideMiddleAudio": "",
+                "guideMiddleAudioTime": 0.0,
+                "answerType": "HALF_OPEN_ORAL",
+                "choiceQuestionAnswerInfo": { "floatMode": null, "options": null },
+                "gapFillingQuestionAnswerInfo": {
+                  "gapMode": null,
+                  "gapFloatMode": null,
+                  "answers": null
+                },
+                "closeOralQuestionAnswerInfo": {
+                  "referenceText": null,
+                  "referenceAudio": null,
+                  "referenceAudioTime": null,
+                  "referenceTextMark": null,
+                  "allowEnter": null
+                },
+                "openOralQuestionAnswerInfo": {
+                  "referenceAnswer": null,
+                  "referenceMachineEvaluation": null,
+                  "keywords": null
+                },
+                "halfOpenOralQuestionAnswerInfo": {
+                  "referenceAnswer": [
+                    "twenty dollars",
+                    "it is twenty dollars",
+                    "it's twenty dollars",
+                    "the skirt is twenty dollars"
+                  ],
+                  "referenceMachineEvaluation": [
+                    "twenty dollars",
+                    "it is twenty dollars",
+                    "it's twenty dollars",
+                    "the skirt is twenty dollars"
+                  ],
+                  "keywords": [
+                    { "text": "twenty dollars", "weight": "10", "exclude": false },
+                    { "text": "no", "weight": "50", "exclude": true }
+                  ],
+                  "errorReferenceMachineEvaluation": [],
+                  "hintReferenceMachineEvaluation": []
+                },
+                "evaluationEngineInfo": {
+                  "evaluationEngine": "eval.semi.en",
+                  "fourDimensionEvaluationMode": "4"
+                },
+                "answerExplanation": ""
+              },
+              "subQuestion": [],
+              "groups": [],
+              "pluginParameters": null
+            }
+          },
+          {
+            "dataVersion": null,
+            "id": "42912459215863808",
+            "code": "",
+            "questionPatternId": "41784028499542016",
+            "questionTime": 41.87,
+            "mainOrderIndex": 1,
+            "rawOrderIndex": 1,
+            "relationType": "NEW",
+            "difficultLevel": "LVL_1",
+            "difficultLevelValue": "易",
+            "checkAbility": "ABILITY_GUESSMEANING,ABILITY_NUMERATION,",
+            "checkAbilityValue": "词意猜测 / 数字计算",
+            "data": {
+              "id": null,
+              "patternType": "NORMAL",
+              "subjectiveAndObjective": "SUBJECTIVE_ORAL",
+              "mainQuestion": {
+                "stemText": "What’s the boy’s favourite sport?~",
+                "stemImage": "",
+                "stemAudio": "42912433446061056",
+                "stemAudioTime": 14.436,
+                "stemAudioText": "",
+                "stemVideo": "",
+                "stemVideoText": "",
+                "stemVideoTime": 0.0,
+                "stemAudio2": "",
+                "stemAudioTime2": 0.0,
+                "guidePrefixText": "",
+                "guidePrefixImage": "",
+                "guidePrefixAudio": "",
+                "guidePrefixAudioTime": 0.0,
+                "guideSuffixText": "",
+                "guideSuffixImage": "",
+                "guideSuffixAudio": "",
+                "guideSuffixAudioTime": 0.0,
+                "guideMiddleText": "",
+                "guideMiddleImage": "",
+                "guideMiddleAudio": "",
+                "guideMiddleAudioTime": 0.0,
+                "answerType": "HALF_OPEN_ORAL",
+                "choiceQuestionAnswerInfo": { "floatMode": null, "options": null },
+                "gapFillingQuestionAnswerInfo": {
+                  "gapMode": null,
+                  "gapFloatMode": null,
+                  "answers": null
+                },
+                "closeOralQuestionAnswerInfo": {
+                  "referenceText": null,
+                  "referenceAudio": null,
+                  "referenceAudioTime": null,
+                  "referenceTextMark": null,
+                  "allowEnter": null
+                },
+                "openOralQuestionAnswerInfo": {
+                  "referenceAnswer": null,
+                  "referenceMachineEvaluation": null,
+                  "keywords": null
+                },
+                "halfOpenOralQuestionAnswerInfo": {
+                  "referenceAnswer": [
+                    "football",
+                    "it is football",
+                    "it's football",
+                    "his favourite sport is football",
+                    "the boy's favourite sport is football",
+                    "football is his favourite sport",
+                    "football is the boy's favourite sport"
+                  ],
+                  "referenceMachineEvaluation": [
+                    "football",
+                    "it is football",
+                    "it's football",
+                    "his favourite sport is football",
+                    "the boy's favourite sport is football",
+                    "football is his favourite sport",
+                    "football is the boy's favourite sport"
+                  ],
+                  "keywords": [{ "text": "football", "weight": "20", "exclude": false }],
+                  "errorReferenceMachineEvaluation": [],
+                  "hintReferenceMachineEvaluation": []
+                },
+                "evaluationEngineInfo": {
+                  "evaluationEngine": "eval.semi.en",
+                  "fourDimensionEvaluationMode": "4"
+                },
+                "answerExplanation": "123"
+              },
+              "subQuestion": [],
+              "groups": [],
+              "pluginParameters": null
+            }
+          },
+          {
+            "dataVersion": null,
+            "id": "42912493575602176",
+            "code": "",
+            "questionPatternId": "41784028499542016",
+            "questionTime": 32.8,
+            "mainOrderIndex": 1,
+            "rawOrderIndex": 2,
+            "relationType": "NEW",
+            "difficultLevel": "LVL_1",
+            "difficultLevelValue": "易",
+            "checkAbility": "ABILITY_EXPRESSION ,ABILITY_PURPORT,",
+            "checkAbilityValue": "表达能力 / 主旨大意",
+            "data": {
+              "id": null,
+              "patternType": "NORMAL",
+              "subjectiveAndObjective": "SUBJECTIVE_ORAL",
+              "mainQuestion": {
+                "stemText": "When is the boy’s birthday?~",
+                "stemImage": "",
+                "stemAudio": "42912469953283072",
+                "stemAudioTime": 9.9,
+                "stemAudioText": "",
+                "stemVideo": "",
+                "stemVideoText": "",
+                "stemVideoTime": 0.0,
+                "stemAudio2": "",
+                "stemAudioTime2": 0.0,
+                "guidePrefixText": "",
+                "guidePrefixImage": "",
+                "guidePrefixAudio": "",
+                "guidePrefixAudioTime": 0.0,
+                "guideSuffixText": "",
+                "guideSuffixImage": "",
+                "guideSuffixAudio": "",
+                "guideSuffixAudioTime": 0.0,
+                "guideMiddleText": "",
+                "guideMiddleImage": "",
+                "guideMiddleAudio": "",
+                "guideMiddleAudioTime": 0.0,
+                "answerType": "HALF_OPEN_ORAL",
+                "choiceQuestionAnswerInfo": { "floatMode": null, "options": null },
+                "gapFillingQuestionAnswerInfo": {
+                  "gapMode": null,
+                  "gapFloatMode": null,
+                  "answers": null
+                },
+                "closeOralQuestionAnswerInfo": {
+                  "referenceText": null,
+                  "referenceAudio": null,
+                  "referenceAudioTime": null,
+                  "referenceTextMark": null,
+                  "allowEnter": null
+                },
+                "openOralQuestionAnswerInfo": {
+                  "referenceAnswer": null,
+                  "referenceMachineEvaluation": null,
+                  "keywords": null
+                },
+                "halfOpenOralQuestionAnswerInfo": {
+                  "referenceAnswer": [
+                    "in August",
+                    "it is in August",
+                    "it's in August",
+                    "his birthday is in August",
+                    "the boy's birthday is in August"
+                  ],
+                  "referenceMachineEvaluation": [
+                    "in August",
+                    "it is in August",
+                    "it's in August",
+                    "his birthday is in August",
+                    "the boy's birthday is in August"
+                  ],
+                  "keywords": [{ "text": "August", "weight": "20", "exclude": false }],
+                  "errorReferenceMachineEvaluation": [],
+                  "hintReferenceMachineEvaluation": []
+                },
+                "evaluationEngineInfo": {
+                  "evaluationEngine": "eval.semi.en",
+                  "fourDimensionEvaluationMode": "4"
+                },
+                "answerExplanation": "2313"
+              },
+              "subQuestion": [],
+              "groups": [],
+              "pluginParameters": null
+            }
+          },
+          {
+            "dataVersion": null,
+            "id": "42912523640373248",
+            "code": "",
+            "questionPatternId": "41784028499542016",
+            "questionTime": 45.54,
+            "mainOrderIndex": 1,
+            "rawOrderIndex": 3,
+            "relationType": "NEW",
+            "difficultLevel": "",
+            "difficultLevelValue": "",
+            "checkAbility": "",
+            "checkAbilityValue": "",
+            "data": {
+              "id": null,
+              "patternType": "NORMAL",
+              "subjectiveAndObjective": "SUBJECTIVE_ORAL",
+              "mainQuestion": {
+                "stemText": "Where will the girl have her birthday party?~",
+                "stemImage": "",
+                "stemAudio": "42912506460505088",
+                "stemAudioTime": 16.272,
+                "stemAudioText": "",
+                "stemVideo": "",
+                "stemVideoText": "",
+                "stemVideoTime": 0.0,
+                "stemAudio2": "",
+                "stemAudioTime2": 0.0,
+                "guidePrefixText": "",
+                "guidePrefixImage": "",
+                "guidePrefixAudio": "",
+                "guidePrefixAudioTime": 0.0,
+                "guideSuffixText": "",
+                "guideSuffixImage": "",
+                "guideSuffixAudio": "",
+                "guideSuffixAudioTime": 0.0,
+                "guideMiddleText": "",
+                "guideMiddleImage": "",
+                "guideMiddleAudio": "",
+                "guideMiddleAudioTime": 0.0,
+                "answerType": "HALF_OPEN_ORAL",
+                "choiceQuestionAnswerInfo": { "floatMode": null, "options": null },
+                "gapFillingQuestionAnswerInfo": {
+                  "gapMode": null,
+                  "gapFloatMode": null,
+                  "answers": null
+                },
+                "closeOralQuestionAnswerInfo": {
+                  "referenceText": null,
+                  "referenceAudio": null,
+                  "referenceAudioTime": null,
+                  "referenceTextMark": null,
+                  "allowEnter": null
+                },
+                "openOralQuestionAnswerInfo": {
+                  "referenceAnswer": null,
+                  "referenceMachineEvaluation": null,
+                  "keywords": null
+                },
+                "halfOpenOralQuestionAnswerInfo": {
+                  "referenceAnswer": [
+                    "at her house",
+                    "at the girl's hourse",
+                    "she will have it at her house",
+                    "she'll have it at her house",
+                    "the girl will have it at her house",
+                    "she will have her birthday party at her house",
+                    "she'll have her birthday party at her house",
+                    "the girl will have her birthday party at her house",
+                    "she will have the birthday party at her house",
+                    "she'll have the birthday party at her house",
+                    "the girl will have the birthday party at her house",
+                    "at her house she will have it",
+                    "at her house she'll have it",
+                    "at her house the girl will have it",
+                    "at her houses she will have her birthday party",
+                    "at her house she'll have her birthday party",
+                    "at her house the girl will have her birthday party",
+                    "at the girl's house she will have it",
+                    "at the girl's house she'll have it",
+                    "at the girl's house the girl will have it",
+                    "at the girl's houses she will have her birthday party",
+                    "at the girl's house she'll have her birthday party",
+                    "at the girl's house the girl will have her birthday party"
+                  ],
+                  "referenceMachineEvaluation": [
+                    "at her house",
+                    "at the girl's hourse",
+                    "she will have it at her house",
+                    "she'll have it at her house",
+                    "the girl will have it at her house",
+                    "she will have her birthday party at her house",
+                    "she'll have her birthday party at her house",
+                    "the girl will have her birthday party at her house",
+                    "she will have the birthday party at her house",
+                    "she'll have the birthday party at her house",
+                    "the girl will have the birthday party at her house",
+                    "at her house she will have it",
+                    "at her house she'll have it",
+                    "at her house the girl will have it",
+                    "at her houses she will have her birthday party",
+                    "at her house she'll have her birthday party",
+                    "at her house the girl will have her birthday party",
+                    "at the girl's house she will have it",
+                    "at the girl's house she'll have it",
+                    "at the girl's house the girl will have it",
+                    "at the girl's houses she will have her birthday party",
+                    "at the girl's house she'll have her birthday party",
+                    "at the girl's house the girl will have her birthday party"
+                  ],
+                  "keywords": [{ "text": "house", "weight": "20", "exclude": false }],
+                  "errorReferenceMachineEvaluation": [],
+                  "hintReferenceMachineEvaluation": []
+                },
+                "evaluationEngineInfo": {
+                  "evaluationEngine": "eval.semi.en",
+                  "fourDimensionEvaluationMode": "4"
+                },
+                "answerExplanation": ""
+              },
+              "subQuestion": [],
+              "groups": [],
+              "pluginParameters": null
+            }
+          },
+          {
+            "dataVersion": null,
+            "id": "42912550483918848",
+            "code": "",
+            "questionPatternId": "41784028499542016",
+            "questionTime": 42.88,
+            "mainOrderIndex": 1,
+            "rawOrderIndex": 4,
+            "relationType": "NEW",
+            "difficultLevel": "",
+            "difficultLevelValue": "",
+            "checkAbility": "",
+            "checkAbilityValue": "",
+            "data": {
+              "id": null,
+              "patternType": "NORMAL",
+              "subjectiveAndObjective": "SUBJECTIVE_ORAL",
+              "mainQuestion": {
+                "stemText": "Who does the boy often play with on Children’s Day?~",
+                "stemImage": "",
+                "stemAudio": "42912533304050688",
+                "stemAudioTime": 14.94,
+                "stemAudioText": "",
+                "stemVideo": "",
+                "stemVideoText": "",
+                "stemVideoTime": 0.0,
+                "stemAudio2": "",
+                "stemAudioTime2": 0.0,
+                "guidePrefixText": "",
+                "guidePrefixImage": "",
+                "guidePrefixAudio": "",
+                "guidePrefixAudioTime": 0.0,
+                "guideSuffixText": "",
+                "guideSuffixImage": "",
+                "guideSuffixAudio": "",
+                "guideSuffixAudioTime": 0.0,
+                "guideMiddleText": "",
+                "guideMiddleImage": "",
+                "guideMiddleAudio": "",
+                "guideMiddleAudioTime": 0.0,
+                "answerType": "HALF_OPEN_ORAL",
+                "choiceQuestionAnswerInfo": { "floatMode": null, "options": null },
+                "gapFillingQuestionAnswerInfo": {
+                  "gapMode": null,
+                  "gapFloatMode": null,
+                  "answers": null
+                },
+                "closeOralQuestionAnswerInfo": {
+                  "referenceText": null,
+                  "referenceAudio": null,
+                  "referenceAudioTime": null,
+                  "referenceTextMark": null,
+                  "allowEnter": null
+                },
+                "openOralQuestionAnswerInfo": {
+                  "referenceAnswer": null,
+                  "referenceMachineEvaluation": null,
+                  "keywords": null
+                },
+                "halfOpenOralQuestionAnswerInfo": {
+                  "referenceAnswer": [
+                    "his friends",
+                    "he often plays with his friends on Children's Day",
+                    "the boy often plays with his friends on Children's Day",
+                    "he often plays with his friends on that Day",
+                    "the boy often plays with his friends on that Day",
+                    "he plays with his friends on Children's Day",
+                    "the boy plays with his friends on Children's Day",
+                    "he plays with his friends on that Day",
+                    "the boy plays with his friends on that Day",
+                    "on Children's Day he often plays with his friends",
+                    "on Children's Day the boy often plays with his friends",
+                    "on Children's Day he plays with his friends",
+                    "On Children's Day the boy plays with his friends",
+                    "on that day",
+                    "he often plays with his friends",
+                    "on that Day the boy often plays with his friends",
+                    "on that Day he plays with his friends",
+                    "on that day the boy plays with his friends"
+                  ],
+                  "referenceMachineEvaluation": [
+                    "his friends",
+                    "he often plays with his friends on Children's Day",
+                    "the boy often plays with his friends on Children's Day",
+                    "he often plays with his friends on that Day",
+                    "the boy often plays with his friends on that Day",
+                    "he plays with his friends on Children's Day",
+                    "the boy plays with his friends on Children's Day",
+                    "he plays with his friends on that Day",
+                    "the boy plays with his friends on that Day",
+                    "on Children's Day he often plays with his friends",
+                    "on Children's Day the boy often plays with his friends",
+                    "on Children's Day he plays with his friends",
+                    "On Children's Day the boy plays with his friends",
+                    "on that day",
+                    "he often plays with his friends",
+                    "on that Day the boy often plays with his friends",
+                    "on that Day he plays with his friends",
+                    "on that day the boy plays with his friends"
+                  ],
+                  "keywords": [{ "text": "friends", "weight": "20", "exclude": false }],
+                  "errorReferenceMachineEvaluation": [],
+                  "hintReferenceMachineEvaluation": []
+                },
+                "evaluationEngineInfo": {
+                  "evaluationEngine": "eval.semi.en",
+                  "fourDimensionEvaluationMode": "4"
+                },
+                "answerExplanation": ""
+              },
+              "subQuestion": [],
+              "groups": [],
+              "pluginParameters": null
+            }
+          }
+        ]
+      },
+      {
+        "type": "PATTERN",
+        "pattern": {
+          "questionPatternId": "41785263302639616",
+          "questionPatternName": "sp11听后记录&转述",
+          "questionPatternType": "COMPLEX",
+          "questionPatternCode": "7",
+          "questionPatternDescription": "123",
+          "mainPatterns": {
+            "fullMark": 8.0,
+            "questionMark": 0.0,
+            "questionCount": 0,
+            "stemListening": 0,
+            "readTime": 0,
+            "prepareTime": 0,
+            "subFullMark": 0.0,
+            "subQuestionMark": 0.0,
+            "subQuestionCount": 0,
+            "subQuestionStemListening": 0,
+            "subQuestionReadTime": 0,
+            "subQuestionPrepareTime": 0,
+            "answerTime": 0,
+            "aheadDelivery": 0,
+            "questionPatternInstanceSequence": "三、",
+            "questionPatternInstanceName": "听后记录&转述",
+            "questionPatternInstanceAudioTime": 0.0,
+            "questionPatternInstanceHint": "(共2节；共8分)",
+            "showQuestionPatternInstanceName": "Y",
+            "answerGuideText": "听短文，记录关键信息并转述短文内容。本大题共两节。第一节，听两遍短文，根据所听内容和提示，将所缺的关键信息填写在相应位置上。每空只需填写一个词。第二节，听第三遍短文，根据所听内容和提示进行转述。",
+            "answerGuideAudio": "41785840975741952",
+            "answerGuideAudioTime": 30.096,
+            "answerGuideDelay": 0
+          },
+          "subQuestionPatterns": [],
+          "groups": [
+            {
+              "pattern": {
+                "questionPatternName": "sp11北京记录",
+                "questionPatternType": "TWO_LEVEL",
+                "questionPatternCode": "4",
+                "questionPatternDescription": "13",
+                "mainPatterns": {
+                  "fullMark": 5.0,
+                  "questionMark": 0.0,
+                  "questionCount": 1,
+                  "stemListening": 2,
+                  "readTime": 120,
+                  "prepareTime": 0,
+                  "subFullMark": 0.0,
+                  "subQuestionMark": 1.0,
+                  "subQuestionCount": 5,
+                  "subQuestionStemListening": 0,
+                  "subQuestionReadTime": 0,
+                  "subQuestionPrepareTime": 0,
+                  "answerTime": 90,
+                  "aheadDelivery": 0,
+                  "questionPatternInstanceSequence": "第一节、",
+                  "questionPatternInstanceName": "听后记录",
+                  "questionPatternInstanceAudioTime": 0.0,
+                  "questionPatternInstanceHint": "(共5小题；每小题1分，共5分)",
+                  "answerGuideAudioTime": 0.0,
+                  "answerGuideDelay": 0,
+                  "markRatio": "1"
+                },
+                "sequenceNumber": [["1", "2", "3", "4", "5"]],
+                "hints": [
+                  {
+                    "mainHints": [
+                      { "name": "stemListening", "text": "", "audio": "", "audioTime": null },
+                      {
+                        "name": "readTime",
+                        "text": "现在，你有1分钟的时间浏览提示信息。",
+                        "audio": "41785919358895104",
+                        "audioTime": 6.192
+                      },
+                      {
+                        "name": "answerTime",
+                        "text": "下面，请在90秒钟内将所缺信息输入到指定的答题区域。",
+                        "audio": "41785929022571520",
+                        "audioTime": 6.768
+                      }
+                    ],
+                    "subHints": null
+                  }
+                ],
+                "subQuestionPatterns": [],
+                "subjectiveAndObjective": "OBJECTIVE",
+                "answerType": "GAP_FILLING"
+              }
+            },
+            {
+              "pattern": {
+                "questionPatternName": "sp11北京转述",
+                "questionPatternType": "NORMAL",
+                "questionPatternCode": "6",
+                "questionPatternDescription": "123",
+                "mainPatterns": {
+                  "fullMark": 3.0,
+                  "questionMark": 3.0,
+                  "questionCount": 1,
+                  "stemListening": 1,
+                  "readTime": 0,
+                  "prepareTime": 120,
+                  "subFullMark": 0.0,
+                  "subQuestionMark": 0.0,
+                  "subQuestionCount": 0,
+                  "subQuestionStemListening": 0,
+                  "subQuestionReadTime": 0,
+                  "subQuestionPrepareTime": 0,
+                  "answerTime": 120,
+                  "aheadDelivery": 0,
+                  "questionPatternInstanceSequence": "第二节、",
+                  "questionPatternInstanceName": "听后转述",
+                  "questionPatternInstanceAudioTime": 0.0,
+                  "questionPatternInstanceHint": "(本节3分)",
+                  "answerGuideAudioTime": 0.0,
+                  "answerGuideDelay": 0,
+                  "markRatio": "1"
+                },
+                "sequenceNumber": [["6"]],
+                "hints": [
+                  {
+                    "mainHints": [
+                      {
+                        "name": "stemListening",
+                        "text": "请再听一遍短文，完成转述。",
+                        "audio": "41785994520821760",
+                        "audioTime": 8.1
+                      },
+                      {
+                        "name": "prepareTime",
+                        "text": "下面，你有2分钟的时间做转述准备。转述的开头已给出。",
+                        "audio": "41786005258241024",
+                        "audioTime": 6.768
+                      },
+                      {
+                        "name": "answerTime",
+                        "text": "下面，请准备录音。听到录音提示音后，在2分钟内完成转述。",
+                        "audio": "41786015995658240",
+                        "audioTime": 7.2
+                      }
+                    ],
+                    "subHints": null
+                  }
+                ],
+                "subQuestionPatterns": [],
+                "subjectiveAndObjective": "SUBJECTIVE_ORAL",
+                "answerType": "OPEN_ORAL"
+              }
+            }
+          ],
+          "subjectiveAndObjective": "SUBJECTIVE_ORAL"
+        },
+        "splitter": null,
+        "recall": null,
+        "questions": [
+          {
+            "dataVersion": null,
+            "id": "42912719061385216",
+            "code": "",
+            "questionPatternId": "41785263302639616",
+            "questionTime": 600.61,
+            "mainOrderIndex": 2,
+            "rawOrderIndex": 0,
+            "relationType": "NEW",
+            "difficultLevel": "",
+            "difficultLevelValue": "",
+            "checkAbility": "",
+            "checkAbilityValue": "",
+            "data": {
+              "id": null,
+              "patternType": "COMPLEX",
+              "subjectiveAndObjective": "SUBJECTIVE_ORAL",
+              "mainQuestion": {
+                "stemText": "",
+                "stemImage": "42912559073853440",
+                "stemAudio": "42912566590047232",
+                "stemAudioTime": 48.204,
+                "stemAudioText": "",
+                "stemVideo": "",
+                "stemVideoText": "",
+                "stemVideoTime": 0.0,
+                "stemAudio2": "",
+                "stemAudioTime2": 0.0,
+                "guidePrefixText": "",
+                "guidePrefixImage": "",
+                "guidePrefixAudio": "",
+                "guidePrefixAudioTime": 0.0,
+                "guideSuffixText": "",
+                "guideSuffixImage": "",
+                "guideSuffixAudio": "",
+                "guideSuffixAudioTime": 0.0,
+                "guideMiddleText": "",
+                "guideMiddleImage": "",
+                "guideMiddleAudio": "",
+                "guideMiddleAudioTime": 0.0,
+                "answerType": "OPEN_ORAL",
+                "choiceQuestionAnswerInfo": { "floatMode": null, "options": null },
+                "gapFillingQuestionAnswerInfo": {
+                  "gapMode": null,
+                  "gapFloatMode": null,
+                  "answers": null
+                },
+                "closeOralQuestionAnswerInfo": {
+                  "referenceText": null,
+                  "referenceAudio": null,
+                  "referenceAudioTime": null,
+                  "referenceTextMark": null,
+                  "allowEnter": null
+                },
+                "openOralQuestionAnswerInfo": {
+                  "referenceAnswer": null,
+                  "referenceMachineEvaluation": null,
+                  "keywords": null
+                },
+                "halfOpenOralQuestionAnswerInfo": {
+                  "referenceAnswer": null,
+                  "referenceMachineEvaluation": null,
+                  "keywords": null,
+                  "errorReferenceMachineEvaluation": null,
+                  "hintReferenceMachineEvaluation": null
+                },
+                "evaluationEngineInfo": {
+                  "evaluationEngine": null,
+                  "fourDimensionEvaluationMode": null
+                },
+                "answerExplanation": ""
+              },
+              "subQuestion": [],
+              "groups": [
+                {
+                  "id": "6f1e3890c55647448001f6e7b023ef22",
+                  "data": {
+                    "id": null,
+                    "patternType": "TWO_LEVEL",
+                    "subjectiveAndObjective": "OBJECTIVE",
+                    "mainQuestion": {
+                      "stemText": "",
+                      "stemImage": "42912559073853440",
+                      "stemAudio": "42912566590047232",
+                      "stemAudioTime": 48.204,
+                      "stemAudioText": "",
+                      "stemVideo": null,
+                      "stemVideoText": null,
+                      "stemVideoTime": 0.0,
+                      "stemAudio2": null,
+                      "stemAudioTime2": 0.0,
+                      "guidePrefixText": null,
+                      "guidePrefixImage": null,
+                      "guidePrefixAudio": null,
+                      "guidePrefixAudioTime": 0.0,
+                      "guideSuffixText": null,
+                      "guideSuffixImage": null,
+                      "guideSuffixAudio": null,
+                      "guideSuffixAudioTime": 0.0,
+                      "guideMiddleText": null,
+                      "guideMiddleImage": null,
+                      "guideMiddleAudio": null,
+                      "guideMiddleAudioTime": 0.0,
+                      "answerType": "GAP_FILLING",
+                      "choiceQuestionAnswerInfo": null,
+                      "gapFillingQuestionAnswerInfo": null,
+                      "closeOralQuestionAnswerInfo": null,
+                      "openOralQuestionAnswerInfo": null,
+                      "halfOpenOralQuestionAnswerInfo": null,
+                      "evaluationEngineInfo": null,
+                      "answerExplanation": null
+                    },
+                    "subQuestion": [
+                      {
+                        "id": "56d9712707ae4e7dad97bae93647aa5a",
+                        "subQuestionStemText": null,
+                        "subQuestionStemImage": null,
+                        "subQuestionStemAudio": null,
+                        "subQuestionStemAudioTime": 0.0,
+                        "subQuestionStemAudio2": null,
+                        "subQuestionStemAudioTime2": 0.0,
+                        "subQuestionStemAudioText": null,
+                        "askAnswerSection": null,
+                        "answerType": "GAP_FILLING",
+                        "choiceQuestionAnswerInfo": null,
+                        "gapFillingQuestionAnswerInfo": {
+                          "gapMode": "UNIQUE",
+                          "gapFloatMode": "HORIZENTAL",
+                          "answers": [{ "text": "exercise" }]
+                        },
+                        "closeOralQuestionAnswerInfo": null,
+                        "openOralQuestionAnswerInfo": null,
+                        "halfOpenOralQuestionAnswerInfo": null,
+                        "evaluationEngineInfo": null,
+                        "answerExplanation": null
+                      },
+                      {
+                        "id": "85c3e96a62fa4967920d08b181ae66ff",
+                        "subQuestionStemText": null,
+                        "subQuestionStemImage": null,
+                        "subQuestionStemAudio": null,
+                        "subQuestionStemAudioTime": 0.0,
+                        "subQuestionStemAudio2": null,
+                        "subQuestionStemAudioTime2": 0.0,
+                        "subQuestionStemAudioText": null,
+                        "askAnswerSection": null,
+                        "answerType": "GAP_FILLING",
+                        "choiceQuestionAnswerInfo": null,
+                        "gapFillingQuestionAnswerInfo": {
+                          "gapMode": "UNIQUE",
+                          "gapFloatMode": "HORIZENTAL",
+                          "answers": [{ "text": "Usually" }]
+                        },
+                        "closeOralQuestionAnswerInfo": null,
+                        "openOralQuestionAnswerInfo": null,
+                        "halfOpenOralQuestionAnswerInfo": null,
+                        "evaluationEngineInfo": null,
+                        "answerExplanation": null
+                      },
+                      {
+                        "id": "6bdcd1068ea241429d63a42cce75695b",
+                        "subQuestionStemText": null,
+                        "subQuestionStemImage": null,
+                        "subQuestionStemAudio": null,
+                        "subQuestionStemAudioTime": 0.0,
+                        "subQuestionStemAudio2": null,
+                        "subQuestionStemAudioTime2": 0.0,
+                        "subQuestionStemAudioText": null,
+                        "askAnswerSection": null,
+                        "answerType": "GAP_FILLING",
+                        "choiceQuestionAnswerInfo": null,
+                        "gapFillingQuestionAnswerInfo": {
+                          "gapMode": "UNIQUE",
+                          "gapFloatMode": "HORIZENTAL",
+                          "answers": [{ "text": "computer" }]
+                        },
+                        "closeOralQuestionAnswerInfo": null,
+                        "openOralQuestionAnswerInfo": null,
+                        "halfOpenOralQuestionAnswerInfo": null,
+                        "evaluationEngineInfo": null,
+                        "answerExplanation": null
+                      },
+                      {
+                        "id": "16096d2f038b4bd3a4762a0d538b5227",
+                        "subQuestionStemText": null,
+                        "subQuestionStemImage": null,
+                        "subQuestionStemAudio": null,
+                        "subQuestionStemAudioTime": 0.0,
+                        "subQuestionStemAudio2": null,
+                        "subQuestionStemAudioTime2": 0.0,
+                        "subQuestionStemAudioText": null,
+                        "askAnswerSection": null,
+                        "answerType": "GAP_FILLING",
+                        "choiceQuestionAnswerInfo": null,
+                        "gapFillingQuestionAnswerInfo": {
+                          "gapMode": "UNIQUE",
+                          "gapFloatMode": "HORIZENTAL",
+                          "answers": [{ "text": "Sometimes" }]
+                        },
+                        "closeOralQuestionAnswerInfo": null,
+                        "openOralQuestionAnswerInfo": null,
+                        "halfOpenOralQuestionAnswerInfo": null,
+                        "evaluationEngineInfo": null,
+                        "answerExplanation": null
+                      },
+                      {
+                        "id": "e64455a0922848de94d85b5e902e5b40",
+                        "subQuestionStemText": null,
+                        "subQuestionStemImage": null,
+                        "subQuestionStemAudio": null,
+                        "subQuestionStemAudioTime": 0.0,
+                        "subQuestionStemAudio2": null,
+                        "subQuestionStemAudioTime2": 0.0,
+                        "subQuestionStemAudioText": null,
+                        "askAnswerSection": null,
+                        "answerType": "GAP_FILLING",
+                        "choiceQuestionAnswerInfo": null,
+                        "gapFillingQuestionAnswerInfo": {
+                          "gapMode": "UNIQUE",
+                          "gapFloatMode": "HORIZENTAL",
+                          "answers": [{ "text": "Never " }]
+                        },
+                        "closeOralQuestionAnswerInfo": null,
+                        "openOralQuestionAnswerInfo": null,
+                        "halfOpenOralQuestionAnswerInfo": null,
+                        "evaluationEngineInfo": null,
+                        "answerExplanation": null
+                      }
+                    ],
+                    "groups": null,
+                    "pluginParameters": null
+                  }
+                },
+                {
+                  "id": "65e395c026da41c785c2ab9e2c51a45e",
+                  "data": {
+                    "id": null,
+                    "patternType": "NORMAL",
+                    "subjectiveAndObjective": "SUBJECTIVE_ORAL",
+                    "mainQuestion": {
+                      "stemText": "",
+                      "stemImage": "42912559073853440",
+                      "stemAudio": "42912566590047232",
+                      "stemAudioTime": 48.204,
+                      "stemAudioText": "",
+                      "stemVideo": null,
+                      "stemVideoText": null,
+                      "stemVideoTime": 0.0,
+                      "stemAudio2": null,
+                      "stemAudioTime2": 0.0,
+                      "guidePrefixText": null,
+                      "guidePrefixImage": null,
+                      "guidePrefixAudio": null,
+                      "guidePrefixAudioTime": 0.0,
+                      "guideSuffixText": "提示文本\nWhat does Mike do at weekends …\n",
+                      "guideSuffixImage": null,
+                      "guideSuffixAudio": null,
+                      "guideSuffixAudioTime": 0.0,
+                      "guideMiddleText": null,
+                      "guideMiddleImage": null,
+                      "guideMiddleAudio": null,
+                      "guideMiddleAudioTime": 0.0,
+                      "answerType": "OPEN_ORAL",
+                      "choiceQuestionAnswerInfo": null,
+                      "gapFillingQuestionAnswerInfo": null,
+                      "closeOralQuestionAnswerInfo": null,
+                      "openOralQuestionAnswerInfo": {
+                        "referenceAnswer": [
+                          "What does Mike do at weekends? He always gets some exercise with his friends. He thinks it's good for his health. He usually reads books in the library near his house. He often uses the computer at home. He sometimes watches TV with his father. He never goes out for shopping. He lives a healthy life."
+                        ],
+                        "referenceMachineEvaluation": [
+                          "What does Mike do at weekends He always gets some exercise with his friends. He thinks it's good for his health. He usually reads books in the library near his house. He often uses the computer at home. He sometimes watches TV with his father. He never goes out for shopping. He lives a healthy life",
+                          "What does Mike do at weekends He always does some exercise with his friends. He thinks it's good for his health. He usually reads books in the library near his house. He often uses the computer at home. He sometimes watches TV with his father. He never goes out for shopping. He lives a healthy life",
+                          "What does Mike do at weekends He always gets some exercise with his friends. He thinks that it is good for his health. He usually reads books in the library near his house. He often uses the computer at home. He sometimes watches TV with his father. He never goes out for shopping. He lives a healthy life",
+                          "What does Mike do at weekends He always gets some exercise with his friends. He thinks it's good for his health. He usually reads books in the library near his house. He often uses the computer at home. He sometimes watches TV with his father. He never goes out for shopping. He lives a healthy life",
+                          "What does Mike do at weekends He always gets some exercise with his friends. He thinks doing exercise is good for his health. He usually reads books in the library near his house. He often uses the computer at home. He sometimes watches TV with his father. He never goes out for shopping. He lives a healthy life",
+                          "What does Mike do at weekends He always gets some exercise with his friends. He thinks it's good for his health. He usually reads books in the library close to his house. He often uses the computer at home. He sometimes watches TV with his father. He never goes out for shopping. He lives a healthy life",
+                          "What does Mike do at weekends He always gets some exercise with his friends. He thinks it's good for his health. He usually reads books in the library near his house. He often uses the computer at home. Sometimes he watches TV with his father. He never goes out for shopping. He lives a healthy life",
+                          "What does Mike do at weekends He always gets some exercise with his friends. He thinks it's good for his health. He usually reads books in the library near his house. He often uses the computer when he is at home. He sometimes watches TV with his father. He never goes out for shopping. He lives a healthy life",
+                          "What does Mike do at weekends He always gets some exercise with his friends. Mike thinks it's good for his health. He usually reads books in the library near his house at weekends. He often uses the computer at home. Mike sometimes watches TV with his father. He never goes out for shopping. Mike lives a healthy life",
+                          "What does Mike do at weekends He always do some sport with his friends. He thinks it's good for his health. Mike usually reads books in the library near his house. He often uses the computer at home. He sometimes watches TV with his father. Mike never goes out for shopping. He lives a healthy life",
+                          "What does Mike do at weekends He always gets some exercise with his friends. He thinks it's good for his health. He likes playing basketball best. He usually reads books in the library near his house. He often uses the computer at home. He sometimes watches TV with his father. He never goes out for shopping. He lives a healthy life",
+                          "What does Mike do at weekends He always gets some exercise with his friends. He thinks it's good for his health. At weekends He usually reads books in the library near his house. He often uses the computer at home. He sometimes watches TV with his father. He never goes out for shopping. He lives a healthy life",
+                          "What does Mike do at weekends He always gets some exercise with his friends. He thinks it's good for his health. He usually reads books in the library near his house. He often uses the computer at home. He uses it for homework and not for fun. He sometimes watches TV with his father. He never goes out for shopping. He lives a healthy life",
+                          "What does Mike do at weekends He always gets some exercise with his friends. He thinks it's good for his health. He usually reads books in the library near his house. He often uses the computer at home. He sometimes watches TV with his father. It's interesting to watch TV. He likes watching sports games. He never goes out for shopping. He lives a healthy life",
+                          "What does Mike do at weekends He always gets some exercise with his friends. He thinks it's good for his health. He likes playing basketball best. At weekends he usually reads books in a library near his house. He often uses the computer at home. He uses it for homework and not for fun. He sometimes watches TV with his father. It's interesting to watch TV. He likes watching sports games. He never goes out for shopping. He buys things on the Internet because things on the Internet are cheap. He lives a healthy life."
+                        ],
+                        "keywords": [
+                          { "text": "exercise", "weight": "20", "exclude": false },
+                          { "text": "no", "weight": "50", "exclude": true },
+                          { "text": "Usually", "weight": "20", "exclude": false },
+                          { "text": "computer", "weight": "20", "exclude": false },
+                          { "text": "Sometimes", "weight": "20", "exclude": false },
+                          { "text": "Never ", "weight": "20", "exclude": false }
+                        ]
+                      },
+                      "halfOpenOralQuestionAnswerInfo": null,
+                      "evaluationEngineInfo": {
+                        "evaluationEngine": "eval.open.en",
+                        "fourDimensionEvaluationMode": "4"
+                      },
+                      "answerExplanation": null
+                    },
+                    "subQuestion": null,
+                    "groups": null,
+                    "pluginParameters": null
+                  }
+                }
+              ],
+              "pluginParameters": null
+            }
+          }
+        ]
+      },
+      {
+        "type": "PATTERN",
+        "pattern": {
+          "questionPatternId": "41784221773070336",
+          "questionPatternName": "sp11北京-朗读短文",
+          "questionPatternType": "NORMAL",
+          "questionPatternCode": "3",
+          "questionPatternDescription": "123",
+          "mainPatterns": {
+            "fullMark": 5.0,
+            "questionMark": 5.0,
+            "questionCount": 1,
+            "stemListening": 0,
+            "readTime": 90,
+            "prepareTime": 0,
+            "subFullMark": 0.0,
+            "subQuestionMark": 0.0,
+            "subQuestionCount": 0,
+            "subQuestionStemListening": 0,
+            "subQuestionReadTime": 0,
+            "subQuestionPrepareTime": 0,
+            "answerTime": 120,
+            "aheadDelivery": 40,
+            "questionPatternInstanceSequence": "四、",
+            "questionPatternInstanceName": "朗读短文",
+            "questionPatternInstanceAudioTime": 0.0,
+            "questionPatternInstanceHint": "(共5分)",
+            "answerGuideText": "NO_GUIDE",
+            "answerGuideAudioTime": 0.0,
+            "answerGuideDelay": 0,
+            "markRatio": "1"
+          },
+          "sequenceNumber": [["1"]],
+          "hints": [
+            {
+              "mainHints": [
+                {
+                  "name": "readTime",
+                  "text": "现在，你有90秒钟的时间浏览短文并做录音准备。",
+                  "audio": "41786090083845120",
+                  "audioTime": 7.956
+                },
+                {
+                  "name": "answerTime",
+                  "text": "下面请准备录音。听到录音提示音后，在2分钟内完成朗读。",
+                  "audio": "41786097600037888",
+                  "audioTime": 6.768
+                }
+              ],
+              "subHints": null
+            }
+          ],
+          "subjectiveAndObjective": "SUBJECTIVE_ORAL",
+          "answerType": "CLOSED_ORAL"
+        },
+        "splitter": null,
+        "recall": null,
+        "questions": [
+          {
+            "dataVersion": null,
+            "id": "42912779190927360",
+            "code": "",
+            "questionPatternId": "41784221773070336",
+            "questionTime": 213.0,
+            "mainOrderIndex": 3,
+            "rawOrderIndex": 0,
+            "relationType": "NEW",
+            "difficultLevel": "",
+            "difficultLevelValue": "",
+            "checkAbility": "",
+            "checkAbilityValue": "",
+            "data": {
+              "id": null,
+              "patternType": "NORMAL",
+              "subjectiveAndObjective": "SUBJECTIVE_ORAL",
+              "mainQuestion": {
+                "stemText": "Daming's mother likes chocolate, but she doesn't often buy any because it isn't very healthy. She likes going shopping and always buys expensive clothes. She has got 11 silk scarves, 20 dresses and a lot of shoes. She spends a lot of money. Betty's cousin likes reading and she reads lots of books and magazines. She also likes films and often goes to the cinema, but she never watches sport. Tony's sister likes music. She likes going to concerts but it's often expensive. She buys CDs of her favourite songs.",
+                "stemImage": "",
+                "stemAudio": "",
+                "stemAudioTime": 0.0,
+                "stemAudioText": "",
+                "stemVideo": "",
+                "stemVideoText": "",
+                "stemVideoTime": 0.0,
+                "stemAudio2": "",
+                "stemAudioTime2": 0.0,
+                "guidePrefixText": "",
+                "guidePrefixImage": "",
+                "guidePrefixAudio": "",
+                "guidePrefixAudioTime": 0.0,
+                "guideSuffixText": "",
+                "guideSuffixImage": "",
+                "guideSuffixAudio": "",
+                "guideSuffixAudioTime": 0.0,
+                "guideMiddleText": "",
+                "guideMiddleImage": "",
+                "guideMiddleAudio": "",
+                "guideMiddleAudioTime": 0.0,
+                "answerType": "CLOSED_ORAL",
+                "choiceQuestionAnswerInfo": { "floatMode": null, "options": null },
+                "gapFillingQuestionAnswerInfo": {
+                  "gapMode": null,
+                  "gapFloatMode": null,
+                  "answers": null
+                },
+                "closeOralQuestionAnswerInfo": {
+                  "referenceText": "Daming's mother likes chocolate, but she doesn't often buy any because it isn't very healthy. She likes going shopping and always buys expensive clothes. She has got 11 silk scarves, 20 dresses and a lot of shoes. She spends a lot of money. Betty's cousin likes reading and she reads lots of books and magazines. She also likes films and often goes to the cinema, but she never watches sport. Tony's sister likes music. She likes going to concerts but it's often expensive. She buys CDs of her favourite songs.",
+                  "referenceAudio": null,
+                  "referenceAudioTime": 0.0,
+                  "referenceTextMark": [
+                    { "word": "11", "markedWord": "eleven", "startIndex": "166", "endIndex": "167" }
+                  ],
+                  "allowEnter": "N"
+                },
+                "openOralQuestionAnswerInfo": {
+                  "referenceAnswer": null,
+                  "referenceMachineEvaluation": null,
+                  "keywords": null
+                },
+                "halfOpenOralQuestionAnswerInfo": {
+                  "referenceAnswer": null,
+                  "referenceMachineEvaluation": null,
+                  "keywords": null,
+                  "errorReferenceMachineEvaluation": null,
+                  "hintReferenceMachineEvaluation": null
+                },
+                "evaluationEngineInfo": {
+                  "evaluationEngine": "eval.para.en",
+                  "fourDimensionEvaluationMode": "4"
+                },
+                "answerExplanation": "123"
+              },
+              "subQuestion": [],
+              "groups": [],
+              "pluginParameters": null
+            }
+          }
+        ]
+      }
+    ],
+    "fullMark": 26.0,
+    "annual": "2017",
+    "annualValue": "2017-2018",
+    "tags": null,
+    "paperScope": "SCOPE_NORMAL",
+    "paperScopeValue": "日常",
+    "textbookId": "41974361049006080",
+    "textbookName": "lucy测试",
+    "grade": "009",
+    "gradeValue": "九年级",
+    "volumn": "FIRST_VOLUMN",
+    "volumnValue": "上册",
+    "unitId": "41974381450100736",
+    "unitName": "lucy测试单元",
+    "hasExamination": null,
+    "publishDate": 1554701919470,
+    "questionCount": 11
+  },
+  "responseCode": "200"
+}

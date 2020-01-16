@@ -1,0 +1,57 @@
+.finishModal {
+  .warningInfo {
+    width: 440px;
+    height: 36px;
+    background: #FFF8E6;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #333333;
+    font-size: 13px;
+
+    :global {
+      .iconfont {
+        color: #FF6E4A;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .campusList {
+    width: 440px;
+    max-height: 186px;
+    border-radius: 5px;
+    border: 1px solid #E5E5E5;
+    padding: 0px 10px;
+    margin-top: 10px;
+
+    .campusLisItem {
+      color: #333333;
+      font-size: 14px;
+      padding: 7px 0px;
+      border-bottom: 1px solid #f5f5f5;
+
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+
+  .pagination {
+    padding: 10px 0px;
+    border-bottom: 1px solid #E5E5E5;
+  }
+
+  .modalFooter {
+    :global {
+      .ant-btn {
+        color: #FFFFFF;
+        border: 1px solid #03c46b;
+        &:first-child{
+          background-color: #ff6e4a;
+          border: 1px solid #FF6E4A;
+          box-shadow: 0px 2px 5px 0px rgba(255, 110, 74, 0.5);
+        }
+      }
+    }
+  }
+}

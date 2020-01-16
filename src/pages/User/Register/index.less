@@ -1,0 +1,222 @@
+@import '~antd/lib/style/themes/default.less';
+
+
+  .user-register {
+      position: relative;
+      padding: 0 0;
+      margin: 0 0;
+      width: 100%;
+      height: 100vh;
+      background-repeat:no-repeat;
+      :global {
+        .right {
+            width: 50%;
+            height: 100vh;
+            background-color: #fff;
+            position: absolute;
+            right: 0;
+            top: 0;
+            .registerContainer {
+                padding: 20px 40px;
+                width:410px;
+                height:510px;
+                background:rgba(255,255,255,1);
+                box-shadow:0px 2px 20px 0px rgba(0,0,0,0.1);
+                border-radius:10px;
+                .registerTit {
+                    color: #333;
+                    font-weight: bold;
+                    .tit {
+                        font-size: 30px;
+                    }
+                    .subTit {
+                        font-size: 18px;
+                    }
+                }
+
+            }
+        }
+
+        .logoBox {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            img {
+                width: 127px;
+                height: 32px;
+            }
+
+        }
+        .register-success {
+            margin-top: 100px;
+            text-align: center;
+
+            .success-icon {
+                margin: 0 auto;
+                width: 60px;
+                height: 60px;
+                background: #03C46B;
+                border-radius: 30px;
+                text-align: center;
+                .success {
+                    font-size: 26px !important;
+                    color: #fff;
+                    line-height: 60px;
+                }
+            }
+            .account {
+                margin: 20px auto 12px;
+                font-size:24px;
+                color: #333333;
+                font-weight: 400;
+            }
+            .tip {
+                padding: 0 0;
+                margin: 10px auto;
+                font-size:14px;
+                font-family:PingFangSC-Regular;
+                font-weight:400;
+                text-align: center;
+                color:#888888;
+                line-height:20px;
+            }
+            .now-login-btn {
+                margin: 40px auto 20px;
+                width: 180px;
+                height: 40px;
+                background:#fff;
+                color: #333333;
+                font-size: 16px;
+                border-radius:20px;
+                border-color: #333;
+                border:2px solid rgba(51,51,51,1);
+            }
+        }
+        .register-container {
+            transform: all 0.5s ease;
+            background: #fff;
+
+            .form {
+                padding-top: 10px;
+                input:-webkit-autofill,
+                textarea:-webkit-autofill,
+                select:-webkit-autofill {
+                background-color: #fff !important;
+                background-image: none !important;
+                color: rgb(0, 0, 0) !important;
+                }
+                .ant-form-explain {
+                    display: none;
+                }
+                .ant-input-affix-wrapper .ant-input-prefix {
+                    left: 0;
+                  }
+                  .ant-input-affix-wrapper .ant-input:not(:first-child) {
+                    padding-left: 23px;
+                  }
+
+                  .has-error .ant-input{
+                    border-color: transparent !important;
+                    &:focus,&:hover,&:not([disabled]):hover{
+                      border-color: transparent !important;
+                      box-shadow: none !important;
+                    }
+                  }
+                  .ant-form-item {
+                    margin-bottom: 0;
+                    height: 61px;
+                    line-height: 60px;
+                    .ant-input {
+                      outline: none;
+                      background: #fff;
+                      height: 60px;
+                      line-height: normal;
+                      border-radius: 10px;
+                      font-size: 14px;
+                      box-shadow: none;
+                      border : none !important;
+                      border-color : transparent !important;
+                      &:last-child {
+                        border-top-left-radius: 0;
+                        border-top-right-radius: 0;
+                      }
+                    }
+
+                  }
+                .message-item {
+                    position: relative;
+                    .ant-input-affix-wrapper .ant-input:not(:first-child) {
+                        padding-right: 84px;
+                    }
+                    .message-btn {
+                        outline: none;
+                        width: 90px;
+                        height: 59px;
+                        line-height: 60px;
+                        border: none;
+                        background: #fff;
+                        position: absolute;
+                        top: -20px;
+                        right: 0px;
+                        color: #228EFF;
+                        font-size: 14px;
+                        cursor: pointer;
+                        &:disabled {
+                            color: #B2B2B2;
+                        }
+                    }
+                }
+                .password-item {
+                    .ant-input-affix-wrapper .ant-input:not(:first-child) {
+                        padding-right: 20px;
+                    }
+                    .visibile {
+                        width: 20px;
+                        height: 60px;
+                        line-height: 60px;
+                        position: absolute;
+                        top: -20px;
+                        right: 0px;
+                        color: #000000;
+                        font-size: 14px;
+                        cursor: pointer;
+                    }
+                }
+                input.form-control:focus {
+                    box-shadow: none;
+                }
+                .login-form-forgot {
+                    float: right;
+                    color: #333;
+                    font-size: 14px;
+                }
+                .register-btn {
+                    border: none;
+                    margin-top: 0px;
+                    width: 100%;
+                    height: 40px;
+                    color: #fff;
+                    background:rgba(3,196,107,1);
+                    box-shadow:0px 2px 5px 0px rgba(3,196,107,0.5);
+                    border-radius:20px;
+                }
+                .tip {
+                    margin: 10px 0px 0px 0px;
+                    text-align: center;
+                    font-size: 14px;
+                    color: #292935;
+                    font-weight:400;
+                }
+                .registerErrorInfo {
+                    color: #FF6E4A;
+                    width: 100%;
+                    border-radius:5px;
+                    font-size: 13px;
+                }
+            }
+
+        }
+
+
+    }
+}

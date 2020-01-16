@@ -1,0 +1,944 @@
+.teacher-manager {
+  .stylesName {
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 20px;
+    span {
+      color: rgba(255, 255, 255, 1);
+      font-weight: 500;
+      font-size: 13px;
+    }
+  }
+  :global {
+    .ant-back-top {
+      bottom: 20px;
+    }
+    .backtop {
+      width: 40px;
+      height: 40px;
+      color: #fff;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.65);
+      border-radius: 50%;
+      box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+      .text {
+        font-size: 14px;
+        line-height: 38px;
+      }
+      :global {
+        .iconfont {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(60, 69, 78, 0.15);
+    .right_text {
+      color: rgba(34, 142, 255, 1);
+      font-size: 13px;
+      cursor: pointer;
+    }
+    :global {
+      .ant-tabs-nav .ant-tabs-tab {
+        margin: 0;
+        // padding: 5px 5px;
+        padding-top: 21px;
+        padding-right: 25px;
+      }
+      .ant-tabs-bar {
+        border-bottom: 0;
+      }
+
+      .ant-tabs-nav .ant-tabs-tab:hover {
+        color: rgba(51, 51, 51, 1);
+        font-weight: 600;
+      }
+
+      .ant-tabs-nav .ant-tabs-tab-active {
+        color: rgba(51, 51, 51, 1);
+        font-weight: 600;
+      }
+
+      .ant-tabs-top .ant-tabs-ink-bar-animated {
+        width: 10px !important;
+        margin-left: 38px;
+      }
+    }
+  }
+}
+
+.teacher-examination {
+  :global {
+    .releaseStep {
+      height: auto;
+      min-height: auto;
+      background: unset;
+      border-radius: 0;
+    }
+
+    .selectpaper {
+      display: block;
+      margin-top: 10px;
+      padding: 0;
+      .Search {
+        margin: 0;
+        margin-bottom: 10px;
+      }
+      .selectpaperDrawer {
+        position: fixed;
+        top: 159px;
+        bottom: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        width: 367px;
+        padding: 17px 20px;
+        padding-bottom: 66px;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 10px 0 0 0;
+        box-shadow: 0 0 10px 0 rgba(60, 69, 78, 0.15);
+
+        /* 设置滚动条的样式 */
+        ::-webkit-scrollbar {
+          width: 6px;
+          // background-color: aqua;
+        }
+
+        /* 滚动槽 */
+        ::-webkit-scrollbar-track {
+          border-radius: 10px;
+        }
+
+        /* 滚动条滑块 */
+        ::-webkit-scrollbar-thumb {
+          background: rgba(204, 204, 204, 1);
+          border-radius: 10px;
+        }
+
+        .ant-spin-nested-loading {
+          flex: 1;
+          overflow: auto;
+        }
+        .tag {
+          position: fixed;
+          top: 30%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 36px;
+          height: 100px;
+          margin-right: -36px;
+          margin-left: 347px;
+          color: #fff;
+          font-size: 12px;
+          background-image: url('../../assets/examination/colse_plan_btn_bg.png');
+          cursor: pointer;
+          .text {
+            width: 18px;
+            text-align: center;
+          }
+        }
+        .pages {
+          height: 67px;
+          margin-top: 20px;
+          padding: 15px 0;
+          border-top: 1px solid #e5e5e5;
+          .ant-pagination {
+            position: relative;
+            right: 0;
+            bottom: 0;
+          }
+        }
+        .lefttop {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-bottom: 7px;
+          border-bottom: 1px solid #e5e5e5;
+        }
+
+        .leftInfo {
+          // width: 327px;
+          margin: 10px 0;
+          padding: 10px;
+          background: rgba(245, 245, 245, 1);
+          border-radius: 5px;
+          .leftInfocontent {
+            display: flex;
+          }
+          .infoCard {
+            flex: 1;
+            .label {
+              color: rgba(136, 136, 136, 1);
+              font-size: 13px;
+            }
+            .labelinfo {
+              flex: 1;
+              color: rgba(51, 51, 51, 1);
+              font-size: 13px;
+            }
+          }
+        }
+      }
+      .selectpaperDraweropen {
+        position: absolute;
+        z-index: 2;
+        height: 801px;
+        padding-bottom: 66px;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 10px 0 0 0;
+        box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.3);
+        .tag {
+          position: fixed;
+          top: 30%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 36px;
+          height: 100px;
+          margin-right: -36px;
+          color: #fff;
+          background-image: url('../../assets/examination/colse_plan_btn_bg.png');
+          cursor: pointer;
+          .text {
+            width: 18px;
+            text-align: center;
+          }
+        }
+      }
+
+      .shoppaperDrawer {
+        position: fixed;
+        right: 0;
+        z-index: 2;
+        width: 190px;
+        height: 412px;
+        min-height: 412px;
+        margin-right: 24px;
+        padding-bottom: 66px;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 10px;
+        box-shadow: 0 0 10px 0 rgba(60, 69, 78, 0.15);
+
+        /* 设置滚动条的样式 */
+        ::-webkit-scrollbar {
+          width: 6px;
+          // background-color: aqua;
+        }
+
+        /* 滚动槽 */
+        ::-webkit-scrollbar-track {
+          border-radius: 10px;
+        }
+
+        /* 滚动条滑块 */
+        ::-webkit-scrollbar-thumb {
+          background: rgba(204, 204, 204, 1);
+          border-radius: 10px;
+        }
+        .lefttop {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 6px 15px;
+          padding-bottom: 7px;
+          border-bottom: 1px solid #e5e5e5;
+        }
+        .clear_text {
+          color: rgba(255, 110, 74, 1);
+          cursor: pointer;
+        }
+        .border-dashed {
+          margin: 4px 9px;
+          border: 1px dashed #fff;
+          .dragTheSorting {
+            display: none;
+          }
+        }
+
+        .border-dashed:hover {
+          margin: 4px 9px;
+          border: 1px dashed #979797;
+          .dragTheSorting {
+            display: block;
+          }
+        }
+        .title {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 36px;
+          padding: 6px 5px;
+          line-height: 36px;
+        }
+        .iconfont {
+          cursor: pointer;
+        }
+
+        .shopcontent {
+          height: 292px;
+          overflow: auto;
+          overflow-x: hidden;
+        }
+
+        .shop_footer {
+          padding-top: 10px;
+          text-align: center;
+          .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 160px;
+            height: 32px;
+            margin: auto;
+            margin-top: 10px;
+            color: #fff;
+            background: rgba(3, 196, 107, 1);
+            border-radius: 18px;
+            box-shadow: 0 2px 5px 0 rgba(3, 196, 107, 0.5);
+            cursor: pointer;
+          }
+        }
+
+        .question {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 34px;
+          margin: 6px 5px;
+          padding-left: 5px;
+          background: rgba(245, 245, 245, 1);
+          border-radius: 5px;
+          .question_number {
+            width: 56px;
+            color: rgba(136, 136, 136, 1);
+            font-size: 13px;
+          }
+          .question_score {
+            width: 50px;
+            height: 24px;
+            margin-right: 5px;
+            padding: 0 5px;
+            line-height: 24px;
+            background: rgba(255, 255, 255, 1);
+            border: 1px solid rgba(204, 204, 204, 1);
+            border-radius: 4px;
+          }
+        }
+        .complexquestion {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 6px 5px;
+          background: rgba(245, 245, 245, 1);
+          border-radius: 5px;
+        }
+        .complexitem {
+          margin: 0;
+        }
+        .normal {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .tag {
+          position: absolute;
+          top: 10%;
+          right: 226px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 46px;
+          height: 100px;
+          margin-right: -36px;
+          padding-left: 12px;
+          color: #fff;
+          background-image: url('../../assets/colse_plan_btn_bg.png');
+          cursor: pointer;
+          .text {
+            width: 18px;
+            text-align: center;
+          }
+        }
+      }
+      .shoppaperDraweropen {
+        position: absolute;
+        right: 36px;
+        z-index: 2;
+        height: 412px;
+        padding-bottom: 66px;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 10px 0 0 0;
+        box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.3);
+
+        /* 设置滚动条的样式 */
+        ::-webkit-scrollbar {
+          width: 6px;
+          // background-color: aqua;
+        }
+
+        /* 滚动槽 */
+        ::-webkit-scrollbar-track {
+          border-radius: 10px;
+        }
+
+        /* 滚动条滑块 */
+        ::-webkit-scrollbar-thumb {
+          background: rgba(204, 204, 204, 1);
+          border-radius: 10px;
+        }
+        .tag {
+          position: fixed;
+          top: 30%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 46px;
+          height: 100px;
+          margin-right: -36px;
+          padding-left: 12px;
+          color: #fff;
+          font-size: 12px;
+          background-image: url('../../assets/colse_plan_btn_bg.png');
+          cursor: pointer;
+          .text {
+            width: 18px;
+            text-align: center;
+          }
+        }
+        .dots {
+          position: absolute;
+          top: 4px;
+          right: -8px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-width: 15px;
+          height: 15px;
+          background: rgba(255, 110, 74, 1);
+          border-radius: 50%;
+          box-shadow: 0 2px 4px 0 rgba(255, 110, 74, 0.5);
+        }
+      }
+      .left {
+        position: fixed;
+        float: left;
+        width: 367px;
+        padding: 17px 20px;
+        padding-bottom: 66px;
+        background: #fff;
+        border-right: 1px solid #e5e5e5;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 0 rgba(60, 69, 78, 0.15);
+        .ant-spin-nested-loading {
+          max-height: 500px;
+          overflow-x: hidden;
+          overflow-y: auto;
+
+          /* 设置滚动条的样式 */
+          ::-webkit-scrollbar {
+            width: 6px;
+            // background-color: aqua;
+          }
+
+          /* 滚动槽 */
+          ::-webkit-scrollbar-track {
+            border-radius: 10px;
+          }
+
+          /* 滚动条滑块 */
+          ::-webkit-scrollbar-thumb {
+            background: rgba(204, 204, 204, 1);
+            border-radius: 10px;
+          }
+        }
+        .pages {
+          position: absolute;
+          left: 0;
+          // width: 367px;
+          height: 67px;
+          padding: 15px 20px;
+          .ant-pagination {
+            position: relative;
+            right: 0;
+            bottom: 0;
+          }
+        }
+        .lefttop {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-bottom: 7px;
+          border-bottom: 1px solid #e5e5e5;
+        }
+
+        .leftInfo {
+          // width: 327px;
+          margin: 10px 0;
+          padding: 10px;
+          background: rgba(245, 245, 245, 1);
+          border-radius: 5px;
+          .leftInfocontent {
+            display: flex;
+          }
+          .infoCard {
+            flex: 1;
+            .label {
+              color: rgba(136, 136, 136, 1);
+              font-size: 13px;
+            }
+            .labelinfo {
+              flex: 1;
+              color: rgba(51, 51, 51, 1);
+              font-size: 13px;
+            }
+          }
+        }
+      }
+      .right {
+        position: relative;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        float: left;
+        .selectedPaper {
+          position: absolute;
+          bottom: 0;
+          z-index: 1;
+          display: flex;
+          flex: 1 1 auto;
+          justify-content: space-between;
+          width: 100%;
+          height: 67px;
+          padding: 15px;
+          border-top: 1px solid #e5e5e5;
+          .showPaperList {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+          }
+          .selectedCount {
+            position: relative;
+            display: inline-block;
+            margin-right: 10px;
+            .icon-btn {
+              align-items: center;
+              width: 40px;
+              height: 40px;
+              padding-left: 5px;
+              font-size: 20px;
+              line-height: 40px;
+              text-align: center;
+              vertical-align: middle;
+              background: rgba(245, 245, 245, 1);
+              border-radius: 50%;
+            }
+            .counts {
+              position: absolute;
+              top: -5px;
+              right: -5px;
+              display: block;
+              width: 16px;
+              height: 16px;
+              color: rgba(255, 255, 255, 1);
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 16px;
+              text-align: center;
+              background: rgba(255, 110, 74, 1);
+              border-radius: 16px;
+              box-shadow: 0 4px 8px 0 rgba(255, 110, 74, 0.5);
+            }
+          }
+        }
+        .black {
+          color: #333;
+          font-size: 13px;
+        }
+        .title {
+          padding-bottom: 5px;
+          color: rgba(51, 51, 51, 1);
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 28px;
+        }
+
+        .paperSelected {
+          position: absolute;
+          bottom: 66px;
+          z-index: 100;
+          width: 100%;
+          background: rgba(255, 255, 255, 1);
+          box-shadow: 0 -5px 5px 0 rgba(0, 0, 0, 0.05);
+          .ant-spin-container {
+            height: 300px;
+            overflow-y: auto;
+          }
+          .navTitle {
+            height: 50px;
+            padding: 0 15px;
+            color: #333;
+            font-size: 14px;
+            line-height: 50px;
+            border-bottom: 1px solid #e5e5e5;
+            .tips {
+              font-weight: 600;
+            }
+            .clearAll {
+              float: right;
+              cursor: pointer;
+              .anticon {
+                margin-left: 30px;
+              }
+            }
+          }
+          .selectedlist {
+            padding: 0;
+            cursor: pointer;
+            // background: #FFEBE6;
+            .titlesub {
+              padding-bottom: 5px;
+              color: #333;
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 28px;
+            }
+            .listItem {
+              position: relative;
+              padding: 10px;
+              list-style: none;
+              border-bottom: 1px solid #e5e5e5;
+              .ant-list-item-content {
+                display: block;
+              }
+              .deleteTest {
+                position: absolute;
+                top: 35%;
+                right: 15px;
+              }
+              .tips {
+                padding-right: 40px;
+                color: #333;
+                span {
+                  color: #888;
+                }
+              }
+              h2 {
+                font-size: 14px;
+              }
+              // &:last{
+              //     border: 0;
+              // }
+            }
+          }
+        }
+      }
+    }
+    .testDetail_none {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 846px;
+      background: #fff;
+      .noData {
+        height: auto;
+      }
+      .noData img {
+        width: 120px;
+        height: 120px;
+        margin-top: 0;
+      }
+    }
+    .testDetail {
+      width: 100%;
+      .paperContent {
+        min-height: 650px;
+        overflow: auto;
+        .paperDetail {
+          display: flex;
+          justify-content: center;
+          min-height: 650px;
+          padding-bottom: 10px;
+          background-color: #f5f5f5;
+        }
+      }
+      .tips {
+        padding-right: 40px;
+        span {
+          color: #888;
+        }
+      }
+      .paperTitle {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        border-bottom: 1px solid #e5e5e5;
+
+        .selectedTest {
+          .button:hover {
+            span {
+              color: #888;
+              cursor: pointer;
+            }
+            i {
+              color: #888;
+              cursor: pointer;
+            }
+          }
+          .iconfont {
+            color: #888;
+          }
+          .button .icon-text {
+            color: #888;
+          }
+          .button {
+            color: #888;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 18px;
+            box-shadow: none;
+          }
+          .textColor {
+            color: #888;
+          }
+        }
+        .addCart {
+          .button {
+            width: 42px;
+            height: 42px;
+            line-height: 42px;
+            text-align: center;
+            background: rgba(255, 153, 0, 1);
+            border: 0;
+            border-radius: 50%;
+            box-shadow: 0 5px 10px rgba(255, 153, 0, 0.5);
+            .icon-add::before {
+              color: #fff !important;
+              font-size: 18px;
+            }
+            .iconfont {
+              padding: 0;
+            }
+          }
+        }
+        h2 {
+          color: #333;
+          font-size: 18px;
+        }
+      }
+    }
+    .secondForm {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      width: 100%;
+      height: 66px;
+      border-top: 1px solid #e5e5e5;
+      .pages {
+        width: 367px;
+        padding: 15px;
+        border-right: 1px solid #e5e5e5;
+        .ant-pagination {
+          position: relative;
+          right: 0;
+          bottom: 0;
+        }
+      }
+      .selectedPaper {
+        position: relative;
+        z-index: 100;
+        display: flex;
+        flex: 1 1 auto;
+        justify-content: space-between;
+        padding: 15px;
+        .selectedCount {
+          position: relative;
+          display: inline-block;
+          margin-right: 10px;
+
+          .icon-btn {
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            padding-left: 5px;
+            line-height: 40px;
+            text-align: center;
+            vertical-align: middle;
+            background: rgba(245, 245, 245, 1);
+            border-radius: 50%;
+          }
+          .counts {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            display: block;
+            width: 16px;
+            height: 16px;
+            color: rgba(255, 255, 255, 1);
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            background: rgba(255, 110, 74, 1);
+            border-radius: 16px;
+            box-shadow: 0 4px 8px 0 rgba(255, 110, 74, 0.5);
+          }
+        }
+      }
+    }
+
+    .paperSource {
+      .ant-tabs-extra-content {
+        padding-top: 2px;
+        color: #888;
+        font-size: 12px;
+      }
+      .ant-tabs-ink-bar {
+        left: 30px;
+        width: 10px !important;
+        height: 4px;
+      }
+      .ant-tabs-nav .ant-tabs-tab {
+        padding: 12px 0;
+      }
+      .paperlist {
+        padding: 0;
+        .paperItem {
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          width: 321px;
+          margin-bottom: 10px;
+          padding: 7px 10px;
+          // overflow: hidden;
+          color: #333;
+          font-size: 14px;
+          list-style: none;
+          background-color: #fff;
+          border: 1px solid #e5e5e5;
+          border-radius: 5px;
+          cursor: pointer;
+          .paperNameDetail {
+            display: block; //转换为盒子模型
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            padding-right: 10px;
+            overflow: hidden; //超出隐藏
+            color: #333;
+            text-overflow: ellipsis; //超出文本设置为...
+            word-break: break-all;
+            -webkit-line-clamp: 2; //设置文本为2行
+            -webkit-box-orient: vertical; //从顶部向底部垂直布置子元素
+          }
+          .ant-checkbox-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            .ant-checkbox {
+              display: none;
+            }
+          }
+          .isExamination {
+            position: absolute;
+            top: 6px;
+            right: -5px;
+          }
+
+          // &:nth-child(2n){
+          //     margin-left: 10px;
+          // }
+        }
+
+        .selected {
+          background: linear-gradient(90deg, rgba(3, 196, 107, 1), rgba(44, 195, 157, 1));
+          border: 0 solid #e5e5e5;
+          box-shadow: 2px 0 8px rgba(14, 192, 93, 0.2);
+          .paperNameDetail {
+            color: #fff;
+          }
+        }
+        .noselected {
+          background: rgba(245, 245, 245, 1);
+          border: 1px solid #f5f5f5;
+          cursor: not-allowed !important;
+          .ant-checkbox-wrapper {
+            cursor: not-allowed;
+          }
+        }
+      }
+    }
+  }
+}
+
+.addNewPaperModal {
+  :global {
+    .itemModal {
+      position: relative;
+      padding: 12px 0;
+      border-bottom: 1px solid #e5e5e5;
+      .paper-title {
+        float: left;
+        width: 100px;
+        color: '#333';
+        font-size: 14px;
+      }
+      .required {
+        color: rgba(255, 110, 74, 1);
+      }
+      input,
+      div {
+        width: calc(~'100% - 120px');
+        border: 0;
+        outline: none;
+      }
+      .suffix {
+        position: absolute;
+        right: 10px;
+      }
+      .subItem {
+        margin-bottom: 5px;
+        span {
+          padding: 0 5px 0 0;
+        }
+      }
+    }
+  }
+}
+
+.footerbtn {
+  display: flex;
+  justify-content: space-between;
+  .warntext {
+    color: rgba(255, 110, 74, 1);
+  }
+}
+
+.question_title {
+  width: 120px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.proVersion {
+  position: relative;
+  img {
+    position: absolute;
+    top: -13px;
+    right: -25px;
+  }
+}

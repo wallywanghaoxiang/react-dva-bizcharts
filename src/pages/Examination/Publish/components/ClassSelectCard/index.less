@@ -1,0 +1,141 @@
+:global {
+  .examination {
+    .card-container > .ant-tabs-card > .ant-tabs-content {
+      height: 120px;
+      margin-top: -16px;
+    }
+
+    .card-container > .ant-tabs-card > .ant-tabs-content > .ant-tabs-tabpane {
+      padding: 16px;
+      background: #fff;
+    }
+
+    .card-container > .ant-tabs-card > .ant-tabs-bar {
+      border-color: #fff;
+    }
+
+    .card-container > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab {
+      background: transparent;
+      border-color: transparent;
+    }
+
+    .card-container > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active {
+      background: #fff;
+      border-color: #fff;
+    }
+    .card-container {
+      padding-top: 10px;
+      background: rgba(245, 245, 245, 1);
+      border-radius: 5px;
+
+      .ant-tabs-nav .ant-tabs-tab-active {
+        background: #fff;
+      }
+
+      .ant-tabs-ink-bar {
+        top: 12px !important;
+        left: 16px !important;
+        width: 3px !important;
+        height: 12px !important;
+      }
+
+      .cardFlex {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .learningGroup {
+        margin-top: 10px;
+      }
+
+      .ant-tabs .ant-tabs-left-bar .ant-tabs-tab,
+      .ant-tabs .ant-tabs-right-bar .ant-tabs-tab {
+        display: block;
+        float: none;
+        margin: 0 0 0 0;
+        padding: 8px 24px;
+      }
+
+      .classCard {
+        position: relative;
+        height: 70px;
+        margin: 6px;
+        padding: 8px 15px;
+        background: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(204, 204, 204, 1);
+        border-radius: 8px;
+        .class {
+          overflow: hidden;
+          color: rgba(51, 51, 51, 1);
+          font-weight: 500;
+          font-size: 18px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        .cardflex {
+          display: flex;
+          align-items: center;
+        }
+        .cardbetween {
+          justify-content: space-between;
+        }
+        .teacherName {
+          max-width: 100px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        .ant-checkbox-wrapper {
+          position: absolute;
+          top: 7px;
+          right: 7px;
+        }
+        .ant-divider,
+        .ant-divider-vertical {
+          top: 0.06em;
+        }
+      }
+
+      .classCard_checked {
+        position: relative;
+        height: 70px;
+        margin: 6px;
+        padding: 8px 15px;
+        background: rgba(230, 249, 240, 1);
+        border: 1px solid rgba(3, 196, 107, 1);
+        border-radius: 8px;
+        .class {
+          overflow: hidden;
+          color: rgba(3, 196, 107, 1);
+          font-weight: 500;
+          font-size: 18px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        .cardflex,
+        i {
+          display: flex;
+          align-items: center;
+          color: rgba(3, 196, 107, 1);
+        }
+        .cardbetween {
+          justify-content: space-between;
+        }
+        .teacherName {
+          max-width: 150px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        .ant-checkbox-wrapper {
+          position: absolute;
+          top: 7px;
+          right: 7px;
+        }
+        .ant-divider,
+        .ant-divider-vertical {
+          top: 0.06em;
+        }
+      }
+    }
+  }
+}

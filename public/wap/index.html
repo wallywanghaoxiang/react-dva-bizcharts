@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>高耘智慧教育云平台</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,maixmum-scale=1.0,minimum-scale=1.0,user-scalable=no"
+    />
+    <style>
+      @media screen and (min-width: 375px) {
+        .info {
+          font-size: 14px !important;
+        }
+      }
+
+      @media screen and (min-width: 750px) {
+        .info {
+          font-size: 24px !important;
+        }
+      }
+
+      html,
+      body,
+      .container {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        min-height: 100%;
+        overflow: hidden;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url('./browser_version_page_bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .logo {
+        margin-top: -0.5rem;
+        width: 1.26rem;
+        height: 0.34rem;
+        background-image: url('./logo_student.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-bottom: 0.5rem;
+      }
+      .pic {
+        width: 2.95rem;
+        height: 1.87rem;
+        background-image: url('./browser_forbid_pic.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-bottom: 0.4rem;
+      }
+      .info {
+        font-size: 12px;
+        line-height: 0.2rem;
+        color: rgba(51, 51, 51, 1);
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo"></div>
+      <div class="pic"></div>
+      <div class="info">为了更好的体验，请使用电脑访问高耘教育云平台</div>
+    </div>
+    <script>
+      function gethtmlfontsize() {
+        // 三个步骤:
+        // 1.获取html的宽,
+        let htmlwidth = document.documentElement.clientWidth || document.body.clientWidth; //有些浏览器documentElement获取不到,那就使用后面的body
+
+        // 2.htmlDom
+        let htmlDom = document.getElementsByTagName('html')[0];
+
+        //3.设置根元素样式
+        htmlDom.style.fontSize = htmlwidth / 3.75 + 'px';
+      }
+      // 调用一次
+      gethtmlfontsize();
+      // 添加监听事件(resize是监听的意思)
+      window.addEventListener('resize', gethtmlfontsize);
+    </script>
+  </body>
+</html>

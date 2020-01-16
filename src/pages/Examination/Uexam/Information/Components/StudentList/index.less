@@ -1,0 +1,40 @@
+.studentTableList {
+  .searchTable {
+    :global {
+      .ant-table table {
+        border: 1px solid #e5e5e5;
+        border-bottom: none;
+        table-layout: fixed;
+        border-radius: 0;
+      }
+
+      .ant-table-pagination .ant-pagination {
+        margin: 10px 0 0 0;
+      }
+
+      th {
+        padding: 7px 10px;
+
+        .anticon-filter,
+        .ant-table-filter-icon {
+          right: auto;
+        }
+      }
+
+      .ant-table-column-title {
+        color: #888888;
+        font-size: 13px;
+      }
+
+      td {
+        padding: 8px 10px;
+        font-size: 13px;
+        font-weight: 400;
+        color: #333333;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+    }
+  }
+}

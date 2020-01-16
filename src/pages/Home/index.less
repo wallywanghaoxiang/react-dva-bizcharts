@@ -1,0 +1,272 @@
+.homeContainer {
+  :global {
+    .ant-divider,
+    .ant-divider-vertical {
+      margin: 0 10px;
+    }
+  }
+}
+.bottom {
+  :global {
+    .noData {
+      img {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+.topCont {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 100%;
+  height: 150px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-image: url('../../assets/home/home_top.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+.top {
+  position: relative;
+}
+.right {
+  overflow: hidden;
+}
+.campusName {
+  padding: 20px 0px 10px 10px;
+  max-width: 540px;
+  height: 106px;
+  color: #333333;
+  font-weight: bold;
+  font-size: 26px;
+  overflow: hidden; //超出隐藏
+  text-overflow: ellipsis; //超出文本设置为...
+  display: -webkit-box; //转换为盒子模型
+  -webkit-line-clamp: 2; //设置文本为2行
+  /*! autoprefixer: off */
+  -webkit-box-orient: vertical; //从顶部向底部垂直布置子元素
+}
+.campusLogo {
+  width: 214px;
+  padding: 20px 0px 20px 20px;
+  img {
+    width: auto;
+    height: auto;
+    max-width: 214px;
+    max-height: 60px;
+  }
+}
+.line {
+  margin-left: 20px;
+  margin-bottom: 5px;
+  width: 57px;
+  height: 1px;
+  background: rgba(204, 204, 204, 1);
+}
+.welcomeTip {
+  padding-left: 20px;
+  font-size: 14px;
+  color: #888888;
+  white-space: nowrap;
+}
+.swapTip {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: fit-content;
+  padding: 0px 0px 0px 10px;
+  line-height: 40px;
+  font-size: 14px;
+  color: #333333;
+  background: rgba(255, 180, 0, 0.1);
+  border-radius: 0px 10px 4px 4px;
+  white-space: nowrap;
+  i {
+    margin-left: 5px;
+    margin-right: 10px;
+    font-size: 13px;
+    color: #333333;
+  }
+}
+.day {
+  padding: 0px 4px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ff6e4a;
+}
+.numberBox {
+  display: flex;
+  margin-top: 76px;
+  margin-right: 0px;
+  justify-content: flex-end;
+}
+.numberItem {
+  padding: 0px 2vw;
+}
+.tit {
+  font-size: 13px;
+  color: #888888;
+}
+.number {
+  color: #333333;
+  font-size: 30px;
+  font-weight: bold;
+}
+.unit {
+  font-size: 13px;
+  color: #333333;
+}
+.middle {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.learnSituation {
+  padding: 20px 20px;
+  width: calc(~'100% - 360px');
+  height: 334px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.learnSituationList {
+  padding: 10px 0px;
+  & > div {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
+.leaveSchoolList {
+  padding: 10px 0px;
+  & > div {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
+.shortCutEntry {
+  padding: 20px 20px;
+  width: 340px;
+  height: 334px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.shortEntryItem {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 20px;
+  width: 100%;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.pagination {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: flex;
+}
+.preview {
+  width: 28px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 100px 0px 0px 100px;
+  border: 1px solid #e5e5e5;
+  border-right: none;
+}
+.next {
+  width: 28px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 0px 100px 100px 0px;
+  border: 1px solid rgba(229, 229, 229, 1);
+}
+
+.empty {
+  text-align: center;
+  margin-top: 20%;
+  .empty-img {
+    width: 120px;
+  }
+  .empty-text {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #888;
+  }
+}
+.welcome {
+  text-align: center;
+  margin-top: 10%;
+  .welcome-img {
+    width: 450px;
+  }
+  .welcome-text {
+    font-size: 30px;
+    margin-top: 16px;
+    color: #333;
+  }
+  .welcome-school {
+    font-size: 40px;
+    margin-top: 25px;
+    color: #333;
+  }
+}
+.f16 {
+  font-size: 16px;
+  text-align: center;
+  color: #333;
+}
+.f24 {
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+}
+
+:global {
+  .addCamplus {
+    position: relative;
+    .top_img {
+      width: 440px;
+      position: absolute;
+      left: 0;
+      top: -292px;
+    }
+    .ant-modal-body {
+      padding: 24px !important;
+    }
+    .ant-modal-footer {
+      position: relative;
+      text-align: center;
+    }
+    .ant-modal-footer .ant-btn {
+      width: 160px;
+      margin-top: 10px;
+      border: 0;
+    }
+    .ant-modal-footer .ant-btn-primary {
+      margin-top: 0;
+      position: absolute;
+      top: -40px;
+      left: 128px;
+      width: 160px;
+      height: 40px;
+      background: rgba(255, 153, 0, 1);
+      box-shadow: 0px 2px 5px 0px rgba(255, 153, 0, 0.5);
+      border-radius: 20px;
+    }
+  }
+}

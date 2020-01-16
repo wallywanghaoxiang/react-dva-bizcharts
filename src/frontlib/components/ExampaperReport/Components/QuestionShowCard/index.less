@@ -1,0 +1,397 @@
+@import '~antd/lib/style/themes/default.less';
+@import '~@/utils/utils.less';
+@import '~@/frontlib/utils/utils.less';
+
+:global {
+  .backsReport {
+    padding: 5px;
+    background: rgba(255, 255, 255, 1);
+    //border: 1px solid rgba(3, 196, 107, 1);
+    // box-shadow: 1px 1px 1px rgba(3, 196, 107, 0.5);
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  .nobacks1 {
+    padding: 5px;
+    border: 0px solid rgba(233, 251, 243, 1);
+    margin-top: 10px;
+  }
+
+  .stemAudioTop {
+    margin-top: 15px;
+  }
+
+  .stemImage {
+    width: 130px;
+    height: 90px;
+  }
+
+  .stemImageflex2 {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 25px;
+    margin-top: -90px;
+    font-size: @paper-normal;
+    font-family: @paper-family;
+    font-weight: @paper-bold;
+  }
+
+  .GAP_FILLING {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px 0px;
+  }
+
+  .submit_GAP_FILLING {
+    background: rgba(255, 153, 0, 1);
+    box-shadow: 0px 2px 5px 0px rgba(255, 153, 0, 0.5);
+  }
+
+  .receivePoints {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    color: #ff6e4a !important;
+  }
+
+  .statusNo {
+    color: #ff6e4a;
+
+    .icontext {
+      color: #ff6e4a;
+
+      &:hover {
+        color: #ff6e4a;
+      }
+    }
+
+    .iconfont:before {
+      color: #ff6e4a;
+    }
+  }
+
+  .validateNext {
+    display: inline-block;
+
+    &:hover {
+      span {
+        cursor: pointer;
+        color: #333 !important;
+      }
+
+      i {
+        cursor: pointer;
+        color: #333 !important;
+      }
+    }
+  }
+
+  .titleInfo {
+    .title {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .titleWords {
+      margin-top: 10px;
+    }
+    .myLine {
+      width: auto !important;
+    }
+
+    .titleLine {
+      margin-top: 20px;
+      width: 786px;
+      height: 1px;
+      background: #e5e5e5;
+      margin-bottom: 10px;
+    }
+  }
+
+  .alreadyVersion {
+    .infomations {
+      text-align: center;
+      i {
+        display: block;
+        color: #888;
+        font-size: 60px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .icon-right {
+        background: rgba(3, 196, 107, 1);
+        display: block;
+        color: #fff;
+        width: 70px;
+        font-size: 48px;
+        text-align: center;
+        height: 70px;
+        margin: -10px auto 20px;
+        border-radius: 70px;
+      }
+      font-size: 16px;
+      font-weight: 500;
+      color: rgba(51, 51, 51, 1);
+      .proVersion {
+        font-size: 20px;
+        font-weight: 500;
+        color: rgba(51, 51, 51, 1);
+        margin-bottom: 10px;
+        span {
+          color: #03c46b;
+        }
+      }
+      .proInfo {
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(136, 136, 136, 1);
+      }
+    }
+    .ant-modal-confirm-body .ant-modal-confirm-content {
+      margin-top: 0;
+    }
+    .ant-modal-confirm-btns {
+      float: none;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .ant-modal-confirm-btns > button:last-child {
+      background: rgba(3, 196, 107, 1) !important;
+      box-shadow: 0px 2px 5px 0px rgba(3, 196, 107, 0.5) !important;
+      border: 0 !important;
+      color: #fff !important;
+    }
+    .ant-modal-confirm-btns > button:first-child {
+      display: none;
+    }
+  }
+}
+
+.audioHide {
+  display: none;
+}
+
+.addquestion_flex {
+  flex: 1;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 21px;
+  border: 1px solid rgba(204, 204, 204, 1);
+}
+
+.addquestion_paper {
+  flex: 1;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 21px;
+  border: 1px solid rgba(3, 196, 107, 1);
+}
+
+.questionpaper {
+  flex: 1;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: @font-normal;
+  color: #03c46b;
+  cursor: pointer;
+  position: relative;
+}
+
+.questionbtn {
+  flex: 1;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: @font-normal;
+  color: @black;
+  cursor: pointer;
+  position: relative;
+}
+
+.addquestion_line {
+  width: 0px;
+  height: 34px;
+  border-right: 1px solid rgba(229, 229, 229, 1);
+}
+
+.card_content {
+  margin: 6px 0px;
+  font-size: 18px;
+  color: rgba(51, 51, 51, 1);
+  font-size: @paper-normal;
+  font-family: @paper-family;
+  font-weight: @paper-bold;
+  white-space: pre-wrap;
+}
+.card_content_normal {
+  color: rgba(51, 51, 51, 1);
+  font-size: 16px;
+  white-space: pre-wrap;
+}
+
+.card_title {
+  margin: 12px 0px;
+  font-size: 18px;
+  color: rgba(51, 51, 51, 1);
+}
+
+.stemAudioSpace {
+  width: 10px;
+}
+
+.float_left {
+  float: left;
+}
+
+.stemImage {
+  width: 440px;
+  height: auto;
+}
+
+.flex {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.answerArea {
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(204, 204, 204, 1);
+  border-radius: 4px;
+  display: flex;
+  margin: 6px;
+  background: #fff;
+  overflow: hidden;
+  flex: 1;
+}
+
+.question_num {
+  width: 32px;
+  border-right: 1px solid rgba(204, 204, 204, 1);
+  text-align: center;
+  line-height: 34px;
+  font-size: 14px;
+  color: rgba(51, 51, 51, 1);
+}
+
+.ant_input {
+  height: 34px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.choosetext {
+  font-size: 14px;
+  color: rgba(51, 51, 51, 1);
+  max-width: 770px;
+  word-wrap: break-word;
+  /* word-break: break-all; */
+  overflow: hidden;
+  white-space: pre-wrap;
+  font-size: @paper-normal;
+  font-family: @paper-family;
+  font-weight: @paper-bold;
+}
+
+.chooseimage {
+  font-size: 14px;
+  color: rgba(51, 51, 51, 1);
+  margin-top: 100px;
+}
+
+.scroe {
+  margin-right: 11px;
+}
+
+.validateQuestion {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+
+.validateStatus {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+.statusShow {
+  color: #888;
+}
+
+.statusOk {
+  color: #03c46b;
+}
+
+.statusNo {
+  color: #ff6e4a;
+}
+
+.statusMeger {
+  color: #2991ff;
+}
+
+.green {
+  color: rgba(3, 196, 107, 1);
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.orange {
+  color: rgba(255, 183, 74, 1);
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.blue {
+  color: #228eff;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.red {
+  color: #ff6e4a;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.normal {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.card_detail {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+}
+
+.subTitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 1);
+  line-height: 21px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.ant-radio-disabled + span {
+  color: black;
+}

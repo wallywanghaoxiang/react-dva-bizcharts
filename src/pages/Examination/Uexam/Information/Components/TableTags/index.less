@@ -1,0 +1,50 @@
+.examRoomLists {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  .roomStatisInfo {
+    width: 100%;
+    background: #F5F5F5;
+    padding: 7px 10px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #333333;
+    line-height: 18px;
+  }
+
+  .tagItemBox {
+    padding-right: 25px;
+
+    .tagItem {
+      width: 110px;
+      height: 80px;
+      margin: 10px 0px;
+      padding: 10px 20px;
+      border: 1px solid #333333;
+
+      .name {
+        width: 100%;
+        text-align: center;
+        height: 20px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #333333;
+      }
+
+      .title {
+        width: 100%;
+        font-size: 30px;
+        font-weight: bold;
+        color: #333333;
+        text-align: center;
+      }
+    }
+  }
+
+  :global {
+    .noData {
+      width: 100%;
+    }
+  }
+}

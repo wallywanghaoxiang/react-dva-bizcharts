@@ -1,0 +1,79 @@
+.dropoutItem {
+    width: 100%;
+    height: 80px;
+    background:rgba(255,255,255,1);
+    border-radius:4px;
+    border:1px solid rgba(234,236,238,1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left {
+    margin-left: 20px;
+    width: calc(~'100% - 188px');
+}
+.name {
+    font-size: 18px;
+    color: #03C46B;
+    font-weight: 500;
+}
+.classN {
+    color: #333;
+    font-size: 13px;
+}
+.divider {
+    padding: 0 3px;
+    color: #333;
+    font-size: 13px;
+}
+.top {
+    margin-bottom: 10px;
+}
+.bottom {
+    display: flex;
+    overflow: hidden;
+}
+.cont {
+    margin-right: 20px;
+    color: #8F92A5;
+    font-size: 13px;
+    white-space: nowrap;
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+.reason {
+    display: flex;
+    overflow: hidden;
+}
+.reasonTxt {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.right {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+.btn {
+    width:66px;
+    height:36px;
+    text-align: center;
+    line-height: 36px;
+    border-radius:18px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.agree {
+    color: #fff;
+    background:rgba(3,196,107,1);
+    box-shadow:0px 2px 5px 0px rgba(3,196,107,0.5);
+}
+.reject {
+    margin-left: 16px;
+    color: #888888;
+    background:rgba(255,255,255,1);
+    border:1px solid rgba(204,204,204,1);
+}

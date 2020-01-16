@@ -1,0 +1,94 @@
+@import '~antd/lib/style/themes/default.less';
+
+:global {
+    .user-login {
+        position: relative;
+        .logoBox {
+            position: absolute;
+            top: 20px;
+            left: 23px;
+            z-index: 2;
+            img {
+                width: 127px;
+                height: 32px;
+            }
+        }
+
+        .login-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            zoom: 1;
+            .banner {
+                width: 300vw;
+                height: 100%;
+                overflow: hidden;
+                position: absolute;
+                top: 0px;
+                left:-100vw;
+                transition: all 0.5s ease;
+                transform: skew(-5deg);
+                .show {
+                    position: absolute;
+                    z-index: 1;
+                    width: 150vw;
+                    height: 100vh;
+                    overflow: hidden;
+                    .mask {
+                        position: absolute;
+                        top: 0;
+                        width: 150%;
+                        height: 100%;
+                        background-color: black;
+                        opacity: 0.5;
+                        transition:  all 0.5s ease;
+                        z-index: 2;
+                    }
+                    .login {
+                        color: black;
+                        position: absolute;
+                        top: 0px;
+                        bottom: 0px;
+                        z-index: 1;
+                        width: 100vw;
+                        height: 100vh;
+                        transition: all 0.5s ease;
+                        transform: skew(5deg);
+
+                    }
+                    .teacher{
+                        right: -50vw;
+                        background-image: url('../../../assets/login/teacher-bg.png'),linear-gradient(317deg,rgba(18,189,154,1) 0%,rgba(27,205,91,1) 100%);
+                        background-repeat: no-repeat;
+                        background-position: 10% center;
+                    }
+                    .student{
+                        left:-50vw;
+                        background-image: url('../../../assets/login/student_bg.png'),linear-gradient(318deg,rgba(250,201,97,1) 0%,rgba(255,157,75,1) 100%);
+                        background-repeat: no-repeat;
+                        background-position: 80% center;
+                    }
+                }
+                .left {
+                    top: 0;
+                    left: 0;
+                    &:hover {
+                        .teacher {
+                            -webkit-transform: scale(1.1) skew(5deg); // safari、chrome浏览器 IE上设置的话蒙板有问题
+                        }
+                    }
+                }
+                .right {
+                    top: 0;
+                    right: 0;
+                    &:hover {
+                        .student {
+                            -webkit-transform: scale(1.1) skew(5deg); // safari、chrome浏览器
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

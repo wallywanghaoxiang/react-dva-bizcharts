@@ -1,0 +1,99 @@
+.currentExam {
+  margin-top: 20px;
+  position: relative;
+
+  .rank {
+    font-size: 13px;
+    font-weight: 500;
+    color: #333333;
+    line-height: 18px;
+    text-align: right;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+
+    .rankNum {
+      color: #FF6E4A;
+    }
+  }
+
+  .examGrid {
+    border-radius: 5px;
+
+    .pagination {
+      text-align: center;
+      padding: 20px 0 10px 0;
+    }
+
+    .headerTitle {
+      font-size: 24px;
+      font-weight: 500;
+      color: #333333;
+    }
+
+    .headerTitleOther {
+      font-size: 13px;
+      color: #888888;
+      font-weight: normal;
+      padding-left: 3px;
+    }
+
+    .examTable {
+      background: #F5F5F5;
+
+      :global {
+        .ant-table-thead {
+          tr {
+            background: none;
+
+            th {
+              background: none;
+              white-space: nowrap;
+              padding: 0 0 10px 0px;
+
+              .ant-table-column-sorter {
+                top: 21%;
+                left: 60px;
+                position: absolute;
+              }
+            }
+          }
+        }
+
+        tr>td {
+          font-size: 24px;
+          font-weight: 500;
+          color: #333333;
+          padding: 2px 0;
+          white-space: nowrap
+        }
+
+        .ant-table-tbody {
+          tr:last-child {
+            td {
+              border: none;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  .examExtend {
+    border-top: 27px solid #F5F5F5;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    width: 90px;
+    margin: 0 auto;
+    border-radius: 0px 0px 24px 24px;
+    color: #888888;
+    font-size: 13px;
+
+    .extendBtnBox {
+      margin-top: -25px;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+}

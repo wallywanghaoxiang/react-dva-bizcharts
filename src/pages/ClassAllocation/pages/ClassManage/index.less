@@ -1,0 +1,342 @@
+@import '~antd/lib/style/themes/default.less';
+
+.classManage {
+  .menuTab {
+    :global {
+      .ant-tabs-ink-bar {
+        left: 29px;
+        width: 14px !important;
+        height: 4px;
+        border-radius:5px;
+      }
+      .ant-tabs-bar {
+        border-bottom: 1px solid #e8e8e800;
+      }
+
+    }
+  }
+  // 行政班，教学班头部信息
+  .classHeadInfo {
+    display: flex;
+    padding: 8px 0 20px 0;
+    color: rgba(136, 136, 136, 1);
+    font-weight: 400;
+    font-size: 13px;
+    border-bottom: 1px solid #e5e5e5;
+    .distance {
+      width: auto;
+      min-width: 100px;
+      text-align: left;
+      .number {
+        width: auto;
+        height: 32px;
+        padding-right: 8px;
+        color: rgba(51, 51, 51, 1);
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 32px;
+      }
+    }
+    .position {
+      position: relative;
+      top: 20px;
+      height: 30px;
+      border-left: 1px solid #e5e5e5;
+      padding-left: 30px;
+      .line {
+        margin: 0;
+      }
+    }
+  }
+  .listInfo {
+    :global {
+      .ant-list {
+        .ant-list-empty-text {
+          padding: 0;
+          color: rgba(0, 0, 0, 0);
+          .ant-empty-normal {
+            display: none;
+            margin: 100px 0;
+            .ant-empty-image {
+              display: none;
+              height: 0;
+            }
+          }
+        }
+        @media (min-width: 576px){
+          .ant-col {
+            display: block;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            width: 50%;
+          }
+        }
+        @media (min-width: 992px){
+          .ant-col {
+            display: block;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            width: 33.33333333%;
+          }
+        }
+        @media (min-width: 1200px) {
+          .ant-col {
+            display: block;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            width: 25%;
+          }
+        }
+        .ant-list-item {
+          width: auto;
+          max-width: 384px;
+          margin-bottom: 20px;
+          background: #fff;
+          .ant-card-bordered {
+            height: 220px;
+            background: @body-background;
+            border: 1px solid rgba(229, 229, 229, 1);
+            border-radius: 10px;
+            box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            cursor: pointer;
+            .ant-card-body {
+              padding: 0;
+            }
+          }
+          .ant-card-bordered:hover {
+            border: 1px solid #03C46B;
+            box-shadow: 0 2px 5px 0 #03C46B;
+          }
+        }
+      }
+    }
+    .cardItemContent {
+      display: block;
+      height: 20px;
+      margin-top: 0;
+      margin-bottom: 0;
+      line-height: 20px;
+      & > span {
+        flex: 1;
+        color: @text-color-secondary;
+        font-size: @font-size-sm;
+      }
+      .avatarList {
+        flex: 0 1 auto;
+      }
+      .adminInfo {
+        margin-top: 0;
+        margin-left: 0;
+        .headInfo {
+          height: 24px;
+          line-height: 24px;
+          text-align: center;
+          text-align: -webkit-center;
+          text-align: -moz-center;
+          .headAdmin {
+            position: absolute;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-top: 40px solid #03C46B;
+            border-left: 40px solid transparent;
+            img {
+              position: absolute;
+              right: 2px;
+              bottom: 20px;
+              width: 17px;
+              height: 17px;
+            }
+          }
+          .headName {
+            width: 80px;
+            height: 24px;
+            margin:auto;
+            text-align: center;
+            border-top: 24px solid #f5f5f5;
+            border-right: 10px solid transparent;
+            border-bottom: 0 solid transparent;
+            border-left: 10px solid transparent;
+            span {
+              position: relative;
+              bottom: 20px;
+              display: inline-block;
+              width: auto;
+              max-width: 60px;
+              height: 17px;
+              color: rgba(51, 51, 51, 1);
+              overflow: hidden;
+              font-weight: 400;
+              font-size: @font-size-sm;
+              line-height: 17px;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+        .curClass {
+          height: 70px;
+          line-height: 70px;
+          text-align: center;
+          span {
+            display: inline-block;
+            width: auto;
+            max-width: 200px;
+            height: 20px;
+            color: #333;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 20px;
+          }
+        }
+        .student {
+          position: relative;
+          display: flex;
+          > div {
+            width: 50%;
+            text-align: center;
+            span:nth-child(1){
+              padding-right: 4px;
+            }
+          }
+          .line {
+            margin: 0;
+            border-left: 1px solid #E5E5E5;
+          }
+          span {
+            height: 30px;
+            padding-top: 17px;
+            color: #888;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 13px;
+          }
+          p {
+            height: 20px;
+            color: rgba(51, 51, 51, 1);
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 20px;
+          }
+        }
+        .groupNum {
+          position: relative;
+          top: 14px;
+          display: block;
+          height: 33px;
+          font-size: 13px;
+          color: #888;
+          line-height: 33px;
+          text-align: center;
+        }
+      }
+      .teachInfo {
+        margin-top: 0;
+        margin-left: 0;
+        .headInfo {
+          height: 24px;
+          line-height: 24px;
+          text-align: center;
+          text-align: -webkit-center;
+          text-align: -moz-center;
+          .headAdmin {
+            position: absolute;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-top: 40px solid #03C46B;
+            border-left: 40px solid transparent;
+            img {
+              position: absolute;
+              right: 2px;
+              bottom: 20px;
+              width: 17px;
+              height: 17px;
+            }
+          }
+          .headName {
+            width: 80px;
+            height: 24px;
+            margin:auto;
+            text-align: center;
+            border-top: 17px solid #f5f5f5;
+            border-right: 10px solid transparent;
+            border-bottom: 0 solid transparent;
+            border-left: 10px solid transparent;
+            span {
+              position: relative;
+              bottom: 21px;
+              color: rgba(51, 51, 51, 1);
+              font-weight: 400;
+              font-size: @font-size-sm;
+              line-height: 17px;
+            }
+          }
+        }
+        .curClass {
+          width: 180px;
+          height: 70px;
+          margin: 0 auto;
+          overflow: hidden;
+          color: rgba(51, 51, 51, 1);
+          line-height: 70px;
+          white-space: nowrap;
+          text-align: center;
+          text-overflow: ellipsis;
+          word-break: break-all;
+          span {
+            display: inline-block;
+            width: auto;
+            max-width: 200px;
+            height: 20px;
+            color: #333;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 20px;
+          }
+        }
+        .english {
+          position: relative;
+          bottom: 14px;
+          text-align: center;
+          span {
+            display: inline-block;
+            padding: 0 10px;
+            height: 24px;
+            background: @body-background;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            
+          }
+        }
+        .student {
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+          > div {
+            span:nth-child(1) {
+              color: rgba(51, 51, 51, 1);
+              font-weight: 500;
+              font-size: 20px;
+            }
+            span:nth-child(2) {
+              color: rgb(51, 51, 51);
+              font-weight: 400;
+              font-size: @font-size-base;
+            }
+          }
+        }
+        .groupNum {
+          position: relative;
+          top: 4px;
+          display: block;
+          height: 33px;
+          line-height: 33px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+

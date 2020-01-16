@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <meta name="spm-id" content="a21bo" />
+    <meta name="aplus-xplug" content="NONE" />
+    <title>高耘智慧教育云平台</title>
+    <link rel="icon" href="/logo_icon@2x.png" type="image/x-icon" />
+    <link rel="icon" href="/mycss.css" />
+    <link rel="icon" href="/font/iconfont/iconfont.css" />
+    <style>
+      #browser .browser {
+        background-image: url('/browser/browser_version_page_bg.png');
+        background-repeat: no-repeat;
+        height: 100%;
+        background-size: cover;
+      }
+
+      #browser .browser .browserContainer {
+        text-align: center;
+      }
+      #browser .browser .browserContainer .bigText {
+        font-size: 30px;
+        font-family: PingFangSC-Medium;
+        font-weight: 500;
+        color: #333333;
+        line-height: 42px;
+      }
+      #browser .browser .browserContainer .littleText {
+        font-size: 14px;
+        font-family: PingFangSC-Medium;
+        font-weight: 500;
+        color: #888888;
+        line-height: 20px;
+        margin-top: 100px;
+      }
+      #browser .browser .browserContainer .bottomContainer {
+        width: 800px;
+        margin: auto;
+        position: relative;
+        z-index: 9999;
+      }
+      #browser .browser .browserContainer .bottomContainer .bottom {
+        cursor: pointer;
+        width: 141px;
+        margin: 20px 60px;
+        display: inline-block;
+      }
+      #browser .browser .browserContainer .bottomContainer .bottom .vertical {
+        height: 28px;
+        margin-top: 10px;
+        width: 2px;
+        background: #e8e8e8;
+        margin-bottom: 20px;
+      }
+      #browser .browser .browserContainer .bottomContainer .bottom .item {
+        border-bottom: 1px solid #e5e5e5;
+        width: 141px;
+        height: 49px;
+      }
+      #browser .browser .browserContainer .bottomContainer .bottom .item .left {
+        flex: 1;
+        width: 50px;
+        font-size: 12px;
+        font-family: PingFangSC-Medium;
+        font-weight: 500;
+        color: #888888;
+        line-height: 14px;
+        display: inline-block;
+        padding-top: 8px;
+        padding-left: 12px;
+        float: left;
+      }
+      #browser .browser .browserContainer .bottomContainer .bottom .item .right {
+        flex: 1;
+        font-size: 34px;
+        font-family: PingFangSC-Medium;
+        font-weight: 500;
+        color: #888888;
+        line-height: 48px;
+        display: inline-block;
+        float: right;
+      }
+      #browser .browser .browserContainer .bottomContainer .downloadBtn {
+        font-size: 13px;
+        font-family: PingFangSC-Medium;
+        font-weight: 500;
+        color: #333333;
+        line-height: 18px;
+        margin-top: 14px;
+      }
+      #browser .browser .browserContainer .bottomContainer .downloadBtn i {
+        margin-left: 4px;
+      }
+
+      @media \0screen\, screen\9 {
+        #browser .browser {
+          background-image: none !important;
+          background-repeat: no-repeat !important;
+          height: 100% !important;
+          background-size: cover !important;
+          overflow: auto !important;
+          filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/browser/browser_version_page_bg.png', sizingMethod='scale') !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>Sorry, we need js to run correctly!</noscript>
+    <div id="root"></div>
+    <script id="showBrowserNotice" type="text/template">
+      <div id="browser" style="height: 100%;overflow: auto;">
+          <div class="browser" >
+              <img src="/browser/logo_icon.png" class="img" style="width: 252px;padding: 20px;"/>
+              <div class="browserContainer">
+              <img src="/browser/browser_version_pic.png" class="img"/>
+              <div class="bigText">
+                为了更好的学习体验，请更新您的浏览器！
+              </div>
+
+              <div class="littleText">
+                推荐浏览器
+              </div>
+              <div class="bottomContainer">
+                <div class="bottom" style="float: left;">
+                    <img src="/browser/browser_version_ie.png" class="img"/>
+                    <div class="item">
+                      <div class="left">
+                          Internet Explorer
+                      </div>
+                      <div class="right">
+                          10+
+                      </div>
+                    </div>
+                    <div class="downloadBtn" onClick="goUrl('https://www.microsoft.com/en-us/download/internet-explorer.aspx')">
+                        去下载
+                        <i class='iconfont icon-next' ></i>
+                    </div>
+                </div>
+
+                <div class="bottom" style="float: left;">
+                      <img src="/browser/browser_version_chrome.png" class="img"/>
+                      <div class="item">
+                        <div class="left">
+                            谷歌 浏览器
+                        </div>
+                        <div class="right">
+                            30+
+                        </div>
+                      </div>
+                      <div class="downloadBtn" onClick="goUrl('https://www.google.cn/chrome/')">
+                          去下载
+                          <i class='iconfont icon-next' ></i>
+                      </div>
+                </div>
+
+                <div class="bottom" style="float: left;">
+                    <img src="/browser/browser_version_firfox.png" class="img"/>
+                    <div class="item">
+                      <div class="left">
+                          Firefox
+                      </div>
+                      <div class="right">
+                          30+
+                      </div>
+                    </div>
+                    <div class="downloadBtn" onClick="goUrl('http://www.firefox.com.cn/')">
+                        去下载
+                        <i class='iconfont icon-next' ></i>
+                    </div>
+                  </div>
+
+                  <div style="clear: both;width: 0px;height: 0px;"></div>
+                </div>
+              </div>
+          </div>
+      </div>
+    </script>
+
+    <script>
+      function goUrl(url) {
+        window.open(url);
+      }
+      /**
+       * 浏览器版本检查
+       */
+      function getBrowserInfo() {
+        var Sys = {};
+        var ua = navigator.userAgent.toLowerCase();
+        var s;
+        var scan;
+        (s = ua.match(/msie ([\d.]+)/))
+          ? (Sys.ie = s[1])
+          : (s = ua.match(/firefox\/([\d.]+)/))
+          ? (Sys.firefox = s[1])
+          : (s = ua.match(/chrome\/([\d.]+)/))
+          ? (Sys.chrome = s[1])
+          : (s = ua.match(/opera.([\d.]+)/))
+          ? (Sys.opera = s[1])
+          : (s = ua.match(/version\/([\d.]+).*safari/))
+          ? (Sys.safari = s[1])
+          : 0;
+
+        var isStandardbrowser = false;
+        var version;
+        if (Sys.ie) {
+          version = (Sys.ie + '').split('.')[0];
+          if (Number(version) > 9) {
+            isStandardbrowser = true;
+          }
+        } else if (Sys.firefox) {
+          version = (Sys.firefox + '').split('.')[0];
+          if (Number(version) >= 30) {
+            isStandardbrowser = true;
+          }
+        } else if (Sys.chrome) {
+          version = (Sys.chrome + '').split('.')[0];
+          if (Number(version) >= 30) {
+            isStandardbrowser = true;
+          }
+        } else {
+          //ie11 单独判断
+          var u = window.navigator.userAgent.toLocaleLowerCase(),
+            ie11 = /(trident)\/([\d.]+)/,
+            b = u.match(ie11);
+          console.log(u);
+          if (b) {
+            isStandardbrowser = true;
+          }
+        }
+        return isStandardbrowser;
+      }
+      if (!getBrowserInfo()) {
+        document.getElementById('root').innerHTML = document.getElementById(
+          'showBrowserNotice'
+        ).innerHTML;
+        throw new Error('浏览器不支持！');
+      }
+    </script>
+  </body>
+</html>

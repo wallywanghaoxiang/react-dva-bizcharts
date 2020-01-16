@@ -1,0 +1,39 @@
+:global {
+  .labelList {
+    .ant-spin-container {
+      display: inline;
+    }
+
+    .ant-list-item {
+      display: inline-block;
+      height: 24px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      padding: 0 10px;
+      background: rgba(245, 245, 245, 1);
+      border: 0;
+      border-radius: 4px;
+      cursor: pointer;
+      &.selected {
+        color: #fff;
+        background: linear-gradient(90deg, rgba(3, 196, 107, 1), rgba(44, 195, 157, 1));
+        border-radius: 4px;
+        box-shadow: 2px 0 8px rgba(14, 192, 93, 0.2);
+      }
+    }
+    .filterLabel {
+      margin-bottom: 10px;
+    }
+    .ant-list {
+      margin-bottom: 10px;
+    }
+  }
+  .PaperFilterModals {
+    .ant-modal-body {
+      max-height: calc(100vh - 200px);
+      margin: 20px 0;
+      padding: 0 30px !important;
+      overflow: auto;
+    }
+  }
+}

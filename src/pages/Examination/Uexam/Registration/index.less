@@ -1,0 +1,61 @@
+.registration {
+
+  .menuName {
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 20px;
+
+    span {
+      color: rgba(255, 255, 255, 1);
+      font-weight: 500;
+      font-size: 13px;
+
+      i {
+        padding: 0 10px;
+      }
+    }
+  }
+
+  .regContent {
+    display: flex;
+
+    .left {
+      flex: 1 1 auto;
+    }
+
+    .right {
+      flex: 0 0 152px;
+    }
+
+  }
+
+  .footerbtn {
+    padding-top: 15px;
+    text-align: right;
+
+    .btnFinish {
+      width: 92px;
+      height: 36px;
+
+      font-size: 13px;
+      font-weight: bold;
+      color: #FFFFFF;
+      line-height: 18px;
+
+      background: #03C46B;
+      box-shadow: 0px 2px 5px 0px #03C46B;
+      border-radius: 18px;
+      border: none;
+    }
+
+    :global {
+      .ant-btn[disabled] {
+        color: #FFFFFF !important;
+        background: #CCCCCC;
+        border: 1px solid #CCCCCC !important;
+        box-shadow: none !important;
+      }
+    }
+  }
+
+}

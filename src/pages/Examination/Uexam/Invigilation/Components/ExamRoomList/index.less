@@ -1,0 +1,53 @@
+.examRoomList {
+  padding: 10px;
+
+  .examRoomListItem {
+    width: 150px;
+    margin: 0 auto;
+    height: 36px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    cursor: pointer;
+
+    .rightInfo {
+      font-size: 12px;
+      font-weight: 400;
+      color: #888888;
+
+      span {
+        padding-left: 10px;
+      }
+    }
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+
+  .active {
+    color: #03C46B;
+    font-weight: bold;
+    background: #E4FFF3;
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px transparent;
+    border-radius: 10px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px #CCCCCC;
+    background-color: #CCCCCC;
+  }
+}

@@ -1,0 +1,20 @@
+@import '~antd/lib/style/themes/default.less';
+
+.content {
+  margin: 0 24px 0;
+}
+:global {
+  .wrapperMain {
+    position: relative;
+    min-height: 84vh;
+    background: @component-background;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: @screen-sm) {
+  .content {
+    margin: 0;
+  }
+}

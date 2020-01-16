@@ -1,0 +1,71 @@
+.invigilationTable {
+  height: 100%;
+  // border: 1px solid #e5e5e5;
+
+  .searchTable {
+    .noneStu {
+      margin-left: 6px;
+      padding: 0 3px;
+      color: #888;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 17px;
+      background: #f5f5f5;
+      border: 1px solid #e5e5e5;
+      border-radius: 4px;
+    }
+
+    .hasStu {
+      margin-left: 6px;
+      padding: 0 3px;
+      color: #03c46b;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 17px;
+      background: #e6f9f0;
+      border: 1px solid #03c46b;
+      border-radius: 4px;
+    }
+
+    :global {
+      .ant-table table {
+        table-layout: fixed;
+        border: 1px solid #e5e5e5;
+        border-bottom: none;
+        border-radius: 0;
+      }
+
+      .ant-table-placeholder {
+        display: none;
+      }
+
+      .ant-pagination {
+        margin: 10px 0 0 0;
+      }
+
+      th {
+        padding: 7px 10px;
+
+        .anticon-filter,
+        .ant-table-filter-icon {
+          right: auto;
+        }
+      }
+
+      .ant-table-column-title {
+        color: #888;
+        font-size: 13px;
+      }
+
+      td {
+        padding: 8px 10px;
+        overflow: hidden;
+        color: #333;
+        font-weight: 400;
+        font-size: 13px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}

@@ -1,0 +1,280 @@
+@import '~antd/lib/style/themes/default.less';
+
+@keyframes shake-horizontal{
+  89% {
+      -webkit-transform: rotate(0deg)
+  }
+  90% {
+      -webkit-transform: rotate(5deg)
+  }
+  91% {
+      -webkit-transform: rotate(15deg)
+  }
+  92% {
+      -webkit-transform: rotate(5deg)
+  }
+  93% {
+      -webkit-transform: rotate(0deg)
+  }
+
+  94% {
+      -webkit-transform: rotate(-5deg)
+  }
+
+  95% {
+      -webkit-transform: rotate(-15deg)
+  }
+  96% {
+      -webkit-transform: rotate(-5deg)
+  }
+
+  97% {
+      -webkit-transform: rotate(0deg)
+  }
+
+  98% {
+      -webkit-transform: rotate(5deg)
+  }
+
+  99% {
+      -webkit-transform: rotate(15deg)
+  }
+  100% {
+      -webkit-transform: rotate(5deg)
+  }
+}
+
+@pro-header-hover-bg: rgba(0, 0, 0, 0.025);
+
+:global {
+    .ant-layout-header {
+        background: none !important;
+    }
+
+    .trigger {
+        font-size: 16px;
+        line-height: 64px;
+        cursor: pointer;
+        transition: all 0.3s, padding 0s;
+        padding: 0 24px;
+        color: #fff;
+    }
+}
+
+.header {
+    position: relative;
+    height: @layout-header-height;
+    padding: 0;
+    background: #03C46B;
+}
+
+.logo {
+    display: inline-block;
+    height: @layout-header-height;
+    padding: 0 0 0 24px;
+    font-size: 20px;
+    line-height: @layout-header-height;
+    vertical-align: top;
+    cursor: pointer;
+
+    img {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.menu {
+    :global(.anticon) {
+        margin-right: 8px;
+    }
+
+    :global(.ant-dropdown-menu-item) {
+        min-width: 160px;
+    }
+}
+
+.trigger {
+    height: @layout-header-height;
+    padding: 0 24px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s, padding 0s;
+
+    &:hover {
+        background: @pro-header-hover-bg;
+    }
+}
+
+.right {
+    float: right;
+    height: 44px;
+    overflow: hidden;
+
+    .action {
+        display: inline-block;
+        height: 100%;
+        margin-right: 30px;
+        cursor: pointer;
+        color: #fff;
+        transition: all 0.3s;
+
+        >i {
+            color: #fff;
+            vertical-align: middle;
+        }
+
+        &:global(.opened) {
+            background: @pro-header-hover-bg;
+        }
+        .noticeBell{
+          transform-origin:50% 0%;
+          -webkit-animation-name: shake-horizontal;
+          -ms-animation-name: shake-horizontal;
+          animation-name: shake-horizontal;
+          -webkit-animation-duration: 3s;
+          -ms-animation-duration: 3s;
+          animation-duration: 3s;
+          -webkit-animation-iteration-count: infinite;
+          -ms-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+          -webkit-animation-timing-function: ease-in-out;
+          -ms-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+          // -webkit-animation-delay:3s;
+          // -ms-animation-delay: 3s;
+          // animation-delay: 3s;
+          -webkit-animation-play-state: running;
+          -ms-animation-play-state: running;
+          animation-play-state: running;
+        }
+    }
+
+    .search {
+        padding: 0 12px;
+
+        &:hover {
+            background: transparent;
+        }
+    }
+
+    .account {
+        .avatar {
+            margin:~'calc((@{layout-header-height} - 24px) / 2)'0;
+            margin-right: 8px;
+            color: @primary-color;
+            vertical-align: top;
+            background: rgba(255, 255, 255, 0.85);
+        }
+    }
+
+    :global {
+        .ant-badge-count {
+            min-width: 16px;
+            height: 16px;
+            padding: 0px 5px;
+            color: #fff;
+            font-weight: normal;
+            font-size: 10px;
+            line-height: 16px;
+            background: #FF6E4A;
+            border-radius: 10px;
+            box-shadow: none;
+        }
+    }
+}
+
+.dark {
+    height: @layout-header-height;
+
+    .action {
+        color: rgba(255, 255, 255, 0.85);
+
+        >i {
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        &:hover,
+        &:global(.opened) {
+            background: @primary-color;
+        }
+
+        :global(.ant-badge) {
+            color: rgba(255, 255, 255, 0.85);
+        }
+    }
+}
+
+.schoolList {
+    top: 41px !important;
+
+    :global {
+        .ant-popover {
+            top: 41px !important;
+        }
+
+        .ant-list-item,
+        .ant-list-item-content {
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .ant-popover-arrow {
+            display: none;
+        }
+    }
+}
+
+.campus {
+    display: inline-block;
+    cursor: pointer;
+    height: 34px;
+    line-height: 34px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 17px;
+    color: #fff;
+    font-size: 14px;
+    font-family: PingFangSC-Medium;
+    font-weight: 500;
+    padding: 0 14px;
+
+    i {
+        font-size: 12px;
+        padding-left: 5px;
+    }
+
+}
+
+@media only screen and (max-width: @screen-md) {
+    .header {
+        :global(.ant-divider-vertical) {
+            vertical-align: unset;
+        }
+
+        .name {
+            display: none;
+        }
+
+        i.trigger {
+            padding: 22px 12px;
+        }
+
+        .logo {
+            position: relative;
+            padding-right: 12px;
+            padding-left: 12px;
+        }
+
+        .right {
+            position: absolute;
+            top: 0;
+            right: 12px;
+            background: #fff;
+
+            .account {
+                .avatar {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

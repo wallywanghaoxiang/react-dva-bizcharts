@@ -1,0 +1,62 @@
+{
+  "data": {
+    "taskId": "47578599733067850",
+    "name": "0529公司模考-广州卷",
+    "type": "TT_5",
+    "typeValue": "本班考试",
+    "status": "TS_4",
+    "statusValue": "已评分",
+    "linkStatus": "ES_17",
+    "linkStatusValue": "",
+    "examTime": 1559047024491,
+    "distributeType": "DT_2",
+    "distributeValue": "按座位号",
+    "examStatus": "ET_2",
+    "examStatusValue": "选项打乱",
+    "rectifyType": "CURRENT_TEACHER",
+    "rectifyValue": "我",
+    "examNum": 24,
+    "studentNum": 30,
+    "effectiveAnswers": 23,
+    "classList": [
+      { "classId": "47571248896540853", "className": "初1(4)班", "classIndex": "004" },
+      { "classId": "47571253191508149", "className": "初1(7)班", "classIndex": "007" },
+      { "classId": "47571254265249973", "className": "初1(8)班", "classIndex": "008" }
+    ],
+    "paperList": [
+      {
+        "paperId": "47551401852666992",
+        "name": "sp15标准广州b卷",
+        "fullMark": 0.0,
+        "paperTime": 0,
+        "grade": "001",
+        "gradeValue": "一年级",
+        "templateName": "sp15广州卷",
+        "paperTemplateId": "47467243042242617",
+        "isExamination": null,
+        "scopeName": "一年级期中"
+      },
+      {
+        "paperId": "47468488582759481",
+        "name": "sp15标准卷广州",
+        "fullMark": 0.0,
+        "paperTime": 0,
+        "grade": "",
+        "gradeValue": "",
+        "templateName": "sp15广州卷",
+        "paperTemplateId": "47467243042242617",
+        "isExamination": null,
+        "scopeName": "小升初"
+      }
+    ],
+    "teacher": null,
+    "teacherName": null,
+    "teacherType": null,
+    "exerciseBeginTime": null,
+    "exerciseEndTime": null,
+    "exerciseType": "EXER_MODEL",
+    "exerciseTypeValue": null,
+    "isCheck": null
+  },
+  "responseCode": "200"
+}

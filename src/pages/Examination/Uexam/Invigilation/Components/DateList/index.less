@@ -1,0 +1,48 @@
+.dateList {
+  .dateListContainer {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+
+    .dateListItem {
+      margin-left: 10px;
+      padding: 12px 0 10px;
+      color: #888;
+      text-align: center;
+      cursor: pointer;
+
+      .month {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 17px;
+      }
+
+      .date {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+
+    .active {
+      color: #333;
+
+      &::after {
+        content: ' ';
+        display: block;
+        width: 10px;
+        height: 4px;
+        margin: 0 auto;
+        background-color: #03c46b;
+        border-radius: 2px;
+      }
+    }
+
+    :global {
+      .ant-badge-dot {
+        z-index: 1;
+        background: #ff6e4a;
+      }
+    }
+  }
+}

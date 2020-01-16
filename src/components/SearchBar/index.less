@@ -1,0 +1,45 @@
+@import '~antd/lib/style/themes/default.less';
+@import '~@/utils/utils.less';
+:global {
+  .custom-searchbar {
+    .ant-input {
+      background: rgba(255, 255, 255, 1);
+      border-radius: 19px;
+      height: 38px;
+      padding-left: 15px;
+      padding-right: 40px !important;
+    }
+
+    .Search {
+      margin-right: 9px;
+      margin-left: 9px;
+      position: relative;
+      .clear { 
+        &:hover {
+          cursor: pointer;
+        }
+        position: absolute;
+        right: 38px;
+        top: 10px;
+        padding: 0px 5px;
+        font-size: 14px !important;
+        color: #888;
+       }
+    }
+
+    .left-icon {
+      cursor: pointer;
+      right: 0;
+      height: 30px;
+      width: 38px;
+      padding-top: 2px;
+      // display: -ms-flexbox;
+      /* display: flex; */
+      -ms-flex-align: center;
+      /* align-items: center; */
+      border-left: 1px solid #ccc;
+      padding-left: 8px;
+    }
+  }
+}
+

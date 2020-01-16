@@ -1,0 +1,206 @@
+.changeBox {
+    padding: 30px 40px;
+    width:430px;
+    min-height:346px;
+    background:rgba(255,255,255,1);
+    border-radius:10px;
+    
+}
+.imageCodeBox {
+    padding: 10px 0px;
+    text-align: center;
+}
+.title {
+    color: #333333;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.stepBox {
+    position: relative;
+    width: 100%;
+    padding-bottom:8px;
+    border-bottom: 1px solid #E5E5E5;
+    display: flex;
+}
+.step {
+    width: 33%;
+    font-size:14px; 
+    color: #B2B2B2;
+}
+.step1 {
+    text-align: left;
+}
+.current {
+    color: #5E6CF3;
+    font-weight: bolder;
+}
+.hLine {
+    position: absolute;
+    width: 116px;
+    height: 2px;
+    background: #5E6CF3;
+    bottom:-1px;
+    transition: all 0.5s ease;
+}
+.sanjiao {
+    position: absolute;
+    left: 53px;
+    bottom: 0px;
+    width:0;
+    height:0;
+    border-left:6px solid transparent;
+    border-right:6px solid transparent;
+    border-bottom:8px solid #5E6CF3;
+}
+.step1Box {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.step2Box {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.step3Box {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.item {
+    border-bottom: 1px solid #E5E5E5;
+}
+.tip {
+    color: #FF6E4A;
+    font-size: 12px;
+    text-align: left;
+}
+.nextBtn {
+    width:330px;
+    height: 40px;
+    background:rgba(94,108,243,1);
+    box-shadow:0px 2px 5px 0px rgba(34,142,255,0.5);
+    border-radius:20px;
+    color: #fff;
+    &:hover {
+        background:rgba(94,108,243,1);
+        box-shadow:0px 2px 5px 0px rgba(34,142,255,0.5);
+        color: #fff;
+        border: none;
+    }
+}
+.sendCode {
+    margin: 0 0;
+    padding: 10px 10px;
+    text-align: left;
+    background: #F5F5F5;
+}
+
+.nextBtnDisable {
+    width:330px;
+    height: 40px;
+    color: #fff;
+    background: #f5f5f5;
+    border-radius:20px;
+}
+.backBtnTit {
+    margin: 20px auto 0px;
+    width: 100px;
+    font-size: 14px;
+    color: #5E6CF3;
+    text-align: center;
+    cursor: pointer;
+}
+.tipTxt {
+    font-size: 12px;
+    color: #FF9900;
+}
+.step1Box {
+    :global{
+        .drag {
+            margin: 20px 0px;
+            width: 100%;
+        } 
+    }
+}
+
+.type {
+    width: 150px;
+    height: 36px;
+    line-height: 36px;
+    background:rgba(255,255,255,1);
+    border-radius:18px;
+    border:1px solid rgba(229,229,229,1);
+}
+
+.successIcon {
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+    background: #03c46b;
+    border-radius: 30px;
+    text-align: center;
+    i {
+      font-size: 26px !important;
+      color: #fff;
+      line-height: 60px;
+    }
+  }
+  .step3Tip {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #292935;
+  }
+  .account {
+      font-weight: bold;
+      padding: 0 5px;
+  }
+  .goLogin {
+    margin-top: 20px;
+    width:330px;
+    height:40px;
+    border-radius:20px;
+    border:2px solid rgba(51,51,51,1);
+    text-align: center;
+    line-height: 40px;
+    color: #333333;
+    font-size: 16px;
+  }
+
+
+.changeBox {
+    :global{
+        .ant-input-affix-wrapper .ant-input-prefix {
+            left: 0px;
+        }
+        .ant-input {
+            outline: none;
+            background: #fff;
+            height: 60px;
+            line-height: 60px;
+            border-radius: 10px;
+            font-size: 14px;
+            -webkit-box-shadow: 0 0 0px 1000px white inset;
+            border : none !important;
+            border-color : transparent !important;
+            text-align: left;
+            &:last-child {
+              border-top-left-radius: 0;
+              border-top-right-radius: 0;
+            }
+        }
+        
+        .ant-btn:hover, .ant-btn:focus, .ant-btn:active, .ant-btn.active {
+            text-decoration: none;
+            background: #5E6CF3;
+            box-shadow:0px 2px 5px 0px rgba(34,142,255,0.5);
+            color: #fff;
+        }
+        .ant-btn.disabled, .ant-btn[disabled] {
+            &:hover,&:focus {
+                background: #f5f5f5;
+                color: rgba(0, 0, 0, 0.25);
+                box-shadow: none;
+            }
+        }
+    }
+}

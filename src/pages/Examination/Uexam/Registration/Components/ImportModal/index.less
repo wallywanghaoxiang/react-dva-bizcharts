@@ -1,0 +1,52 @@
+.importModal {
+  .modalFooter {
+    .footerInfo {
+      padding-right: 20px;
+
+      .selectedNum {
+        color: #03C46B;
+        font-weight: bold;
+      }
+
+      .normalNum {
+        color: #333333;
+      }
+    }
+
+    .btnOk {
+      color: #FFFFFF;
+      border: none;
+    }
+
+    :global {
+      .ant-btn[disabled] {
+        color: #FFFFFF !important;
+        background-color: #CCCCCC;
+        border: none;
+        box-shadow: none;
+      }
+    }
+  }
+
+  .importStudents {
+    height: 380px;
+    display: flex;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+
+    .campuses {
+      flex: 0 0 378px;
+      border-right: 1px solid #E5E5E5;
+    }
+
+    .students {
+      flex: 1 1 auto;
+    }
+
+    :global {
+      .noData {
+        width: 100%;
+      }
+    }
+  }
+}
