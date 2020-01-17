@@ -11,25 +11,23 @@ const localServerConfig = {
   https: false, // 是否开启https服务
   port: 8000, // 默认开启端口
   privatePath: '/node_modules/', // 私有包的位置
-  downloadLocalesApi: `https://front-basic-dev.aidoin.com/api/i10n/down?vids=${localesDataIds.join(
-    ','
-  )}`, // 下载字典库的网址
+  downloadLocalesApi: `https://***********?vids=${localesDataIds.join(',')}`, // 下载字典库的网址
 };
 
 // 开发环境
 const devConfig = {
-  proxy: 'https://campusweb-dev.aidoin.com',
+  proxy: 'https://***********',
 };
 
 // 测试环境
 const sitConfig = {
   // sit - proxy
-  proxy: 'https://campusweb-sit.aidoin.com',
+  proxy: 'https://***********',
 };
 
 // 生产环境
 const proConfig = {
-  proxy: 'https://campusweb-uat.gaocloud.com',
+  proxy: 'https://***********',
 };
 
 module.exports = () => {
